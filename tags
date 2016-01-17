@@ -1,0 +1,1400 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+AR	unicode/build/Makefile	/^AR		:= ar crus$/;"	m
+AVG_USER_WORD_LEN	unicode/source/Engines/dictDefine.h	/^const int AVG_USER_WORD_LEN			= 8;		\/\/å¹³å‡è¯é•¿$/;"	v
+Add	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::Add( const std::u16string & strContext, const std::u16string & strWord, t_sysFreq sysFreq, int type )$/;"	f	class:t_userDict
+AddAssocCand	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::AddAssocCand( const t_NGramAssocCand * p_cand )$/;"	f	class:t_ngram
+AddAssocCand	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::AddAssocCand(const t_userNgramAssocCand * p_cand)$/;"	f	class:t_userNgramDict
+AddBigram	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::AddBigram(const std::u16string & szWordLeft, const std::u16string & szWordRight,$/;"	f	class:t_userNgramDict
+AddBigramIndex	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::AddBigramIndex(t_userBigram * offset, unsigned int bigramCurNumber, int LeftID, int RightID, t_sysFreq sysFreq, int type)$/;"	f	class:t_userNgramDict
+AddCands	unicode/source/Candidate/Candidates.cpp	/^bool Candidates::AddCands(int index, Candidates * cands)$/;"	f	class:Candidates
+AddTrigram	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::AddTrigram(const std::u16string & szWordLeft, const std::u16string & szWordMiddle, const std::u16string & szWordRight,$/;"	f	class:t_userNgramDict
+AddTrigramIndex	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::AddTrigramIndex(t_userTrigram * offset, int trigramCurNumber, int LeftID, int MiddleID, int RightID, t_sysFreq sysFreq, int type)$/;"	f	class:t_userNgramDict
+AdjustAssocCandFreq	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::AdjustAssocCandFreq( t_candMemory &candMemory, int nRepeat )$/;"	f	class:t_convertInterface
+AdjustOriginalInput	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::AdjustOriginalInput()$/;"	f	class:t_convertInterface
+AssocCandFreqCompare	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::AssocCandFreqCompare( const t_NGramAssocCand * p_canda,$/;"	f	class:t_ngram
+Attach	unicode/source/SysDict/t_sysDict.cpp	/^bool t_sysDict::Attach( void * buffer, int bufferSize )$/;"	f	class:t_sysDict
+Attach	unicode/source/SysDict/t_sysPhrase.cpp	/^bool t_sysPhrase::Attach( void * buffer, int bufferSize )$/;"	f	class:t_sysPhrase
+BIGRAM_DEL_FLAG	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_DEL_FLAG = 0;		\/\/è¾“å…¥æ¬¡æ•°ä¸º0è¡¨å¾è¯¥è¯è¢«åˆ é™¤äº†$/;"	v
+BIGRAM_MAX_UINT_NUM	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_MAX_UINT_NUM = 0xffffff;	\/\/unsigned intç±»å‹æœ€å¤§å€¼$/;"	v
+BIGRAM_MAX_USER_DICT_SIZE	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_MAX_USER_DICT_SIZE = 20000;	\/\/ç”¨æˆ·è¯åº“æœ€å¤§è§„æ¨¡$/;"	v
+BIGRAM_MAX_USER_WORD_FREQ	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_MAX_USER_WORD_FREQ = 0xffff;	\/\/æœ€å¤§ç”¨æˆ·è¾“å…¥æ¬¡æ•°$/;"	v
+BIGRAM_MIN_FREQ_CAN_BE_DEL	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_MIN_FREQ_CAN_BE_DEL = 1;		\/\/è¾“å…¥æ¬¡æ•°æœ€å¤§ä¸ºè¯¥å€¼æ—¶æ–¹å¯è¢«æ·˜æ±°$/;"	v
+BIGRAM_PSEUDOTIME_DIFF	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_PSEUDOTIME_DIFF = 1000;		\/\/æ•´ç†è¯åº“æ—¶ä½¿ç”¨çš„å‚æ•°ï¼Œä¼ªæ—¶é—´å·®(å’Œæœ€å¤§ä¼ªæ—¶é—´çš„å·®è¶…è¿‡è¯¥å€¼å¯ä»¥è¢«æ·˜æ±°)$/;"	v
+BIGRAM_PSEUDOTIME_DIFF_CAN_BE_DELETE	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_PSEUDOTIME_DIFF_CAN_BE_DELETE = 100;\/\/å‘è¯åº“æ·»åŠ äºŒå…ƒæ—¶ä½¿ç”¨çš„å‚æ•°,å½“ä¼ªæ—¶é—´å·®è¶…è¿‡è¿™ä¸ªå€¼æ—¶ï¼Œè¡¨ç¤ºè¯¥ç”¨æˆ·äºŒå…ƒå¯ä»¥æ›¿æ¢äº†$/;"	v
+BIGRAM_USER_DICT_GROWTH_RATE	unicode/source/Engines/dictDefine.h	/^const int BIGRAM_USER_DICT_GROWTH_RATE = 1000;		\/\/ç”¨æˆ·è¯åº“è§„æ¨¡å¢é•¿é€Ÿåº¦$/;"	v
+BIN	unicode/build/Makefile	/^BIN		:= libsgimcore.so$/;"	m
+BIN	unicode/test/Makefile	/^BIN	:= scripts\/convert$/;"	m
+BKDRHash	hash_map.c	/^size_t BKDRHash(ngx_str_t key, size_t max_node) {$/;"	f
+BKDRHash	test1/hash_map.h	/^size_t BKDRHash(ngx_str_t key, size_t max_node) {$/;"	f
+BYTE	unicode/source/Common/commonType.h	/^typedef unsigned char BYTE;$/;"	t
+Begin	unicode/source/Common/t_hashMap.h	/^	__inline t_hashMapIterator Begin()$/;"	f	class:t_hashMap
+BigramOffset	unicode/source/UserDict/t_userNgramDict.h	/^	int BigramOffset : 20;	\/\/¶şÔªÊı¾İindex$/;"	m	struct:t_BasicIndex
+CPPFLAGS	unicode/build/Makefile	/^CPPFLAGS:= $(INCS) -Wall$/;"	m
+CPPFLAGS	unicode/test/Makefile	/^CPPFLAGS:= $(INCS) -Wall$/;"	m
+CXX	unicode/build/Makefile	/^CXX		:= g++$/;"	m
+CXX	unicode/test/Makefile	/^CXX		:= g++$/;"	m
+CXXFLAGS	unicode/build/Makefile	/^CXXFLAGS:= -std=c++11 -g -O0 -fPIC -shared$/;"	m
+CXXFLAGS	unicode/test/Makefile	/^CXXFLAGS:= -std=c++11 -g -O0$/;"	m
+CacheHit	unicode/source/Correct/t_spellerCache.cpp	/^bool t_spellerCache::CacheHit( const std::u16string & strOriginal, std::u16string & strCorrection )$/;"	f	class:t_spellerCache
+CalIDSScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::CalIDSScore( const char16_t chContext, const char16_t cha, const char16_t chb )$/;"	f	class:t_sysCorrect
+CalIndex	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::CalIndex( const char16_t cha, const char16_t chb, const char16_t chc )$/;"	f	class:t_sysCorrect
+CalIndex	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::CalIndex( const std::u16string & strInputStr, const int nPos )$/;"	f	class:t_sysCorrect
+CalLM	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::CalLM( const std::u16string & strInputStr )$/;"	f	class:t_sysCorrect
+CalLMScoreForCorCand	unicode/source/Correct/t_sysCorrect.cpp	/^void t_sysCorrect::CalLMScoreForCorCand( t_correctCandidate *& p_corCand, bool &bRemoveDeadEnd )$/;"	f	class:t_sysCorrect
+CalMemSizeOfBigramIndex	unicode/source/UserDict/t_userNgramDict.cpp	/^inline int t_userNgramDict::CalMemSizeOfBigramIndex(int nWordNum)$/;"	f	class:t_userNgramDict
+CalMemSizeOfDictHeader	unicode/source/UserDict/t_userDict.cpp	/^inline int t_userDict::CalMemSizeOfDictHeader()$/;"	f	class:t_userDict
+CalMemSizeOfTrigramIndex	unicode/source/UserDict/t_userNgramDict.cpp	/^inline int t_userNgramDict::CalMemSizeOfTrigramIndex(int nWordNum)$/;"	f	class:t_userNgramDict
+CalMemSizeOfWordData	unicode/source/UserDict/t_userDict.cpp	/^inline int t_userDict::CalMemSizeOfWordData( const int nWordNum,$/;"	f	class:t_userDict
+CalMemSizeOfWordData	unicode/source/UserDict/t_userNgramDict.cpp	/^inline int t_userNgramDict::CalMemSizeOfWordData(int nWordNum,$/;"	f	class:t_userNgramDict
+CalMemSizeOfWordIndex	unicode/source/UserDict/t_userDict.cpp	/^inline int t_userDict::CalMemSizeOfWordIndex( const int nWordNum )$/;"	f	class:t_userDict
+CalMemSizeOfWordIndex	unicode/source/UserDict/t_userNgramDict.cpp	/^inline int t_userNgramDict::CalMemSizeOfWordIndex(int nWordNum)$/;"	f	class:t_userNgramDict
+CalScore	unicode/source/SysDict/t_sysInterface.cpp	/^int t_sysInterface::CalScore( const float fProb, const int nFreq )$/;"	f	class:t_sysInterface
+CalXPOSScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::CalXPOSScore( const char16_t chContext, const char16_t cha, const char16_t chb )$/;"	f	class:t_sysCorrect
+CanbePerfectTense	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::CanbePerfectTense( const std::u16string & strContext )$/;"	f	class:t_tenseEstimate
+CanbePresentTense	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::CanbePresentTense( const std::u16string & strContext )$/;"	f	class:t_tenseEstimate
+CanbeThirdPersonal	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::CanbeThirdPersonal( const std::u16string & strContext )$/;"	f	class:t_tenseEstimate
+CandCompare	unicode/source/SysDict/t_sysInterface.cpp	/^int t_sysInterface::CandCompare( const t_composingMemory * p_canda, const t_composingMemory * p_candb )$/;"	f	class:t_sysInterface
+CandExists	unicode/source/Candidate/Candidates.cpp	/^bool Candidates::CandExists(std::string &cand)$/;"	f	class:Candidates
+CandItem	unicode/source/Candidate/CandItem.cpp	/^CandItem::CandItem(CandItem & cand)$/;"	f	class:CandItem
+CandItem	unicode/source/Candidate/CandItem.cpp	/^CandItem::CandItem(CandItem * cand)$/;"	f	class:CandItem
+CandItem	unicode/source/Candidate/CandItem.cpp	/^CandItem::CandItem(ENGINE_ID eid, const char * szWord, int pos, UINT16 score, UINT16 dfr, UINT16 flag)$/;"	f	class:CandItem
+CandItem	unicode/source/Candidate/CandItem.h	/^class CandItem$/;"	c
+Candidates	unicode/source/Candidate/Candidates.cpp	/^Candidates::Candidates()$/;"	f	class:Candidates
+Candidates	unicode/source/Candidate/Candidates.h	/^class Candidates$/;"	c
+CharToIndex	unicode/source/Correct/t_sysCorrect.cpp	/^int CharToIndex( const char16_t &ch )$/;"	f
+CharToInt	backup/chat_module.c	/^char CharToInt(char ch){  $/;"	f
+ChatFunc	backup/chat_module.c	/^typedef char* (*ChatFunc) (char*, char*);$/;"	t	file:
+CheckCoreDictVersion	unicode/source/SysDict/t_sysDict.h	/^	bool CheckCoreDictVersion(unsigned int version)$/;"	f	class:t_sysDict
+CheckCoreDictVersion	unicode/source/SysDict/t_sysPhrase.h	/^	bool CheckCoreDictVersion( unsigned int version )$/;"	f	class:t_sysPhrase
+CheckCoreDictVersionSupplement	unicode/source/SysDict/t_sysDict.h	/^	bool CheckCoreDictVersionSupplement(unsigned int version)$/;"	f	class:t_sysDict
+CheckCoreDictVersionSupplement	unicode/source/SysDict/t_sysPhrase.h	/^	bool CheckCoreDictVersionSupplement(unsigned int version)$/;"	f	class:t_sysPhrase
+CheckFull	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::CheckFull()$/;"	f	class:t_userDict
+CheckFull	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::CheckFull()$/;"	f	class:t_userNgramDict
+CleanAllCands	unicode/source/Correct/t_correctInterface.cpp	/^void t_correctInterface::CleanAllCands()$/;"	f	class:t_correctInterface
+CleanAllCands	unicode/source/Correct/t_sysCorrect.cpp	/^void t_sysCorrect::CleanAllCands()$/;"	f	class:t_sysCorrect
+CleanAllCands	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::CleanAllCands()$/;"	f	class:t_convertInterface
+CleanAllCands	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::CleanAllCands()$/;"	f	class:t_sysInterface
+CleanAssocCands	unicode/source/Ngram/t_ngram.cpp	/^void t_ngram::CleanAssocCands()$/;"	f	class:t_ngram
+CleanAssocCands	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::CleanAssocCands()$/;"	f	class:t_userNgramDict
+CleanPhraseCands	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::CleanPhraseCands()$/;"	f	class:t_phraseInterface
+Clear	unicode/source/Candidate/Candidates.cpp	/^void Candidates::Clear()$/;"	f	class:Candidates
+Clear	unicode/source/Common/t_hashMap.h	/^__inline void t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::Clear()$/;"	f	class:t_hashMap
+ClearMemory	unicode/source/Correct/t_correctInterface.cpp	/^void t_correctInterface::ClearMemory()$/;"	f	class:t_correctInterface
+ClearMemory	unicode/source/Correct/t_sysCorrect.cpp	/^void t_sysCorrect::ClearMemory()$/;"	f	class:t_sysCorrect
+ClearMemory	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::ClearMemory()$/;"	f	class:t_convertInterface
+ClearMemory	unicode/source/Ngram/t_ngram.cpp	/^void t_ngram::ClearMemory()$/;"	f	class:t_ngram
+ClearMemory	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::ClearMemory()$/;"	f	class:t_phraseInterface
+ClearMemory	unicode/source/UserDict/t_userDict.cpp	/^void t_userDict::ClearMemory()$/;"	f	class:t_userDict
+ClearMemory	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::ClearMemory()$/;"	f	class:t_userNgramDict
+ClearMemory	unicode/source/Verbs/t_verbDict.cpp	/^void t_verbDict::ClearMemory()$/;"	f	class:t_verbDict
+Compare	unicode/source/Candidate/CandItem.cpp	/^int CandItem::Compare(const CandItem & cand) const$/;"	f	class:CandItem
+Compare	unicode/source/Common/t_hashMap.h	/^	static bool Compare(KEY &key1, KEY &key2)$/;"	f	class:t_HMLstrArrComp
+Compare	unicode/source/Common/t_hashMap.h	/^	static bool Compare(KEY &key1, KEY &key2)$/;"	f	class:t_HMStrComp
+Compare	unicode/source/Common/t_hashMap.h	/^	static bool Compare(const KEY &key1, const KEY &key2) $/;"	f	class:t_HMDefaultComp
+CompareFunc	hash_map.h	/^typedef int (*CompareFunc) (ngx_str_t str1, ngx_str_t str2);$/;"	t
+CompareFunc	test1/hash_map.h	/^typedef int (*CompareFunc) (ngx_str_t str1, ngx_str_t str2);$/;"	t
+CompareKey	hash_map.c	/^static CompareFunc CompareKey = CompareStr;$/;"	v	file:
+CompareKey	test1/hash_map.h	/^static CompareFunc CompareKey;$/;"	v
+CompareStr	hash_map.c	/^int CompareStr(ngx_str_t str1, ngx_str_t str2)$/;"	f
+CompareStr	test1/hash_map.h	/^int CompareStr(ngx_str_t str1, ngx_str_t str2)$/;"	f
+CompareValue	hash_map.c	/^static CompareFunc CompareValue = CompareStr;$/;"	v	file:
+CompareValue	test1/hash_map.h	/^static CompareFunc CompareValue;$/;"	v
+ContextCompare	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::ContextCompare( const char16_t * szContext,$/;"	f	class:t_tenseEstimate
+Convert	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::Convert( const std::u16string & strComposing, const bool bCorrection )$/;"	f	class:t_convertInterface
+Convert	unicode/source/SysDict/t_phraseInterface.cpp	/^bool t_phraseInterface::Convert( const std::u16string & strInput, t_candMemory * p_tCandList, int &nCount )$/;"	f	class:t_phraseInterface
+Convert	unicode/source/SysDict/t_sysInterface.cpp	/^bool t_sysInterface::Convert(const std::u16string & strInput, t_candMemory * p_tCandList, int &nCount,$/;"	f	class:t_sysInterface
+ConvertIntType	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^e_WordType t_ruleEstimate::ConvertIntType(int nType)$/;"	f	class:t_ruleEstimate
+ConvertWordType	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^int t_ruleEstimate::ConvertWordType(e_WordType type)$/;"	f	class:t_ruleEstimate
+CorrectCandCompare	unicode/source/Correct/t_sysCorrect.cpp	/^int CorrectCandCompare( const void * pa, const void * pb )$/;"	f
+Create	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::Create()$/;"	f	class:t_userDict
+Create	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::Create()$/;"	f	class:t_userNgramDict
+CreateHashMap	hash_map.c	/^HashMap* CreateHashMap(ngx_pool_t* pool, size_t size) {$/;"	f
+CreateHashMap	test1/hash_map.h	/^HashNode* CreateHashMap(size_t size) {$/;"	f
+DEFAULT_SYS_FREQ_FOR_ORIGINAL	unicode/source/Engines/dictDefine.h	/^const int DEFAULT_SYS_FREQ_FOR_ORIGINAL		= 0;		\/\/åŸå§‹è¾“å…¥ä¸²çš„é»˜è®¤ç³»ç»Ÿè¯é¢‘$/;"	v
+DEFAULT_SYS_FREQ_FOR_USER_NGRAM_WORD	unicode/source/Engines/dictDefine.h	/^const int DEFAULT_SYS_FREQ_FOR_USER_NGRAM_WORD = 500;  \/\/ç”¨æˆ·è‡ªé€ çš„ç”¨æˆ·äºŒå…ƒå’Œä¸‰å…ƒçš„é»˜è®¤çš„ç³»ç»Ÿè¯é¢‘(ä¸»åŠ¨è¾“å…¥ä¸Šå±æ—¶ï¼Œè¿åŒä¸Šæ–‡å­¦ä¹ æˆç”¨æˆ·äºŒå…ƒï¼Œè¿åŒä¸Šæ–‡å’Œä¸Šä¸Šæ–‡å­¦ä¹ æˆç”¨æˆ·ä¸‰å…ƒ)$/;"	v
+DEFAULT_SYS_FREQ_FOR_USER_WORD	unicode/source/Engines/dictDefine.h	/^const int DEFAULT_SYS_FREQ_FOR_USER_WORD	= 1000;		\/\/è‡ªé€ è¯çš„é»˜è®¤ç³»ç»Ÿè¯é¢‘$/;"	v
+DEL_FLAG	unicode/source/Engines/dictDefine.h	/^const int DEL_FLAG					= 0;		\/\/è¾“å…¥æ¬¡æ•°ä¸º0è¡¨å¾è¯¥è¯è¢«åˆ é™¤äº†$/;"	v
+DEPS	unicode/build/Makefile	/^DEPS	:= $(OBJS:.o=.d)$/;"	m
+DEPS	unicode/test/Makefile	/^DEPS	:= $(OBJS:.o=.d)$/;"	m
+DICTDIR	unicode/test/Makefile	/^DICTDIR := .\/data$/;"	m
+Delete	unicode/source/Common/t_hashMap.h	/^__inline bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::Delete(KEY key)$/;"	f	class:t_hashMap
+Delete	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::Delete( const std::u16string & strWord, const bool bRemove )$/;"	f	class:t_userDict
+DeleteCand	unicode/source/Candidate/Candidates.cpp	/^bool Candidates::DeleteCand(int index)$/;"	f	class:Candidates
+DeleteCand	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::DeleteCand( const int nIndex )$/;"	f	class:t_convertInterface
+DeleteCand	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::DeleteCand( const int nIndex )$/;"	f	class:t_sysInterface
+DeleteCorCand	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::DeleteCorCand( const int nIndex )$/;"	f	class:t_sysCorrect
+DeleteCorCand	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::DeleteCorCand( t_candMemory * p_tCandList,$/;"	f	class:t_convertInterface
+DeleteTailAssocCand	unicode/source/Ngram/t_ngram.cpp	/^void t_ngram::DeleteTailAssocCand()$/;"	f	class:t_ngram
+DeleteTailUserAssocCand	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::DeleteTailUserAssocCand()$/;"	f	class:t_userNgramDict
+DeleteWord	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::DeleteWord( const std::u16string & strContext,const std::u16string & strWord )$/;"	f	class:t_convertInterface
+ENGINE_ID	unicode/source/Common/commonType.h	/^enum ENGINE_ID$/;"	g
+ENGINE_ID_Base	unicode/source/Common/commonType.h	/^    ENGINE_ID_Base,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Contact	unicode/source/Common/commonType.h	/^    ENGINE_ID_Contact,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Email	unicode/source/Common/commonType.h	/^    ENGINE_ID_Email,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Emoji	unicode/source/Common/commonType.h	/^    ENGINE_ID_Emoji,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_English	unicode/source/Common/commonType.h	/^    ENGINE_ID_English,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Macro	unicode/source/Common/commonType.h	/^    ENGINE_ID_Macro$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Mgr	unicode/source/Common/commonType.h	/^    ENGINE_ID_Mgr,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Udp	unicode/source/Common/commonType.h	/^    ENGINE_ID_Udp,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Url	unicode/source/Common/commonType.h	/^    ENGINE_ID_Url,$/;"	e	enum:ENGINE_ID
+ENGINE_ID_Yanwenzi	unicode/source/Common/commonType.h	/^    ENGINE_ID_Yanwenzi,$/;"	e	enum:ENGINE_ID
+EN_NO_SYSWORD_SYS_FREQ	unicode/source/Engines/dictDefine.h	/^const int EN_NO_SYSWORD_SYS_FREQ			= 0;		\/\/æ— ç³»ç»Ÿè¯é¢‘æ—¶çš„æ ‡è®°$/;"	v
+EN_SINGLE_WORD_FREQ	unicode/source/Engines/dictDefine.h	/^const int EN_SINGLE_WORD_FREQ				= 0xfff0;	\/\/wRonSKy åç»­éœ€è¦æ ¹æ®å®é™…æ’åºçš„è§„åˆ™è°ƒæ•´è¯¥å€¼ï¼Œä¿è¯å•å­—æ¯å€™é€‰æ’åœ¨é€‚åˆçš„ä½ç½®$/;"	v
+EntireSift	unicode/source/Common/t_hashMap.h	/^void t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::EntireSift()$/;"	f	class:t_hashMap
+ExpandIndexSizeForcibly	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::ExpandIndexSizeForcibly()$/;"	f	class:t_userDict
+ExpandIndexSizeForcibly	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::ExpandIndexSizeForcibly()$/;"	f	class:t_userNgramDict
+FILE_NAME	unicode/source/Common/commonMacro.h	13;"	d
+FindBasicWordID	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::FindBasicWordID(const std::u16string & szWord)$/;"	f	class:t_userNgramDict
+FindHeaderTrigramScope	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::FindHeaderTrigramScope(const int nID1, int &nLowerIndex, int &nUpperIndex)$/;"	f	class:t_ngram
+FindIndex	unicode/source/Correct/t_spellerCache.cpp	/^bool t_spellerCache::FindIndex( const std::u16string & strOriginal, int &nIndex )$/;"	f	class:t_spellerCache
+FindIndex	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::FindIndex( const t_correctCandidate * p_corCand, int &nIndex )$/;"	f	class:t_sysCorrect
+FindIndex	unicode/source/SysDict/t_phraseInterface.cpp	/^int t_phraseInterface::FindIndex( const std::u16string & strWord, int &nLower, int &nUpper )$/;"	f	class:t_phraseInterface
+FindIndex	unicode/source/SysDict/t_sysDict.cpp	/^const void* t_sysDict::FindIndex(const void* base, char16_t ch)$/;"	f	class:t_sysDict
+FindIndex	unicode/source/SysDict/t_sysInterface.cpp	/^int t_sysInterface::FindIndex( const t_composingMemory * p_cand )$/;"	f	class:t_sysInterface
+FindIndex	unicode/source/SysDict/t_sysPhrase.cpp	/^const void* t_sysPhrase::FindIndex( const void* base, char16_t ch )$/;"	f	class:t_sysPhrase
+FindLowerIndex	unicode/source/SysDict/t_phraseInterface.cpp	/^int t_phraseInterface::FindLowerIndex( const std::u16string & strWord, int nLeft, int nRight )$/;"	f	class:t_phraseInterface
+FindLowerIndex	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::FindLowerIndex( const std::u16string & strInputSequence, int nLeft, int nRight )$/;"	f	class:t_userDict
+FindTrigramLowerIndex	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::FindTrigramLowerIndex( const int nID1, const int nLowerIndex, const int nUpperIndex )$/;"	f	class:t_ngram
+FindTrigramUpperIndex	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::FindTrigramUpperIndex( const int nID1, const int nLowerIndex, const int nUpperIndex )$/;"	f	class:t_ngram
+FindUpperIndex	unicode/source/SysDict/t_phraseInterface.cpp	/^int t_phraseInterface::FindUpperIndex( const std::u16string & strWord, int nLeft, int nRight )$/;"	f	class:t_phraseInterface
+FindUpperIndex	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::FindUpperIndex( const std::u16string & strInputSequence, int nLeft, int nRight )$/;"	f	class:t_userDict
+FindWordInfo	unicode/source/SysDict/t_sysInterface.cpp	/^bool t_sysInterface::FindWordInfo(const std::u16string & strInput, int &nWordType, int &nWordID)$/;"	f	class:t_sysInterface
+FreqAdjust	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::FreqAdjust()$/;"	f	class:t_convertInterface
+FreqAdjust	unicode/source/SysDict/t_phraseInterface.cpp	/^int t_phraseInterface::FreqAdjust( const std::u16string & strWord )$/;"	f	class:t_phraseInterface
+GET_FILE_NAME	unicode/source/Common/commonMacro.h	11;"	d
+GROWTH_RATE	unicode/source/Engines/dictDefine.h	/^const int GROWTH_RATE			= 200;$/;"	v
+GenericConvert	unicode/source/SysDict/t_sysInterface.cpp	/^bool t_sysInterface::GenericConvert( const std::u16string & strInput, t_candMemory * p_tCandList,$/;"	f	class:t_sysInterface
+GenericSearch	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::GenericSearch( const std::u16string & strInput, t_keyMap * keymap,$/;"	f	class:t_sysInterface
+Get	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::Get(KEY key, VALUE &res)$/;"	f	class:t_hashMap
+GetAssocCandidates	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetAssocCandidates( int nStart, int nMaxNumber,$/;"	f	class:t_convertInterface
+GetAssociationResult	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^int t_ruleEstimate::GetAssociationResult($/;"	f	class:t_ruleEstimate
+GetAssociationResult	unicode/source/Ngram/t_ngram.cpp	/^void t_ngram::GetAssociationResult( t_candMemory * p_tCandList, int &nCount )$/;"	f	class:t_ngram
+GetAssociationResult	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::GetAssociationResult( t_candMemory * p_tCandList,$/;"	f	class:t_phraseInterface
+GetAvgFreq	unicode/source/UserDict/t_userDict.cpp	/^double t_userDict::GetAvgFreq()$/;"	f	class:t_userDict
+GetBase	unicode/source/SysDict/t_sysDict.h	/^	const void* GetBase(void) const { return m_base; }$/;"	f	class:t_sysDict
+GetBase	unicode/source/SysDict/t_sysPhrase.h	/^	const void* GetBase( void ) const { return m_base; }$/;"	f	class:t_sysPhrase
+GetBasicWord	unicode/source/UserDict/t_userNgramDict.cpp	/^std::u16string t_userNgramDict::GetBasicWord(const int nIndex)$/;"	f	class:t_userNgramDict
+GetBasicWordDataPtr	unicode/source/UserDict/t_userNgramDict.cpp	/^char16_t * t_userNgramDict::GetBasicWordDataPtr(int nIndex)$/;"	f	class:t_userNgramDict
+GetBasicWordLen	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::GetBasicWordLen(const int nIndex)$/;"	f	class:t_userNgramDict
+GetBasicWordOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::GetBasicWordOffset(const int nIndex)$/;"	f	class:t_userNgramDict
+GetBiRulesBase	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^bool t_ruleEstimate::GetBiRulesBase(const int nContextType, int &nDataOffset)$/;"	f	class:t_ruleEstimate
+GetBigramFreq	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetBigramFreq( const int nIndex )$/;"	f	class:t_ngram
+GetBigramIndexOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::GetBigramIndexOffset(const int nIndex)$/;"	f	class:t_userNgramDict
+GetBigramRightElement	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetBigramRightElement( const int nIndex )$/;"	f	class:t_ngram
+GetBigramScope	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::GetBigramScope( const int nID0, int &nLowerIndex, int &nUpperIndex )$/;"	f	class:t_ngram
+GetCand	unicode/source/Candidate/Candidates.cpp	/^CandItem * Candidates::GetCand(int index)$/;"	f	class:Candidates
+GetCandIndex	unicode/source/Candidate/CandItem.cpp	/^int CandItem::GetCandIndex() const$/;"	f	class:CandItem
+GetCandidates	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetCandidates( int start, int maxNumber, Candidates * cands, bool & ifMoreAvailable )$/;"	f	class:t_convertInterface
+GetCaseSensitive	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::GetCaseSensitive( const int nIndex )$/;"	f	class:t_convertInterface
+GetCaseSensitive	unicode/source/SysDict/t_sysDict.h	/^	static int GetCaseSensitive( const void* pos )$/;"	f	class:t_sysDict
+GetCaseSensitive	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetCaseSensitive( const void* pos )$/;"	f	class:t_sysPhrase
+GetChar	unicode/source/SysDict/t_sysDict.h	/^	static char16_t GetChar(const void*pos)$/;"	f	class:t_sysDict
+GetChar	unicode/source/SysDict/t_sysPhrase.h	/^	static char16_t GetChar( const void*pos )$/;"	f	class:t_sysPhrase
+GetCode	unicode/source/Common/t_keyMap.h	/^	virtual char16_t GetCode( const char16_t key, const int pos )$/;"	f	class:t_keyMap
+GetContextBase	unicode/source/Verbs/t_tenseEstimate.cpp	/^char16_t * t_tenseEstimate::GetContextBase( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetContextLen	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::GetContextLen( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetContextTense	unicode/source/Verbs/t_verbInterface.cpp	/^int t_verbInterface::GetContextTense(const char16_t* szRawContext)$/;"	f	class:t_verbInterface
+GetCorCand	unicode/source/Correct/t_correctInterface.cpp	/^std::u16string t_correctInterface::GetCorCand( const int nIndex )$/;"	f	class:t_correctInterface
+GetCorCands	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::GetCorCands( const int nIndex, std::u16string & strCorStr )$/;"	f	class:t_sysCorrect
+GetCorChar	unicode/source/Correct/t_sysCorrect.cpp	/^char16_t t_sysCorrect::GetCorChar( const int nIndex )$/;"	f	class:t_sysCorrect
+GetCorEmScore	unicode/source/Correct/t_correctInterface.cpp	/^int t_correctInterface::GetCorEmScore( const int nIndex )$/;"	f	class:t_correctInterface
+GetCorEmScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetCorEmScore( const int nIndex )$/;"	f	class:t_sysCorrect
+GetCorPos	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetCorPos( const int nIndex )$/;"	f	class:t_sysCorrect
+GetCorType	unicode/source/Correct/t_sysCorrect.cpp	/^e_correctType t_sysCorrect::GetCorType( const int nIndex )$/;"	f	class:t_sysCorrect
+GetCorrectLength	unicode/source/Correct/t_spellerCache.cpp	/^int t_spellerCache::GetCorrectLength( const int nIndex )$/;"	f	class:t_spellerCache
+GetCorrectPtr	unicode/source/Correct/t_spellerCache.cpp	/^char16_t * t_spellerCache::GetCorrectPtr( const int nIndex )$/;"	f	class:t_spellerCache
+GetCorrectStr	unicode/source/Correct/t_spellerCache.cpp	/^std::u16string t_spellerCache::GetCorrectStr( const int nIndex )$/;"	f	class:t_spellerCache
+GetCount	unicode/source/Candidate/Candidates.cpp	/^int Candidates::GetCount() const$/;"	f	class:Candidates
+GetCurBigramNum	unicode/source/UserDict/t_userNgramDict.cpp	/^unsigned int t_userNgramDict::GetCurBigramNum(const int nIndex)$/;"	f	class:t_userNgramDict
+GetCurTrigramMiddleNum	unicode/source/UserDict/t_userNgramDict.cpp	/^unsigned int t_userNgramDict::GetCurTrigramMiddleNum(const int nIndex)$/;"	f	class:t_userNgramDict
+GetDfrScore	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetDfrScore() const$/;"	f	class:CandItem
+GetDictType	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetDictType( const int nIndex )$/;"	f	class:t_convertInterface
+GetDictType	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::GetDictType( const int nIndex )$/;"	f	class:t_userDict
+GetDoingOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetDoingOffset(int nMapOffset)   \/\/»ñµÃverbÏÖÔÚ·Ö´ÊÔÚÊı¾İÇøµÄÆ«ÒÆ$/;"	f	class:t_verbDict
+GetDoingVerb	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetDoingVerb(const char16_t * szInputStr, char16_t *& szResultStr)$/;"	f	class:t_verbInterface
+GetEmojiId	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetEmojiId() const$/;"	f	class:CandItem
+GetEngineId	unicode/source/Candidate/CandItem.cpp	/^ENGINE_ID CandItem::GetEngineId() const$/;"	f	class:CandItem
+GetFlag	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetFlag() const {$/;"	f	class:CandItem
+GetFreq	unicode/source/SysDict/t_sysDict.h	/^	static int GetFreq(const void* pos)$/;"	f	class:t_sysDict
+GetFreq	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetFreq( const void* pos )$/;"	f	class:t_sysPhrase
+GetIDSScore	unicode/source/Correct/t_correctInterface.cpp	/^int t_correctInterface::GetIDSScore( const char16_t cha, const char16_t chb, const char16_t chc )$/;"	f	class:t_correctInterface
+GetIDSScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetIDSScore( const char16_t cha, const char16_t chb, const char16_t chc )$/;"	f	class:t_sysCorrect
+GetIDSScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetIDSScore( const int nIndex )$/;"	f	class:t_sysCorrect
+GetIDSScore	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetIDSScore( const char16_t cha, const char16_t chb, const char16_t chc )$/;"	f	class:t_convertInterface
+GetIdxByOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetIdxByOffset(int nOffset)   \/\/¸ù¾İverbÔÚÊı¾İÇøµÄÆ«ÒÆ²éÕÒ¸ÃverbµÄË÷Òı$/;"	f	class:t_verbDict
+GetIndex	unicode/source/SysDict/t_sysDict.h	/^	static const unsigned int* GetIndex(const void* base)$/;"	f	class:t_sysDict
+GetIndex	unicode/source/SysDict/t_sysPhrase.h	/^	static const unsigned int* GetIndex( const void* base )$/;"	f	class:t_sysPhrase
+GetIndexLevel	unicode/source/SysDict/t_sysDict.h	/^	int GetIndexLevel(void) const { return m_indexLevel; }$/;"	f	class:t_sysDict
+GetIndexLevel	unicode/source/SysDict/t_sysPhrase.h	/^	int GetIndexLevel( void ) const { return m_indexLevel; }$/;"	f	class:t_sysPhrase
+GetIndexNum	unicode/source/SysDict/t_sysDict.h	/^	static int GetIndexNum(const void* base)$/;"	f	class:t_sysDict
+GetIndexNum	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetIndexNum( const void* base )$/;"	f	class:t_sysPhrase
+GetInt	unicode/source/Common/commonFunc.h	/^inline int GetInt( const unsigned char * p )$/;"	f
+GetKeyData	unicode/source/Common/t_hashMap.h	/^	static void GetKeyData(KEY &key, void *&res, int &byteNum)$/;"	f	class:t_HMLstrArrComp
+GetKeyData	unicode/source/Common/t_hashMap.h	/^	static void GetKeyData(KEY &key, void *&res, int &byteNum)$/;"	f	class:t_HMStrComp
+GetKeyData	unicode/source/Common/t_hashMap.h	/^	static void GetKeyData(const KEY &key, void *&res, int &byteNum)$/;"	f	class:t_HMDefaultComp
+GetLMScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetLMScore( const int nIndex )$/;"	f	class:t_sysCorrect
+GetLastNWords	unicode/source/Common/commonFunc.h	/^inline std::u16string GetLastNWords( const std::u16string & strWord, int n )$/;"	f
+GetLength	unicode/source/SysDict/t_sysDict.h	/^	static int GetLength(const void* pos)$/;"	f	class:t_sysDict
+GetLength	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetLength( const void* pos )$/;"	f	class:t_sysPhrase
+GetLowerCase	unicode/source/Common/t_ctype.cpp	/^bool t_ctype::GetLowerCase( const char16_t chUpper, char16_t &chLower )$/;"	f	class:t_ctype
+GetMapOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetMapOffset(int nIndex)   \/\/¸ù¾İverbË÷Òı²éÕÒ»ñµÃ¸Ãverb¶ÔÓ¦Ó³Éä±íµÄÆğÊ¼µØÖ·$/;"	f	class:t_verbDict
+GetNext	hash_map.c	/^int GetNext(HashMap* hash_map, ngx_str_t* key, ngx_str_t* value, int* index) {$/;"	f
+GetOffset	unicode/source/Correct/t_spellerCache.cpp	/^int t_spellerCache::GetOffset( const int nIndex )$/;"	f	class:t_spellerCache
+GetOffset	unicode/source/SysDict/t_sysDict.h	/^	static int GetOffset(const void*pos)$/;"	f	class:t_sysDict
+GetOffset	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetOffset( const void*pos )$/;"	f	class:t_sysPhrase
+GetOrgOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetOrgOffset(int nMapOffset)   \/\/»ñµÃverbÔ­ĞÍĞÎÊ½ÔÚÊı¾İÇøµÄÆ«ÒÆ$/;"	f	class:t_verbDict
+GetOrgVerb	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetOrgVerb(const char16_t * szInputStr, char16_t *& szResultStr)$/;"	f	class:t_verbInterface
+GetOriginalLength	unicode/source/Correct/t_spellerCache.cpp	/^int t_spellerCache::GetOriginalLength( const int nIndex )$/;"	f	class:t_spellerCache
+GetOriginalPtr	unicode/source/Correct/t_spellerCache.cpp	/^char16_t * t_spellerCache::GetOriginalPtr( const int nIndex )$/;"	f	class:t_spellerCache
+GetOriginalStr	unicode/source/Correct/t_spellerCache.cpp	/^std::u16string t_spellerCache::GetOriginalStr( const int nIndex )$/;"	f	class:t_spellerCache
+GetPosNum	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetPosNum(int nIndex)$/;"	f	class:t_verbDict
+GetPstDoingOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetPstDoingOffset(int nMapOffset, int nIndex)   \/\/»ñµÃ¹ıÈ¥·Ö´ÊÔÚÊı¾İÇøµÄÆ«ÒÆ$/;"	f	class:t_verbDict
+GetPstDoingVerb	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetPstDoingVerb(const char16_t * szInputStr, char16_t *& szResultStr)$/;"	f	class:t_verbInterface
+GetPstOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetPstOffset(int nMapOffset, int nIndex)   \/\/»ñµÃverb¹ıÈ¥Ê½ÔÚÊı¾İÇøµÄÆ«ÒÆ$/;"	f	class:t_verbDict
+GetPstVerb	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetPstVerb(const char16_t * szInputStr, char16_t *& szResultStr)$/;"	f	class:t_verbInterface
+GetRequiredPosition	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetRequiredPosition() const$/;"	f	class:CandItem
+GetScore	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetScore() const$/;"	f	class:CandItem
+GetShort	unicode/source/Common/commonFunc.h	/^inline unsigned short GetShort( const unsigned char * p )$/;"	f
+GetSignedShort	unicode/source/Common/commonFunc.h	/^inline short GetSignedShort( const unsigned char * p )$/;"	f
+GetStartPos	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetStartPos(int nIndex)   \/\/¸ù¾İverbË÷Òı»ñµÃ¸ÃverbÔÚÊı¾İÇøµÄ£¨ÆğÊ¼£©Î»ÖÃ$/;"	f	class:t_verbDict
+GetSuitableForm	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetSuitableForm( const char16_t * szInputStr, char16_t *& szResultStr, const int nType )$/;"	f	class:t_verbInterface
+GetSysFreq	unicode/source/UserDict/t_userDict.cpp	/^unsigned short t_userDict::GetSysFreq( const int nIndex )$/;"	f	class:t_userDict
+GetTenseType	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::GetTenseType()$/;"	f	class:t_convertInterface
+GetTenseType	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::GetTenseType( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetThirdOffset	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetThirdOffset(int nMapOffset)   \/\/»ñµÃverbÈıµ¥ĞÎÊ½ÔÚÊı¾İÇøµÄÆ«ÒÆ$/;"	f	class:t_verbDict
+GetThirdVerb	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::GetThirdVerb(const char16_t * szInputStr, char16_t *& szResultStr)$/;"	f	class:t_verbInterface
+GetTriggerBase	unicode/source/Verbs/t_tenseEstimate.cpp	/^char16_t * t_tenseEstimate::GetTriggerBase( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetTriggerLen	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::GetTriggerLen( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetTriggerTenseType	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::GetTriggerTenseType( const int nIndex )$/;"	f	class:t_tenseEstimate
+GetTrigramFreq	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetTrigramFreq( const int nIndex )$/;"	f	class:t_ngram
+GetTrigramIndexOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::GetTrigramIndexOffset(const int nIndex)$/;"	f	class:t_userNgramDict
+GetTrigramMidElement	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetTrigramMidElement( const int nIndex )$/;"	f	class:t_ngram
+GetTrigramRightElement	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetTrigramRightElement( const int nIndex )$/;"	f	class:t_ngram
+GetTrigramScope	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::GetTrigramScope( const int nID0, const int nID1, int &nLowerIndex, int &nUpperIndex )$/;"	f	class:t_ngram
+GetTrigramScope	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::GetTrigramScope( const int nID0, int &nLowerIndex, int &nUpperIndex )$/;"	f	class:t_ngram
+GetUInt	unicode/source/Common/commonFunc.h	/^inline unsigned int GetUInt( const unsigned char * p )$/;"	f
+GetUpperCase	unicode/source/Common/t_ctype.cpp	/^bool t_ctype::GetUpperCase( const char16_t chLower, char16_t &chUpper )$/;"	f	class:t_ctype
+GetUserBigramScope	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::GetUserBigramScope(const int nID0, int &nLowerIndex, int &nUpperIndex)$/;"	f	class:t_userNgramDict
+GetUserNgramAssociationResult	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::GetUserNgramAssociationResult(t_candMemory * p_tCandList, int &nCount)$/;"	f	class:t_userNgramDict
+GetUserTrigramScope	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::GetUserTrigramScope(const int nID0, const int nID1, int &nLowerIndex, int &nUpperIndex)$/;"	f	class:t_userNgramDict
+GetUserWord	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::GetUserWord( t_candMemory * p_tCandList, int &nCount,$/;"	f	class:t_userDict
+GetValue	hash_map.c	/^ngx_str_t GetValue(HashMap* hash_map,  ngx_str_t key) {$/;"	f
+GetValue	test1/hash_map.h	/^ngx_str_t GetValue(HashNode* hash_map, size_t hashmap_size, ngx_str_t key) {$/;"	f
+GetVerbByIndex	unicode/source/Verbs/t_verbDict.cpp	/^bool t_verbDict::GetVerbByIndex(int nIndex, char16_t *& szStrVerb)   \/\/¸ù¾İverbµÄË÷Òı²éÕÒverb$/;"	f	class:t_verbDict
+GetVerbLength	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetVerbLength(int nIndex)   \/\/¸ù¾İverbË÷Òı»ñµÃ¸ÃverbµÄ³¤¶È$/;"	f	class:t_verbDict
+GetVerbTense	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::GetVerbTense(const char16_t * inputVerb)$/;"	f	class:t_verbDict
+GetVerbTense	unicode/source/Verbs/t_verbInterface.cpp	/^int t_verbInterface::GetVerbTense(const char16_t* szInputVerb)$/;"	f	class:t_verbInterface
+GetVersion	unicode/source/SysDict/t_sysDict.h	/^	int GetVersion(void) const{ return m_version; }$/;"	f	class:t_sysDict
+GetVersion	unicode/source/SysDict/t_sysPhrase.h	/^	int GetVersion( void ) const{ return m_version; }$/;"	f	class:t_sysPhrase
+GetWord	unicode/source/Candidate/CandItem.cpp	/^const char * CandItem::GetWord() const$/;"	f	class:CandItem
+GetWord	unicode/source/Ngram/t_ngram.cpp	/^std::u16string t_ngram::GetWord( const int nIndex )$/;"	f	class:t_ngram
+GetWord	unicode/source/SysDict/t_sysDict.h	/^	static const char16_t * GetWord(const void* pos)     \/\/hfjiao:^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^$/;"	f	class:t_sysDict
+GetWord	unicode/source/SysDict/t_sysPhrase.h	/^	static const char16_t* GetWord( const void* pos )$/;"	f	class:t_sysPhrase
+GetWordData	unicode/source/Engines/t_convertInterface.cpp	/^std::u16string t_convertInterface::GetWordData( const int nIndex )$/;"	f	class:t_convertInterface
+GetWordDataPtr	unicode/source/UserDict/t_userDict.cpp	/^char16_t * t_userDict::GetWordDataPtr( const int nIndex )$/;"	f	class:t_userDict
+GetWordFreq	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetWordFreq( const int nIndex )$/;"	f	class:t_convertInterface
+GetWordID	unicode/source/SysDict/t_sysDict.h	/^	static int GetWordID(const void* pos)               \/\/è·å¾—ç³»ç»Ÿè¯çš„å…ƒè¯ID   $/;"	f	class:t_sysDict
+GetWordLen	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetWordLen( const int nIndex )$/;"	f	class:t_ngram
+GetWordLength	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::GetWordLength( const int nIndex )$/;"	f	class:t_userDict
+GetWordNum	unicode/source/SysDict/t_sysDict.h	/^	static int GetWordNum(const void* base)$/;"	f	class:t_sysDict
+GetWordNum	unicode/source/SysDict/t_sysPhrase.h	/^	static int GetWordNum( const void* base )$/;"	f	class:t_sysPhrase
+GetWordOffset	unicode/source/Ngram/t_ngram.cpp	/^int t_ngram::GetWordOffset( const int nIndex )$/;"	f	class:t_ngram
+GetWordPesudoTime	unicode/source/UserDict/t_userDict.cpp	/^unsigned int t_userDict::GetWordPesudoTime( const int nIndex )$/;"	f	class:t_userDict
+GetWordStartPos	unicode/source/Common/commonFunc.h	/^inline bool GetWordStartPos( const std::u16string & strWord, const int n, int * p_pos, int &nStartIndex )$/;"	f
+GetWordSysFreq	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetWordSysFreq( const int nIndex )$/;"	f	class:t_convertInterface
+GetWordType	unicode/source/Engines/t_convertInterface.cpp	/^int t_convertInterface::GetWordType(const int nIndex)$/;"	f	class:t_convertInterface
+GetWordType	unicode/source/SysDict/t_sysDict.h	/^	static int GetWordType(const void* pos)      \/\/è·å¾—ç³»ç»Ÿè¯çš„è¯æ€§ ï¼š hfjiao$/;"	f	class:t_sysDict
+GetWordUserFreq	unicode/source/UserDict/t_userDict.cpp	/^unsigned short t_userDict::GetWordUserFreq( const int nIndex )$/;"	f	class:t_userDict
+GetWords	unicode/source/SysDict/t_sysDict.h	/^	static const void* GetWords(const void* base)$/;"	f	class:t_sysDict
+GetWords	unicode/source/SysDict/t_sysPhrase.h	/^	static const void* GetWords( const void* base )$/;"	f	class:t_sysPhrase
+GetXPOSScore	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::GetXPOSScore( const int nIndex )$/;"	f	class:t_sysCorrect
+GetYanwenziId	unicode/source/Candidate/CandItem.cpp	/^UINT16 CandItem::GetYanwenziId() const$/;"	f	class:CandItem
+GramRulesAdjust	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::GramRulesAdjust()$/;"	f	class:t_convertInterface
+HASHMAP_SIZE	backup/hello_module.c	7;"	d	file:
+HASHMAP_SIZE	httpframe_module.c	9;"	d	file:
+HASH_MAP_FULL_SIZE	unicode/source/Common/t_hashMap.h	7;"	d
+HM_BLOCK_COUNT	unicode/source/Common/t_hashMap.h	10;"	d
+HM_BLOCK_SIZE	unicode/source/Common/t_hashMap.h	9;"	d
+HM_MAX_HEAP_CLONE_COUNT	unicode/source/Common/t_hashMap.h	11;"	d
+HTTPFRAME_MODULE_H_	httpframe_module.h	2;"	d
+HTTPHANDLE_H_	backup/HttpHandle.h	2;"	d
+HandleCase	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::HandleCase( std::u16string & strWord )$/;"	f	class:t_convertInterface
+HandleGet	backup/HttpHandle.cpp	/^int HttpHandle::HandleGet(RequestInfo* req_info) {$/;"	f	class:HttpHandle
+HandlePost	backup/HttpHandle.cpp	/^int HttpHandle::HandlePost(RequestInfo* req_info) {$/;"	f	class:HttpHandle
+HandleTenseType	unicode/source/Verbs/t_tenseEstimate.cpp	/^void t_tenseEstimate::HandleTenseType( const std::u16string & strContext, int & nTenseType )$/;"	f	class:t_tenseEstimate
+HasDeadEnd	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::HasDeadEnd( const char16_t cha, const char16_t chb, const char16_t chc, int &nScore )$/;"	f	class:t_sysCorrect
+HasHeaderBigram	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::HasHeaderBigram(const int nID1, int &nIndex)$/;"	f	class:t_ngram
+HasHeaderTrigram	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::HasHeaderTrigram(const int nID1, const int nID2, int &nIndex)$/;"	f	class:t_ngram
+HasTheBigram	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::HasTheBigram( const int nID0, const int nID1, int &nIndex )$/;"	f	class:t_ngram
+HasTheSameFinalCaseForm	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::HasTheSameFinalCaseForm( const t_candMemory * p_canda, const t_candMemory * p_candb )$/;"	f	class:t_convertInterface
+HasTheTrigram	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::HasTheTrigram( const int nID0, const int nID1, const int nID2, int &nIndex )$/;"	f	class:t_ngram
+Hash	hash_map.c	/^static HashFunc Hash = BKDRHash;$/;"	v	file:
+Hash	test1/hash_map.h	/^static HashFunc Hash;$/;"	v
+HashFunc	hash_map.h	/^typedef size_t (*HashFunc) (ngx_str_t key, size_t max_node);$/;"	t
+HashFunc	test1/hash_map.h	/^typedef size_t (*HashFunc) (ngx_str_t key, size_t max_node);$/;"	t
+HashMap	hash_map.h	/^} HashMap;$/;"	t	typeref:struct:_HashMap
+HashMap	test1/hash_map.h	/^} HashNode, HashMap;$/;"	t	typeref:struct:_HashNode
+HashNode	hash_map.h	/^} HashNode;$/;"	t	typeref:struct:_HashNode
+HashNode	test1/hash_map.h	/^} HashNode, HashMap;$/;"	t	typeref:struct:_HashNode
+HttpHandle	backup/HttpHandle.cpp	/^HttpHandle::HttpHandle() {}$/;"	f	class:HttpHandle
+HttpHandle	backup/HttpHandle.h	/^class HttpHandle {$/;"	c
+INCS	unicode/build/Makefile	/^INCS	:= $(addprefix -I, $(SRCDIRS))$/;"	m
+INCS	unicode/test/Makefile	/^INCS	:= $(addprefix -I, $(SRCDIRS))$/;"	m
+IncrementalConvert	unicode/source/SysDict/t_sysInterface.cpp	/^bool t_sysInterface::IncrementalConvert( const char16_t * szInput, const int * anProb, t_candMemory * p_tCandList,$/;"	f	class:t_sysInterface
+IncrementalSearch	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::IncrementalSearch( const char16_t * szInput, const int * anProb, t_keyMap * keymap,$/;"	f	class:t_sysInterface
+Init	unicode/source/SysDict/t_phraseInterface.cpp	/^bool t_phraseInterface::Init( void * buffer, int bufferSize )$/;"	f	class:t_phraseInterface
+Init	unicode/source/SysDict/t_sysInterface.cpp	/^bool t_sysInterface::Init( void * buffer, int bufferSize )$/;"	f	class:t_sysInterface
+Init	unicode/source/Verbs/t_verbInterface.cpp	/^bool t_verbInterface::Init(void * buffer, int nBufferSize)$/;"	f	class:t_verbInterface
+InitChat	backup/chat_module.c	/^ngx_int_t InitChat(ngx_cycle_t* cy) {$/;"	f
+InitFunc	backup/chat_module.c	/^typedef void (*InitFunc)(char*, char*);$/;"	t	file:
+InitKeyTable	unicode/source/Common/t_keyMap.h	/^	virtual bool InitKeyTable(const unsigned char * buffer, int bufferSize)$/;"	f	class:t_keyMap
+InitReservedDataSize	unicode/source/UserDict/t_userDict.cpp	/^inline void t_userDict::InitReservedDataSize()$/;"	f	class:t_userDict
+InitReservedDataSize	unicode/source/UserDict/t_userNgramDict.cpp	/^inline void t_userNgramDict::InitReservedDataSize()$/;"	f	class:t_userNgramDict
+InitUserDictInfo	unicode/source/UserDict/t_userDict.cpp	/^void t_userDict::InitUserDictInfo()$/;"	f	class:t_userDict
+InitUserNgramDictInfo	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::InitUserNgramDictInfo()$/;"	f	class:t_userNgramDict
+InitVerbDictInfo	unicode/source/Verbs/t_verbDict.cpp	/^void t_verbDict::InitVerbDictInfo()$/;"	f	class:t_verbDict
+Insert	hash_map.c	/^int Insert(HashMap* hash_map, ngx_str_t key, ngx_str_t value) {$/;"	f
+Insert	test1/hash_map.h	/^int Insert(HashNode* hash_map, size_t hashmap_size, ngx_str_t key, ngx_str_t value) {$/;"	f
+InsertCand	unicode/source/Candidate/Candidates.cpp	/^bool Candidates::InsertCand(int index, CandItem * cand)$/;"	f	class:Candidates
+InsertCand	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::InsertCand( const t_candMemory * p_cand, const int nIndex )$/;"	f	class:t_convertInterface
+InsertCand	unicode/source/SysDict/t_sysInterface.cpp	/^int t_sysInterface::InsertCand( const int nMaxSysFreq, const float fProb,$/;"	f	class:t_sysInterface
+InsertCorCand	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::InsertCorCand( const t_correctCandidate * p_corCand )$/;"	f	class:t_sysCorrect
+InsertCorCand	unicode/source/Engines/t_convertInterface.h	/^	static bool InsertCorCand() { return true; }$/;"	f	class:t_convertInterface
+InsertCorCandsToCandList	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::InsertCorCandsToCandList()$/;"	f	class:t_convertInterface
+InsertOriginalInput	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::InsertOriginalInput( const std::u16string & strComposing )$/;"	f	class:t_convertInterface
+Instance	backup/HttpHandle.cpp	/^static HttpHandle& HttpHandle::Instance() {$/;"	f	class:HttpHandle
+Instance	unicode/source/Engines/t_convertInterface.cpp	/^t_convertInterface& t_convertInterface::Instance(const char* dic_path) {$/;"	f	class:t_convertInterface
+IsAssocCand	unicode/source/Common/commonFunc.h	/^inline bool IsAssocCand( const int nType )$/;"	f
+IsBasicWordIndexLegal	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::IsBasicWordIndexLegal(const int nIndex)$/;"	f	class:t_userNgramDict
+IsContextCorrection	unicode/source/Candidate/CandItem.cpp	/^bool CandItem::IsContextCorrection() const$/;"	f	class:CandItem
+IsCorrectCand	unicode/source/Common/commonFunc.h	/^inline bool IsCorrectCand( const int nType )$/;"	f
+IsCustomizedPhrase	unicode/source/Candidate/CandItem.cpp	/^bool CandItem::IsCustomizedPhrase() const$/;"	f	class:CandItem
+IsDigital	unicode/test/main.cpp	/^inline bool IsDigital( const string & strWord )$/;"	f
+IsEmpty	unicode/source/Candidate/Candidates.cpp	/^bool Candidates::IsEmpty() const$/;"	f	class:Candidates
+IsIndexLegal	unicode/source/Correct/t_sysCorrect.cpp	/^bool IsIndexLegal( const int nIndex )$/;"	f
+IsLetter	unicode/source/Common/commonFunc.h	/^inline bool IsLetter( const char16_t ch )$/;"	f
+IsLowerCase	unicode/source/Common/commonFunc.h	/^inline bool IsLowerCase( const char16_t ch )$/;"	f
+IsPrefix	unicode/source/Common/commonFunc.h	/^inline bool IsPrefix( const char16_t * szPrefix, const char16_t * szSequence )$/;"	f
+IsSysAssocCand	unicode/source/Common/commonFunc.h	/^inline bool IsSysAssocCand(const int nType)$/;"	f
+IsSysBiGram	unicode/source/Common/commonFunc.h	/^inline bool IsSysBiGram(const int nType)$/;"	f
+IsSysTriGram	unicode/source/Common/commonFunc.h	/^inline bool IsSysTriGram(const int nType)$/;"	f
+IsSysWord	unicode/source/Common/commonFunc.h	/^inline bool IsSysWord( const int nType )$/;"	f
+IsTheSameCharIgnoreCase	unicode/source/Common/commonFunc.h	/^inline bool IsTheSameCharIgnoreCase( const char16_t cha, const char16_t chb )$/;"	f
+IsUpperCase	unicode/source/Common/commonFunc.h	/^inline bool IsUpperCase( const char16_t ch )$/;"	f
+IsUserBigramAssoc	unicode/source/Common/commonFunc.h	/^inline bool IsUserBigramAssoc(const int nType)$/;"	f
+IsUserTrigramAssoc	unicode/source/Common/commonFunc.h	/^inline bool IsUserTrigramAssoc(const int nType)$/;"	f
+IsUserWord	unicode/source/Common/commonFunc.h	/^inline bool IsUserWord( const int nType )$/;"	f
+IsWord	unicode/source/SysDict/t_sysDict.h	/^	static bool IsWord(const void* base)$/;"	f	class:t_sysDict
+IsWordCorrection	unicode/source/Candidate/CandItem.cpp	/^bool CandItem::IsWordCorrection() const$/;"	f	class:CandItem
+IsWordIndexLegal	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::IsWordIndexLegal( const int nIndex )$/;"	f	class:t_ngram
+Key	unicode/source/Common/t_hashMap.h	/^		KEY* Key()$/;"	f	class:t_hashMap::t_hashMapIterator
+LD	unicode/build/Makefile	/^LD		:= g++$/;"	m
+LD	unicode/test/Makefile	/^LD		:= g++$/;"	m
+LDFLAGS	unicode/build/Makefile	/^LDFLAGS	:= $(CXXFLAGS)$/;"	m
+LDFLAGS	unicode/test/Makefile	/^LDFLAGS	:= $(CXXFLAGS)$/;"	m
+LEN_DIFF_STEP	unicode/source/Engines/dictDefine.h	/^const int LEN_DIFF_STEP			= 1;	\/\/è¾“å…¥é•¿åº¦å¢åŠ æ—¶çš„è¯é•¿å·®é€’å¢å¹…åº¦ï¼ˆe.g. è¾“å…¥ä¸²é•¿åº¦ä¸º1æ—¶æœ€é•¿è¯ä¸º5ï¼Œè¾“å…¥ä¸²é•¿åº¦ä¸º2æ—¶æœ€é•¿è¯ä¸º7ï¼‰$/;"	v
+LIBS	unicode/build/Makefile	/^LIBS	:=$/;"	m
+LIBS	unicode/test/Makefile	/^LIBS	:=$/;"	m
+LOGD	unicode/source/Common/log.h	14;"	d
+LOGE	unicode/source/Common/log.h	11;"	d
+LOGI	unicode/source/Common/log.h	13;"	d
+LOGV	unicode/source/Common/log.h	15;"	d
+LOGW	unicode/source/Common/log.h	12;"	d
+LOG_TAG	unicode/source/Common/log.h	8;"	d
+LeafIterator	unicode/source/SysDict/t_sysDict.h	/^		LeafIterator(const void* words, int num, int level, const char16_t* prefix, int len)$/;"	f	class:t_sysDict::LeafIterator
+LeafIterator	unicode/source/SysDict/t_sysDict.h	/^	class LeafIterator : public WordIterator$/;"	c	class:t_sysDict
+LeafIterator	unicode/source/SysDict/t_sysPhrase.h	/^		LeafIterator( const void* words, int num, int level, const char16_t* prefix, int len )$/;"	f	class:t_sysPhrase::LeafIterator
+LeafIterator	unicode/source/SysDict/t_sysPhrase.h	/^	class LeafIterator: public WordIterator$/;"	c	class:t_sysPhrase
+LearnWord	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LearnWord( const std::u16string & strContext, int nCandIndex )$/;"	f	class:t_convertInterface
+LoadAdjKeyMap	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadAdjKeyMap( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadAllKeyMap	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadAllKeyMap(const unsigned char * buffer, int nBufferSize)$/;"	f	class:t_convertInterface
+LoadBasicSysDicts	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadBasicSysDicts( const unsigned char * buffer, const int nBufferSize )$/;"	f	class:t_convertInterface
+LoadCache	unicode/source/Correct/t_correctInterface.cpp	/^bool t_correctInterface::LoadCache( const unsigned char * buffer, const int nSize )$/;"	f	class:t_correctInterface
+LoadCtypeData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadCtypeData( const unsigned char * buffer, const int nBufferSize )$/;"	f	class:t_convertInterface
+LoadData	unicode/source/Common/t_ctype.cpp	/^bool t_ctype::LoadData( const unsigned char * buffer, const int nSize )$/;"	f	class:t_ctype
+LoadData	unicode/source/Correct/t_correctInterface.cpp	/^bool t_correctInterface::LoadData( const unsigned char * buffer, const int nSize )$/;"	f	class:t_correctInterface
+LoadData	unicode/source/Correct/t_spellerCache.cpp	/^bool t_spellerCache::LoadData( const unsigned char * p_cacheData, int nSize )$/;"	f	class:t_spellerCache
+LoadData	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::LoadData( const unsigned char * buffer, const int nBufferSize )$/;"	f	class:t_sysCorrect
+LoadData	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^bool t_ruleEstimate::LoadData(const unsigned char * p_buffer, const int nBufferSize)$/;"	f	class:t_ruleEstimate
+LoadData	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::LoadData( const unsigned char * p_buffer, const int nBufferSize, unsigned int sysVersion, unsigned int sysMagic)$/;"	f	class:t_ngram
+LoadData	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::LoadData( const unsigned char * p_buffer, const int nBufferSize )$/;"	f	class:t_tenseEstimate
+LoadDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadDict(const char* dict_path)$/;"	f	class:t_convertInterface
+LoadErrorModel	unicode/source/Correct/t_correctInterface.cpp	/^bool t_correctInterface::LoadErrorModel( const unsigned char * buffer, const int nSize )$/;"	f	class:t_correctInterface
+LoadKeyMap	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadKeyMap( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadNgramData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadNgramData( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadParadigmData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadParadigmData( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadRulesData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadRulesData(const unsigned char * buffer, int nBufferSize)$/;"	f	class:t_convertInterface
+LoadSpellerData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadSpellerData( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadSysDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadSysDict( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadSysPhrase	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadSysPhrase( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadUserDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadUserDict( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LoadUserDict	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::LoadUserDict( void * buffer, int nBufferSize )$/;"	f	class:t_userDict
+LoadUserNgramDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadUserNgramDict(const unsigned char * buffer, int nBufferSize)$/;"	f	class:t_convertInterface
+LoadUserNgramDict	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::LoadUserNgramDict(void * buffer, int nBufferSize)$/;"	f	class:t_userNgramDict
+LoadVerbDict	unicode/source/Verbs/t_verbDict.cpp	/^bool t_verbDict::LoadVerbDict(void * buffer, int nBufferSize)$/;"	f	class:t_verbDict
+LoadVerbsData	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::LoadVerbsData( const unsigned char * buffer, int nBufferSize )$/;"	f	class:t_convertInterface
+LowerChar	unicode/source/Common/commonFunc.h	/^inline void LowerChar( char16_t & cha )$/;"	f
+LowerHeadLetter	unicode/source/Common/commonFunc.h	/^inline void LowerHeadLetter( std::u16string & strWord )$/;"	f
+MAGIC_NUM	unicode/source/Engines/dictDefine.h	/^const int MAGIC_NUM = 117450;$/;"	v
+MAX_BASIC_WORD_LEN	unicode/source/Engines/dictDefine.h	/^const int MAX_BASIC_WORD_LEN		= 15;$/;"	v
+MAX_CAND_NUM	unicode/source/Engines/dictDefine.h	/^const int MAX_CAND_NUM			= 1000;	\/\/å±•ç°å€™é€‰ä¸ªæ•°ä¸Šé™$/;"	v
+MAX_COMPOSING_NUM	unicode/source/SysDict/t_sysInterface.h	/^const int MAX_COMPOSING_NUM = 16;$/;"	v
+MAX_COR_CAND_NUM	unicode/source/Engines/dictDefine.h	/^const int MAX_COR_CAND_NUM		= 10;	\/\/çº é”™å€™é€‰ä¸ªæ•°ä¸Šé™$/;"	v
+MAX_COR_PY_CAND_NUM	unicode/source/Engines/dictDefine.h	/^const int MAX_COR_PY_CAND_NUM	= 20;	\/\/çº é”™å¾…æŸ¥è¯ä¸²ä¸ªæ•°ä¸Šé™$/;"	v
+MAX_KEY_NUM	unicode/source/Engines/dictDefine.h	/^	const int MAX_KEY_NUM = 50;	\/\/æœ€å¤šçš„é”®æ•°$/;"	v
+MAX_KEY_SIZE	hash_map.h	13;"	d
+MAX_LEN_DIFF	unicode/source/Engines/dictDefine.h	/^const int MAX_LEN_DIFF			= 4;	\/\/è¾“å…¥é•¿åº¦ä¸º1æ—¶çš„è¯é•¿å’Œè¾“å…¥ä¸²é•¿åº¦å·®æœ€å¤§å€¼$/;"	v
+MAX_LEVEL	unicode/source/Engines/dictDefine.h	/^const int MAX_LEVEL                 = 8;$/;"	v
+MAX_LOG_BUFFER	unicode/source/Common/log.h	18;"	d
+MAX_MAP_NUM	unicode/source/Engines/dictDefine.h	/^	const int MAX_MAP_NUM = 50;	\/\/æ¯ä¸ªé”®æœ€å¤šæ˜ å°„åˆ°çš„å­—ç¬¦æ•°$/;"	v
+MAX_PHRASE_LEN	unicode/source/Engines/dictDefine.h	/^const int MAX_PHRASE_LEN			= 63;$/;"	v
+MAX_POINTER_NUM	unicode/source/SysDict/t_sysInterface.h	/^const int MAX_POINTER_NUM = 64;$/;"	v
+MAX_PY_LENGTH	unicode/source/Engines/dictDefine.h	/^const int MAX_PY_LENGTH             = 63;	\/\/æœ€å¤§è¾“å…¥ä¸²é•¿åº¦$/;"	v
+MAX_PY_LENGTH_FOR_COR	unicode/source/Engines/dictDefine.h	/^const int MAX_PY_LENGTH_FOR_COR = 20;   \/\/çº é”™çš„æ‹¼éŸ³ä¸²æœ€å¤§é•¿åº¦$/;"	v
+MAX_SOUGOU_FILE_PATH	unicode/source/Common/commonMacro.h	9;"	d
+MAX_SYS_FREQ	unicode/source/Engines/dictDefine.h	/^const int MAX_SYS_FREQ						= 0x7ff;	\/\/æœ€å¤§ç³»ç»Ÿè¯é¢‘$/;"	v
+MAX_TYPING_LENGTH	unicode/source/Common/commonMacro.h	7;"	d
+MAX_UINT_NUM	unicode/source/Engines/dictDefine.h	/^const int MAX_UINT_NUM				= 0xffffff;	\/\/unsigned intç±»å‹æœ€å¤§å€¼$/;"	v
+MAX_USER_DICT_SIZE	unicode/source/Engines/dictDefine.h	/^const int MAX_USER_DICT_SIZE		= 20000;	\/\/ç”¨æˆ·è¯åº“æœ€å¤§è§„æ¨¡$/;"	v
+MAX_USER_WORD_FREQ	unicode/source/Engines/dictDefine.h	/^const int MAX_USER_WORD_FREQ		= 0xffff;	\/\/æœ€å¤§ç”¨æˆ·è¾“å…¥æ¬¡æ•°$/;"	v
+MAX_USER_WORD_LEN	unicode/source/Engines/dictDefine.h	/^const int MAX_USER_WORD_LEN			= 31;		\/\/æœ€å¤§è¯é•¿$/;"	v
+MAX_VALUE_SIZE	hash_map.h	14;"	d
+MAX_WORD_LENGTH	unicode/source/Engines/dictDefine.h	/^const int MAX_WORD_LENGTH           = 23;	\/\/æœ€å¤§è¯é•¿$/;"	v
+MD5	unicode/source/Engines/dictDefine.h	/^const int MD5 = 31415926;$/;"	v
+MERGE_USERFREQ_PSEUDOTIME_CONTRIBUTEPARA	unicode/source/Engines/dictDefine.h	/^const int MERGE_USERFREQ_PSEUDOTIME_CONTRIBUTEPARA = 1000;$/;"	v
+MIN_FREQ_CAN_BE_DEL	unicode/source/Engines/dictDefine.h	/^const int MIN_FREQ_CAN_BE_DEL		= 1;		\/\/è¾“å…¥æ¬¡æ•°æœ€å¤§ä¸ºè¯¥å€¼æ—¶æ–¹å¯è¢«æ·˜æ±°$/;"	v
+MemAllocation	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::MemAllocation()$/;"	f	class:t_userDict
+MemAllocation	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::MemAllocation()$/;"	f	class:t_userNgramDict
+MurmurHash	unicode/source/Common/t_hashMap.h	/^inline unsigned int MurmurHash( const void *key, int len )$/;"	f
+MyStrCmp	unicode/source/Common/commonFunc.h	/^inline int MyStrCmp( const char16_t * str1, const char16_t * str2 )$/;"	f
+MyStrLength	unicode/source/Common/commonFunc.h	/^inline int MyStrLength(const char16_t * str)$/;"	f
+MyStrcpy	unicode/source/Common/commonFunc.h	/^inline bool MyStrcpy(char16_t * szStrA, const char16_t * szStrB)$/;"	f
+MyStrncpy	unicode/source/Common/commonFunc.h	/^inline bool MyStrncpy(char16_t * szStrA, const char16_t * szStrB, size_t n)$/;"	f
+NGINX_HTTP_HANDLE_INTERFACE_H_	ngx_http_handle_interface.h	2;"	d
+NGX_HTTP_REQUEST_INFO_H_	ngx_http_request_info.h	2;"	d
+NGX_HTTP_RESULT_H_	backup/ngx_http_result.h	2;"	d
+NULL	unicode/source/Common/t_hashMap.h	12;"	d
+Next	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::t_hashMapIterator::Next()$/;"	f	class:t_hashMap::t_hashMapIterator
+Next	unicode/source/SysDict/t_sysDict.cpp	/^bool t_sysDict::NodeIterator::Next(void)$/;"	f	class:t_sysDict::NodeIterator
+Next	unicode/source/SysDict/t_sysDict.h	/^		bool Next(void)$/;"	f	class:t_sysDict::LeafIterator
+Next	unicode/source/SysDict/t_sysDict.h	/^	static const void* Next(const void* base, char16_t ch)$/;"	f	class:t_sysDict
+Next	unicode/source/SysDict/t_sysPhrase.cpp	/^bool t_sysPhrase::NodeIterator::Next( void )$/;"	f	class:t_sysPhrase::NodeIterator
+Next	unicode/source/SysDict/t_sysPhrase.h	/^		bool Next( void )$/;"	f	class:t_sysPhrase::LeafIterator
+Next	unicode/source/SysDict/t_sysPhrase.h	/^	static const void* Next( const void* base, char16_t ch )$/;"	f	class:t_sysPhrase
+NextNode	unicode/source/SysDict/t_sysDict.cpp	/^inline bool t_sysDict::NodeIterator::NextNode(void)$/;"	f	class:t_sysDict::NodeIterator
+NextNode	unicode/source/SysDict/t_sysPhrase.cpp	/^inline bool t_sysPhrase::NodeIterator::NextNode( void )$/;"	f	class:t_sysPhrase::NodeIterator
+NodeIterator	unicode/source/SysDict/t_sysDict.h	/^		NodeIterator(const void* base, int level, const char16_t* prefix, int len)$/;"	f	class:t_sysDict::NodeIterator
+NodeIterator	unicode/source/SysDict/t_sysDict.h	/^	class NodeIterator : public WordIterator$/;"	c	class:t_sysDict
+NodeIterator	unicode/source/SysDict/t_sysPhrase.h	/^		NodeIterator( const void* base, int level, const char16_t* prefix, int len )$/;"	f	class:t_sysPhrase::NodeIterator
+NodeIterator	unicode/source/SysDict/t_sysPhrase.h	/^	class NodeIterator: public WordIterator$/;"	c	class:t_sysPhrase
+NodeWordNum	unicode/source/SysDict/t_sysPhrase.h	/^	static int NodeWordNum( const void* base )$/;"	f	class:t_sysPhrase
+Num	unicode/source/Common/t_hashMap.h	/^int t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::Num()$/;"	f	class:t_hashMap
+OBJS	unicode/build/Makefile	/^OBJS	:= $(SRCS:.cpp=.o)$/;"	m
+OBJS	unicode/test/Makefile	/^OBJS	:= $(SRCS:.cpp=.o)$/;"	m
+Object_Creator	unicode/source/Common/t_ctype.h	/^		Object_Creator()$/;"	f	struct:t_ctype::Object_Creator
+Object_Creator	unicode/source/Common/t_ctype.h	/^	struct Object_Creator$/;"	s	class:t_ctype
+Object_Creator	unicode/source/Common/t_keyMap.h	/^		Object_Creator()$/;"	f	struct:t_keyMap::Object_Creator
+Object_Creator	unicode/source/Common/t_keyMap.h	/^	struct Object_Creator$/;"	s	class:t_keyMap
+OnBackspace	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::OnBackspace()$/;"	f	class:t_convertInterface
+OrdingUserDict	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::OrdingUserDict()$/;"	f	class:t_userDict
+OrdingUserNgramDict	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::OrdingUserNgramDict()$/;"	f	class:t_userNgramDict
+OriginalStrCmp	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::OriginalStrCmp( const t_candMemory * p_cand )$/;"	f	class:t_convertInterface
+PSEUDOTIME_DIFF	unicode/source/Engines/dictDefine.h	/^const int PSEUDOTIME_DIFF			= 1000;		\/\/ä¼ªæ—¶é—´å·®(å’Œæœ€å¤§ä¼ªæ—¶é—´çš„å·®è¶…è¿‡è¯¥å€¼å¯ä»¥è¢«æ·˜æ±°)$/;"	v
+PUNISH_FOR_DELETION	unicode/source/Engines/dictDefine.h	/^const int PUNISH_FOR_DELETION	= 100;	\/\/åˆ é™¤ç±»å‹è¯­è¨€æ¨¡å‹å¾—åˆ†æƒ©ç½š$/;"	v
+ParseContext	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::ParseContext( const std::u16string & strContext )$/;"	f	class:t_tenseEstimate
+ParseFileHeader	unicode/source/UserDict/t_userDict.cpp	/^inline void t_userDict::ParseFileHeader( const void * buffer )$/;"	f	class:t_userDict
+ParseFileHeader	unicode/source/UserDict/t_userNgramDict.cpp	/^inline void t_userNgramDict::ParseFileHeader(const void * buffer)$/;"	f	class:t_userNgramDict
+ParseFileHeader	unicode/source/Verbs/t_verbDict.cpp	/^inline void t_verbDict::ParseFileHeader(const void * buffer)$/;"	f	class:t_verbDict
+ParseHeader	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::ParseHeader( const unsigned char * p_buffer )$/;"	f	class:t_tenseEstimate
+ParserContent	backup/chat_module.c	/^static char* ParserContent(ngx_http_request_t* r) {$/;"	f	file:
+ParserHeader	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^bool t_ruleEstimate::ParserHeader(const unsigned char * p_buffer)$/;"	f	class:t_ruleEstimate
+PhraseFilter	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::PhraseFilter( const std::u16string & strWord )$/;"	f	class:t_phraseInterface
+Prefix	unicode/source/SysDict/t_sysDict.h	/^		const char16_t* Prefix(void) const { return m_prefix; }$/;"	f	class:t_sysDict::WordIterator
+Prefix	unicode/source/SysDict/t_sysPhrase.h	/^		const char16_t* Prefix( void ) const { return m_prefix; }$/;"	f	class:t_sysPhrase::WordIterator
+PrefixLength	unicode/source/SysDict/t_sysDict.h	/^		const int PrefixLength(void) const { return m_length; }$/;"	f	class:t_sysDict::WordIterator
+PrefixLength	unicode/source/SysDict/t_sysPhrase.h	/^		const int PrefixLength( void ) const { return m_length; }$/;"	f	class:t_sysPhrase::WordIterator
+Pushback	unicode/source/Candidate/Candidates.cpp	/^void Candidates::Pushback(CandItem * cand)$/;"	f	class:Candidates
+RM	unicode/build/Makefile	/^RM		:= rm -rf$/;"	m
+RM	unicode/test/Makefile	/^RM		:= rm -rf$/;"	m
+RemoveCorProp	unicode/source/Common/commonFunc.h	/^inline void RemoveCorProp( int &nType )$/;"	f
+RemoveRepeat	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::RemoveRepeat()$/;"	f	class:t_convertInterface
+RemoveRepeatConsiderTheFinalCaseForm	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::RemoveRepeatConsiderTheFinalCaseForm()$/;"	f	class:t_convertInterface
+RemoveSpaceOfStr	unicode/source/Common/commonFunc.h	/^inline void RemoveSpaceOfStr( std::u16string & strWord )$/;"	f
+RemoveSpecialCharsOfStr	unicode/source/Common/commonFunc.h	/^inline void RemoveSpecialCharsOfStr( std::u16string & strWord )$/;"	f
+RemoveTailSpaceOfStr	unicode/source/Common/commonFunc.h	/^inline void RemoveTailSpaceOfStr( std::u16string & strWord )$/;"	f
+RequestInfo	ngx_http_request_info.h	/^} RequestInfo;$/;"	t	typeref:struct:_RequestInfo
+ResetComposing	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::ResetComposing()$/;"	f	class:t_convertInterface
+ResetComposing	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::ResetComposing()$/;"	f	class:t_sysInterface
+Restore	unicode/source/UserDict/t_userDict.h	/^	bool Restore(){}\/\/æ¢å¤æœ€åä¸€ä¸ªåŠ å…¥çš„è¯çš„è¯é¢‘(ç›´æ¥ç”¨ä¸Šé¢è¿™ä¸ªå‡½æ•°å§)$/;"	f	class:t_userDict
+SG_Dict_Cmp_Freq	unicode/source/Engines/t_convertInterface.cpp	/^struct SG_Dict_Cmp_Freq$/;"	s	file:
+SG_Dict_Cmp_Word	unicode/source/Engines/t_convertInterface.cpp	/^	SG_Dict_Cmp_Word( int len, bool bCaseSensitive, bool * p_Captial )$/;"	f	struct:SG_Dict_Cmp_Word
+SG_Dict_Cmp_Word	unicode/source/Engines/t_convertInterface.cpp	/^struct SG_Dict_Cmp_Word$/;"	s	file:
+SIZE	test1/main.c	4;"	d	file:
+SPACE_CHAR	unicode/source/Engines/dictDefine.h	/^const int SPACE_CHAR			= 16;	\/\/bits for a char$/;"	v
+SPACE_INDEX_NUM	unicode/source/Engines/dictDefine.h	/^const int SPACE_INDEX_NUM		= 7;	\/\/bits for index num of a non-leaf node$/;"	v
+SPACE_NODE_FREQ	unicode/source/Engines/dictDefine.h	/^const int SPACE_NODE_FREQ		= 0;	\/\/bits for the freq of a non-leaf node$/;"	v
+SPACE_OFFSET	unicode/source/Engines/dictDefine.h	/^const int SPACE_OFFSET			= 24;	\/\/bits for the offset$/;"	v
+SPACE_RESERVED	unicode/source/Engines/dictDefine.h	/^const int SPACE_RESERVED		= 16;	\/\/bits reserved$/;"	v
+SPACE_RESERVED_PHRASE	unicode/source/Engines/dictDefine.h	/^const int SPACE_RESERVED_PHRASE = 10;	\/\/bits reserved for phrase$/;"	v
+SPACE_WORD_FREQ	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_FREQ		= 12;	\/\/bits for the word freq$/;"	v
+SPACE_WORD_FREQ_PHRASE	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_FREQ_PHRASE = 16;  \/\/bits for the phrase freq$/;"	v
+SPACE_WORD_ID	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_ID         	= 16;   \/\/bits for the word ID$/;"	v
+SPACE_WORD_LEN	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_LEN		= 4;	\/\/bits for the word length$/;"	v
+SPACE_WORD_LEN_PHRASE	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_LEN_PHRASE = 6;	\/\/bits for the phrase length$/;"	v
+SPACE_WORD_NUM	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_NUM		= 8;	\/\/bits for words num of a leaf node$/;"	v
+SPACE_WORD_TYPE	unicode/source/Engines/dictDefine.h	/^const int SPACE_WORD_TYPE       	= 16;   \/\/bits for the word type$/;"	v
+SRCDIRS	unicode/build/Makefile	/^SRCDIRS	:= $(SRCROOT)\/Engines \\$/;"	m
+SRCDIRS	unicode/test/Makefile	/^SRCDIRS	:= $(SRCROOT)\/Engines \\$/;"	m
+SRCROOT	unicode/build/Makefile	/^SRCROOT	:= ..\/source$/;"	m
+SRCROOT	unicode/test/Makefile	/^SRCROOT	:= ..\/source$/;"	m
+SRCS	unicode/build/Makefile	/^SRCS	:= $(foreach DIR, $(VPATH), $(notdir $(wildcard $(DIR)\/*.cpp))) \\$/;"	m
+SRCS	unicode/test/Makefile	/^SRCS	:= $(wildcard *.cpp)$/;"	m
+SaveUserDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::SaveUserDict( const unsigned char ** buffer, int &nBufferSize )$/;"	f	class:t_convertInterface
+SaveUserDict	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::SaveUserDict( void ** buffer, int &nBufferSize )$/;"	f	class:t_userDict
+SaveUserNgramDict	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::SaveUserNgramDict(const unsigned char ** buffer, int &nBufferSize)$/;"	f	class:t_convertInterface
+SaveUserNgramDict	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::SaveUserNgramDict(void ** buffer, int &nBufferSize)$/;"	f	class:t_userNgramDict
+SearchBiRules	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^bool t_ruleEstimate::SearchBiRules(int nContextType, e_WordType nBiList[], int &nBiCount)$/;"	f	class:t_ruleEstimate
+SearchConParadigm	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::SearchConParadigm( const std::u16string & strContext )$/;"	f	class:t_tenseEstimate
+SearchSysDict	unicode/source/SysDict/t_sysInterface.cpp	/^void t_sysInterface::SearchSysDict(const std::u16string & strInput, t_keyMap * keymap,$/;"	f	class:t_sysInterface
+SearchSysPhrase	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::SearchSysPhrase( const std::u16string & strInput,$/;"	f	class:t_phraseInterface
+SearchTriParadigm	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::SearchTriParadigm( const std::u16string & strContext, int & nMatchNum )$/;"	f	class:t_tenseEstimate
+SearchTriRules	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^bool t_ruleEstimate::SearchTriRules(int nContextType, e_WordType nTriList[], int &nTriCount)$/;"	f	class:t_ruleEstimate
+SearchUserDict	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::SearchUserDict( const std::u16string & strInputSequence )$/;"	f	class:t_userDict
+SecondaryAssociation	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::SecondaryAssociation( const std::u16string & strContext )$/;"	f	class:t_phraseInterface
+Set	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::Set(KEY key, VALUE value, bool needSetKey)$/;"	f	class:t_hashMap
+SetBasicWordOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::SetBasicWordOffset(t_BasicIndex* pt_Index, int offset)$/;"	f	class:t_userNgramDict
+SetComposing	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::SetComposing( const int nSize, const char16_t * newTyping, const int * p_prob )$/;"	f	class:t_convertInterface
+SetComposing	unicode/source/Engines/t_convertInterface.cpp	/^bool t_convertInterface::SetComposing( const std::u16string & strComposing )$/;"	f	class:t_convertInterface
+SetContext	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::SetContext( const std::u16string & strContext )$/;"	f	class:t_convertInterface
+SetContextAware	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::SetContextAware( const bool bContextAware )$/;"	f	class:t_convertInterface
+SetContextInfo	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::SetContextInfo()    \/\/è·å¾—ä¸Šæ–‡çš„ä¸€äº›è¯æ€§å’Œ$/;"	f	class:t_convertInterface
+SetCorrection	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::SetCorrection( const bool bCorrection )$/;"	f	class:t_convertInterface
+SetCurBigramNum	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::SetCurBigramNum(const int nIndex, unsigned int CurNumber)$/;"	f	class:t_userNgramDict
+SetCurBigramOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::SetCurBigramOffset(const int nIndex, int offset)$/;"	f	class:t_userNgramDict
+SetCurTrigramMiddleNum	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::SetCurTrigramMiddleNum(const int nIndex, unsigned int num)$/;"	f	class:t_userNgramDict
+SetCurTrigramOffset	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::SetCurTrigramOffset(const int nIndex, int offset)$/;"	f	class:t_userNgramDict
+SetInt	unicode/source/Common/commonFunc.h	/^inline unsigned char * SetInt( unsigned char * p, int n )$/;"	f
+SetOriginalInputStr	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::SetOriginalInputStr( const std::u16string & strInputStr )$/;"	f	class:t_sysCorrect
+SetShort	unicode/source/Common/commonFunc.h	/^inline unsigned char * SetShort( unsigned char * p, short s )$/;"	f
+SetUpperCasesFilter	unicode/source/Candidate/Candidates.cpp	/^void Candidates::SetUpperCasesFilter(bool cases[])$/;"	f	class:Candidates
+Sort	unicode/source/Candidate/Candidates.cpp	/^void Candidates::Sort()$/;"	f	class:Candidates
+SpellCorrection	unicode/source/Correct/t_correctInterface.cpp	/^int t_correctInterface::SpellCorrection( const std::u16string & strInputStr )$/;"	f	class:t_correctInterface
+SpellCorrection	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::SpellCorrection( const std::u16string & strInputStr )$/;"	f	class:t_convertInterface
+SpellerCorrect	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::SpellerCorrect( const std::u16string & strInputStr )$/;"	f	class:t_sysCorrect
+SplitInputStr	unicode/source/Correct/t_sysCorrect.cpp	/^int t_sysCorrect::SplitInputStr( const std::u16string & strInputStr )$/;"	f	class:t_sysCorrect
+StackItem	unicode/source/SysDict/t_sysDict.h	/^		struct StackItem$/;"	s	class:t_sysDict::NodeIterator
+StackItem	unicode/source/SysDict/t_sysInterface.h	/^struct StackItem$/;"	s
+StackItem	unicode/source/SysDict/t_sysPhrase.h	/^		struct StackItem$/;"	s	class:t_sysPhrase::NodeIterator
+StrCmp	unicode/source/Verbs/t_verbDict.cpp	/^int t_verbDict::StrCmp(const char16_t *p_szVerba, const char16_t *p_szVerbb)$/;"	f	class:t_verbDict
+StrCmp	unicode/source/Verbs/t_verbInterface.cpp	/^int t_verbInterface::StrCmp(const char16_t *p_szVerba, const char16_t *p_szVerbb)$/;"	f	class:t_verbInterface
+StrToBin	backup/chat_module.c	/^char StrToBin(char *str){$/;"	f
+Sys_Phrase_Cmp_Word	unicode/source/SysDict/t_phraseInterface.cpp	/^int Sys_Phrase_Cmp_Word( const t_phraseMemory *pa, const t_phraseMemory *pb )$/;"	f
+TRIGRAM_DEL_FLAG	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_DEL_FLAG = 0;		\/\/è¾“å…¥æ¬¡æ•°ä¸º0è¡¨å¾è¯¥è¯è¢«åˆ é™¤äº†$/;"	v
+TRIGRAM_MAX_UINT_NUM	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_MAX_UINT_NUM = 0xffffff;	\/\/unsigned intç±»å‹æœ€å¤§å€¼$/;"	v
+TRIGRAM_MAX_USER_DICT_SIZE	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_MAX_USER_DICT_SIZE = 20000;	\/\/ç”¨æˆ·è¯åº“æœ€å¤§è§„æ¨¡$/;"	v
+TRIGRAM_MAX_USER_WORD_FREQ	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_MAX_USER_WORD_FREQ = 0xffff;	\/\/æœ€å¤§ç”¨æˆ·è¾“å…¥æ¬¡æ•°$/;"	v
+TRIGRAM_MIN_FREQ_CAN_BE_DEL	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_MIN_FREQ_CAN_BE_DEL = 1;		\/\/è¾“å…¥æ¬¡æ•°æœ€å¤§ä¸ºè¯¥å€¼æ—¶æ–¹å¯è¢«æ·˜æ±°$/;"	v
+TRIGRAM_PSEUDOTIME_DIFF	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_PSEUDOTIME_DIFF = 1000;		\/\/æ•´ç†è¯åº“æ—¶ä½¿ç”¨çš„å‚æ•°ï¼Œä¼ªæ—¶é—´å·®(å’Œæœ€å¤§ä¼ªæ—¶é—´çš„å·®è¶…è¿‡è¯¥å€¼å¯ä»¥è¢«æ·˜æ±°)$/;"	v
+TRIGRAM_PSEUDOTIME_DIFF_CAN_BE_DELETE	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_PSEUDOTIME_DIFF_CAN_BE_DELETE = 100;\/\/å‘è¯åº“æ·»åŠ ä¸‰å…ƒæ—¶ä½¿ç”¨çš„å‚æ•°,å½“ä¼ªæ—¶é—´å·®è¶…è¿‡è¿™ä¸ªå€¼æ—¶ï¼Œè¡¨é¢è¯¥ç”¨æˆ·ä¸‰å…ƒå¯ä»¥æ›¿æ¢äº†$/;"	v
+TRIGRAM_USER_DICT_GROWTH_RATE	unicode/source/Engines/dictDefine.h	/^const int TRIGRAM_USER_DICT_GROWTH_RATE = 1000;		\/\/ç”¨æˆ·è¯åº“è§„æ¨¡å¢é•¿é€Ÿåº¦$/;"	v
+T_CONVERTINTERFACE_H_	unicode/source/Engines/t_convertInterface.h	2;"	d
+T_CORRECTINTERFACE_H	unicode/source/Correct/t_correctInterface.h	3;"	d
+T_CTYPE_H	unicode/source/Common/t_ctype.h	3;"	d
+T_KEYMAP_H	unicode/source/Common/t_keyMap.h	3;"	d
+T_NGRAM_H	unicode/source/Ngram/t_ngram.h	2;"	d
+T_PHRASEINTERFACE_H	unicode/source/SysDict/t_phraseInterface.h	2;"	d
+T_RULEESTIMATE_H	unicode/source/GramAdjust/t_ruleEstimate.h	7;"	d
+T_SPELLERCACHE_H	unicode/source/Correct/t_spellerCache.h	3;"	d
+T_SYSCORRECT_H	unicode/source/Correct/t_sysCorrect.h	3;"	d
+T_SYSDICT_H	unicode/source/SysDict/t_sysDict.h	2;"	d
+T_SYSINTERFACE_H	unicode/source/SysDict/t_sysInterface.h	2;"	d
+T_SYSPHRASE_H	unicode/source/SysDict/t_sysPhrase.h	2;"	d
+T_TENSEESTIMATE_H	unicode/source/Verbs/t_tenseEstimate.h	4;"	d
+T_USERDICT_H	unicode/source/UserDict/t_userDict.h	2;"	d
+T_USERNGRAMDICT_H	unicode/source/UserDict/t_userNgramDict.h	5;"	d
+T_UTILITIES_H	unicode/source/t_utilities.h	2;"	d
+T_VERBDICT_H	unicode/source/Verbs/t_verbDict.h	2;"	d
+T_VERBINTERFACE_H	unicode/source/Verbs/t_verbInterface.h	2;"	d
+ToLowerCase	unicode/source/Verbs/t_verbInterface.cpp	/^inline bool t_verbInterface::ToLowerCase(const char16_t * szContext, char16_t *& szLowerContext)$/;"	f	class:t_verbInterface
+TriggerContextCompare	unicode/source/Verbs/t_tenseEstimate.cpp	/^int t_tenseEstimate::TriggerContextCompare( const char16_t * szContext,$/;"	f	class:t_tenseEstimate
+TrigramOffset	unicode/source/UserDict/t_userNgramDict.h	/^	int TrigramOffset : 20;   \/\/ÈıÔªÊı¾İindex$/;"	m	struct:t_BasicIndex
+TryDeletion	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::TryDeletion()$/;"	f	class:t_sysCorrect
+TryExchange	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::TryExchange()$/;"	f	class:t_sysCorrect
+TryInsertion	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::TryInsertion()$/;"	f	class:t_sysCorrect
+TrySubstitution	unicode/source/Correct/t_sysCorrect.cpp	/^bool t_sysCorrect::TrySubstitution()$/;"	f	class:t_sysCorrect
+Type	unicode/source/UserDict/t_userNgramDict.h	/^	int Type;$/;"	m	struct:t_userNgramAssocCand
+TypeAssociation	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^int t_ruleEstimate::TypeAssociation(int nContextType, e_WordType nTypeList[])$/;"	f	class:t_ruleEstimate
+UINT16	unicode/source/Common/commonType.h	/^typedef unsigned short UINT16;$/;"	t
+USER_DICT_GROWTH_RATE	unicode/source/Engines/dictDefine.h	/^const int USER_DICT_GROWTH_RATE		= 1000;		\/\/ç”¨æˆ·è¯åº“è§„æ¨¡å¢é•¿é€Ÿåº¦$/;"	v
+UnLoadBasicDict	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadBasicDict()$/;"	f	class:t_convertInterface
+UnLoadExtendedDict	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadExtendedDict()$/;"	f	class:t_convertInterface
+UnLoadKeyMap	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadKeyMap()$/;"	f	class:t_convertInterface
+UnLoadNgram	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadNgram()$/;"	f	class:t_convertInterface
+UnLoadParadigmData	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadParadigmData()$/;"	f	class:t_convertInterface
+UnLoadRulesData	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadRulesData()$/;"	f	class:t_convertInterface
+UnLoadSpellerData	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadSpellerData()$/;"	f	class:t_convertInterface
+UnLoadSysDict	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadSysDict()$/;"	f	class:t_convertInterface
+UnLoadSysPhrase	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadSysPhrase()$/;"	f	class:t_convertInterface
+UnLoadUserDict	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadUserDict()$/;"	f	class:t_convertInterface
+UnLoadUserNgramDict	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadUserNgramDict()$/;"	f	class:t_convertInterface
+UnLoadVerbsData	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::UnLoadVerbsData()$/;"	f	class:t_convertInterface
+UpperChar	unicode/source/Common/commonFunc.h	/^inline void UpperChar( char16_t & cha )$/;"	f
+UrlToGBK	backup/chat_module.c	/^int UrlToGBK(char* dest, char* src, size_t len) {$/;"	f
+UserAssocCandFreqCompare	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::UserAssocCandFreqCompare(const t_userNgramAssocCand * p_canda,$/;"	f	class:t_userNgramDict
+UserBigramDelete	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::UserBigramDelete(const std::u16string & szWordLeft, const std::u16string & szWordRight,const bool bRemove)$/;"	f	class:t_userNgramDict
+UserNgramAssociation	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::UserNgramAssociation(const std::u16string & szContext)$/;"	f	class:t_userNgramDict
+UserTrigramDelete	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::UserTrigramDelete(const std::u16string & szWordLeft, const std::u16string & szWordMiddle, const std::u16string & szWordRight, const bool bRemove)$/;"	f	class:t_userNgramDict
+VERSION	unicode/source/Engines/dictDefine.h	/^const int VERSION = 80;$/;"	v
+VPATH	unicode/build/Makefile	/^VPATH   := $(SRCDIRS) $/;"	m
+Value	unicode/source/Common/t_hashMap.h	/^		VALUE* Value()$/;"	f	class:t_hashMap::t_hashMapIterator
+VerbsTenseAdjust	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::VerbsTenseAdjust()$/;"	f	class:t_convertInterface
+WhetherHasTheBasicWord	unicode/source/UserDict/t_userNgramDict.cpp	/^bool t_userNgramDict::WhetherHasTheBasicWord(const std::u16string & p_szWord, int &nIndex)$/;"	f	class:t_userNgramDict
+WhetherHasThePhrase	unicode/source/SysDict/t_phraseInterface.cpp	/^bool t_phraseInterface::WhetherHasThePhrase( const t_phraseMemory * p_phraseMemory, int &nIndex )$/;"	f	class:t_phraseInterface
+WhetherHasTheWord	unicode/source/UserDict/t_userDict.cpp	/^bool t_userDict::WhetherHasTheWord( const std::u16string & strWord, int &nIndex )$/;"	f	class:t_userDict
+WhetherHasVerb	unicode/source/Verbs/t_verbDict.cpp	/^bool t_verbDict::WhetherHasVerb(const char16_t * inputStr, int &nIndex)   \/\/ÅĞ¶ÏverbÊÇ·ñ´æÔÚ±äÌå¿âÖĞ£¬ÈçÓĞ£¬Ôò½«ÏÂ±ê¸³¸ønIndex£¬·µ»Øtrue£»·ñÔò£¬·µ»Øfalse¡£$/;"	f	class:t_verbDict
+WordAssociation	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::WordAssociation( const std::u16string & strWord,$/;"	f	class:t_convertInterface
+WordAssociation	unicode/source/Ngram/t_ngram.cpp	/^void t_ngram::WordAssociation( int nID0, int nID1 )$/;"	f	class:t_ngram
+WordCompare	unicode/source/SysDict/t_phraseInterface.cpp	/^int WordCompare( const t_phraseMemory *pa, const char16_t *szWord )$/;"	f
+WordCompare	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::WordCompare( const std::u16string & strWorda, const std::u16string & strWordb )$/;"	f	class:t_userDict
+WordCompare	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::WordCompare(const std::u16string & p_szWorda, const std::u16string & p_szWordb)$/;"	f	class:t_userNgramDict
+WordCompareIgnoreCase	unicode/source/Common/commonFunc.h	/^inline int WordCompareIgnoreCase( const std::u16string & strWorda, const std::u16string & strWordb )$/;"	f
+WordCompareIgnoreCase	unicode/source/Correct/t_spellerCache.cpp	/^int t_spellerCache::WordCompareIgnoreCase( const char16_t * sWord1, const int nLen1,$/;"	f	class:t_spellerCache
+WordCompareIgnoreCase	unicode/source/UserDict/t_userDict.cpp	/^int t_userDict::WordCompareIgnoreCase( const std::u16string & strWorda, const std::u16string & strWordb )$/;"	f	class:t_userDict
+WordCompareIgnoreCase	unicode/source/UserDict/t_userNgramDict.cpp	/^int t_userNgramDict::WordCompareIgnoreCase(const std::u16string & p_szWorda, const std::u16string & p_szWordb)$/;"	f	class:t_userNgramDict
+WordFreqAdjust	unicode/source/Ngram/t_ngram.cpp	/^bool t_ngram::WordFreqAdjust(int nID0, int nID1, int nID2, int &nGramNum, int &nFreq)$/;"	f	class:t_ngram
+WordIterator	unicode/source/SysDict/t_sysDict.h	/^		WordIterator(const char16_t* prefix, int len) : m_length(len)$/;"	f	class:t_sysDict::WordIterator
+WordIterator	unicode/source/SysDict/t_sysDict.h	/^	class WordIterator$/;"	c	class:t_sysDict
+WordIterator	unicode/source/SysDict/t_sysPhrase.h	/^		WordIterator( const char16_t* prefix, int len ) : m_length( len )$/;"	f	class:t_sysPhrase::WordIterator
+WordIterator	unicode/source/SysDict/t_sysPhrase.h	/^	class WordIterator$/;"	c	class:t_sysPhrase
+WordNum	unicode/source/SysDict/t_sysDict.h	/^		int WordNum(void) const { return m_num; }$/;"	f	class:t_sysDict::LeafIterator
+WordNum	unicode/source/SysDict/t_sysDict.h	/^		int WordNum(void) const$/;"	f	class:t_sysDict::NodeIterator
+WordNum	unicode/source/SysDict/t_sysPhrase.h	/^		int WordNum( void ) const { return m_num; }$/;"	f	class:t_sysPhrase::LeafIterator
+WordNum	unicode/source/SysDict/t_sysPhrase.h	/^		int WordNum( void ) const$/;"	f	class:t_sysPhrase::NodeIterator
+Words	unicode/source/SysDict/t_sysDict.h	/^		const void* Words(void) const { return m_words; }$/;"	f	class:t_sysDict::LeafIterator
+Words	unicode/source/SysDict/t_sysDict.h	/^		const void* Words(void) const$/;"	f	class:t_sysDict::NodeIterator
+Words	unicode/source/SysDict/t_sysPhrase.h	/^		const void* Words( void ) const { return m_words; }$/;"	f	class:t_sysPhrase::LeafIterator
+Words	unicode/source/SysDict/t_sysPhrase.h	/^		const void* Words( void ) const$/;"	f	class:t_sysPhrase::NodeIterator
+_ADD	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_ADD(KEY &key, const VALUE &value, unsigned int hashCode)$/;"	f	class:t_hashMap
+_ApplyNewData	unicode/source/Common/t_hashMap.h	/^	__inline t_data* _ApplyNewData(KEY &key, const VALUE &value, unsigned int hashCode)$/;"	f	class:t_hashMap
+_BASECANDIDATE_H_	unicode/source/Candidate/CandItem.h	2;"	d
+_CANDIDATES_H_	unicode/source/Candidate/Candidates.h	2;"	d
+_COMMONFUNC_H_	unicode/source/Common/commonFunc.h	3;"	d
+_COMMONMACRO_H_	unicode/source/Common/commonMacro.h	2;"	d
+_DICT_DEFINE_H	unicode/source/Engines/dictDefine.h	8;"	d
+_FindData	unicode/source/Common/t_hashMap.h	/^	__inline t_data* _FindData(KEY &key, unsigned int hashCode)$/;"	f	class:t_hashMap
+_HASHMAP_H_	hash_map.h	2;"	d
+_HASHMAP_H_	test1/hash_map.h	2;"	d
+_HashCode	unicode/source/Common/t_hashMap.h	/^unsigned int t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_HashCode(KEY &key)$/;"	f	class:t_hashMap
+_HashCode	unicode/source/Common/t_hashMap.h	/^unsigned int t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_HashCode(void *key, int keyLen)$/;"	f	class:t_hashMap
+_HashMap	hash_map.h	/^typedef struct _HashMap {$/;"	s
+_HashNode	hash_map.h	/^typedef struct _HashNode {$/;"	s
+_HashNode	test1/hash_map.h	/^typedef struct _HashNode {$/;"	s
+_Init	unicode/source/Common/t_hashMap.h	/^__inline bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_Init(int size)$/;"	f	class:t_hashMap
+_IsCurMapFull	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_IsCurMapFull()$/;"	f	class:t_hashMap
+_LOG_LOG_H_	unicode/source/Common/log.h	2;"	d
+_ReHash	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_ReHash()$/;"	f	class:t_hashMap
+_RequestInfo	ngx_http_request_info.h	/^typedef struct _RequestInfo {$/;"	s
+_SiftData2NewMap	unicode/source/Common/t_hashMap.h	/^bool t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::_SiftData2NewMap()$/;"	f	class:t_hashMap
+__COMMONTYPE_H_	unicode/source/Common/commonType.h	2;"	d
+__DebugAverage	unicode/source/Common/t_hashMap.h	/^void  t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::__DebugAverage(int sz[10000])$/;"	f	class:t_hashMap
+__DebugMap	unicode/source/Common/t_hashMap.h	/^void t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::__DebugMap(KEY tar)$/;"	f	class:t_hashMap
+__T_HASHMAP_WOLEGECA_H_	unicode/source/Common/t_hashMap.h	2;"	d
+__printType	unicode/source/Common/t_hashMap.h	/^void t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::__printType()$/;"	f	class:t_hashMap
+_data	hash_map.h	/^	HashNode* _data;$/;"	m	struct:_HashMap
+_ngx_str_t	test1/hash_map.h	/^typedef struct _ngx_str_t {$/;"	s
+_object_creator	unicode/source/Common/t_ctype.h	/^	static Object_Creator _object_creator;$/;"	m	class:t_ctype
+_object_creator	unicode/source/Common/t_keyMap.h	/^	static Object_Creator _object_creator;$/;"	m	class:t_keyMap
+_object_creator	unicode/source/Engines/t_convertInterface.cpp	/^t_ctype::Object_Creator t_ctype::_object_creator;$/;"	m	class:t_ctype	file:
+_object_creator	unicode/source/Engines/t_convertInterface.cpp	/^t_keyMap::Object_Creator t_keyMap::_object_creator;$/;"	m	class:t_keyMap	file:
+abCaptial	unicode/source/Engines/t_convertInterface.cpp	/^	bool * abCaptial;$/;"	m	struct:SG_Dict_Cmp_Word	file:
+achData	unicode/source/UserDict/t_userNgramDict.h	/^	char16_t *			achData;			\/\/Êı¾İ$/;"	m	struct:__anon7
+achData	unicode/source/Verbs/t_verbDict.h	/^	char16_t* achData;   \/\/Êı¾İ$/;"	m	struct:__anon4
+addCorWord	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::addCorWord( t_candMemory * p_tCandList, int &nCount,$/;"	f	class:t_convertInterface
+addEnWord	unicode/source/Engines/t_convertInterface.cpp	/^void t_convertInterface::addEnWord( t_candMemory * p_tCandList, int &nCount,$/;"	f	class:t_convertInterface
+addPhraseCand	unicode/source/SysDict/t_phraseInterface.cpp	/^void t_phraseInterface::addPhraseCand( int nFreq, const char16_t * szWord, e_dictType eType,$/;"	f	class:t_phraseInterface
+bCacheHit	unicode/source/Correct/t_correctInterface.cpp	/^bool t_correctInterface::bCacheHit( const std::u16string & strInputStr, std::u16string & strCorrectionStr )$/;"	f	class:t_correctInterface
+bCaseSensitive	unicode/source/Engines/dictDefine.h	/^	bool		bCaseSensitive;	\/\/å¤§å°å†™å½¢å¼ä¸èƒ½æ”¹å˜$/;"	m	struct:t_candMemory
+bCaseSensitive	unicode/source/Engines/t_convertInterface.cpp	/^	bool bCaseSensitive;$/;"	m	struct:SG_Dict_Cmp_Word	file:
+bContextAware	unicode/test/main.cpp	/^bool bContextAware = true;$/;"	v
+bLearnWord	unicode/test/main.cpp	/^bool bLearnWord = true;$/;"	v
+base	unicode/source/SysDict/t_sysDict.h	/^			const void* base;$/;"	m	struct:t_sysDict::NodeIterator::StackItem
+base	unicode/source/SysDict/t_sysPhrase.h	/^			const void* base;$/;"	m	struct:t_sysPhrase::NodeIterator::StackItem
+cacheTmp	unicode/source/SysDict/t_sysInterface.h	/^	StackItem * cacheTmp;$/;"	m	class:t_sysInterface
+cand_num	httpframe_module.h	/^	ngx_int_t cand_num;$/;"	m	struct:__anon3
+chLowerEnd	unicode/source/Engines/dictDefine.h	/^	const char16_t chLowerEnd = u'z';$/;"	v
+chLowerStart	unicode/source/Engines/dictDefine.h	/^	const char16_t chLowerStart = u'a';$/;"	v
+chNewChar	unicode/source/Correct/t_sysCorrect.h	/^	char16_t chNewChar;			\/\/ä¿®æ­£å­—ç¬¦$/;"	m	struct:t_correctCandidate
+chUpperEnd	unicode/source/Engines/dictDefine.h	/^	const char16_t chUpperEnd = u'Z';$/;"	v
+chUpperStart	unicode/source/Engines/dictDefine.h	/^	const char16_t chUpperStart = u'A';$/;"	v
+chat1_path	backup/chat_module.c	/^	ngx_str_t chat1_path;$/;"	m	struct:__anon2	file:
+chat2_path	backup/chat_module.c	/^	ngx_str_t chat2_path;$/;"	m	struct:__anon2	file:
+chat_func	backup/chat_module.c	/^static ChatFunc chat_func = NULL;$/;"	v	file:
+chat_handle	backup/chat_module.c	/^static void* chat_handle = NULL;$/;"	v	file:
+cleanup	unicode/test/scripts/spellerTest.sh	/^function cleanup(){$/;"	f
+cmp_BiGramIndex_Freq	unicode/source/UserDict/t_userNgramDict.cpp	/^int cmp_BiGramIndex_Freq(const void* pa, const void *pb)$/;"	f
+cmp_TriGramIndex_Freq	unicode/source/UserDict/t_userNgramDict.cpp	/^int cmp_TriGramIndex_Freq(const void* pa, const void *pb)$/;"	f
+composingTmp	unicode/source/SysDict/t_sysInterface.h	/^	t_composingMemory * composingTmp;$/;"	m	class:t_sysInterface
+compress	unicode/test/scripts/spellerTest.sh	/^function compress(){$/;"	f
+conf	ngx_http_request_info.h	/^	ngx_http_frame_loc_conf_t* conf;	\/\/ÅäÖÃĞÅÏ¢$/;"	m	struct:_RequestInfo
+content	backup/ngx_http_result.h	/^	u_char* content;	\/\/http±¨ÎÄÄÚÈİ$/;"	m	struct:ngx_http_result
+content_len	backup/ngx_http_result.h	/^	size_t content_len;	\/\/http±¨ÎÄ³¤¶È$/;"	m	struct:ngx_http_result
+curBigramNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int curBigramNum : 4;	\/\/¸ÃÔª´ÊËù¶ÔÓ¦µÄÓÃ»§¶şÔªµÄÊıÁ¿$/;"	m	struct:t_BasicIndex
+curTrigramMiddleNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int curTrigramMiddleNum : 8; \/\/Ò»¸ö×óÔª¶ÔÓ¦µÄÖĞÔªµÄµ±Ç°ÊıÄ¿$/;"	m	struct:t_BasicIndex
+data	test1/hash_map.h	/^	unsigned char* data;$/;"	m	struct:_ngx_str_t
+data	unicode/source/SysDict/t_sysInterface.h	/^	const void* data;$/;"	m	struct:StackItem
+dict_path	httpframe_module.h	/^	ngx_str_t dict_path;$/;"	m	struct:__anon3
+e_WordType	unicode/source/Engines/dictDefine.h	/^enum e_WordType          \/\/è¯­æ³•è°ƒé¢‘ç›¸å…³ : hfjiao   è¯æ€§å¸¸é‡å®šä¹‰å¾…ä¿®æ”¹~~~$/;"	g
+e_caMatchType	unicode/source/Engines/dictDefine.h	/^enum e_caMatchType$/;"	g
+e_correctType	unicode/source/Engines/dictDefine.h	/^enum e_correctType$/;"	g
+e_dictType	unicode/source/Engines/dictDefine.h	/^enum e_dictType$/;"	g
+e_keyboardType	unicode/source/Engines/dictDefine.h	/^enum e_keyboardType$/;"	g
+e_sortType	unicode/source/Engines/dictDefine.h	/^enum e_sortType$/;"	g
+e_tenseType	unicode/source/Engines/dictDefine.h	/^enum e_tenseType$/;"	g
+ec26Key	unicode/source/Engines/dictDefine.h	/^	ec26Key,$/;"	e	enum:e_keyboardType
+ec9Key	unicode/source/Engines/dictDefine.h	/^	ec9Key$/;"	e	enum:e_keyboardType
+ecAdj	unicode/source/Engines/dictDefine.h	/^	ecAdj = 0x08,        \/\/å½¢å®¹è¯$/;"	e	enum:e_WordType
+ecAdv	unicode/source/Engines/dictDefine.h	/^	ecAdv = 0x09,        \/\/å‰¯è¯$/;"	e	enum:e_WordType
+ecArt	unicode/source/Engines/dictDefine.h	/^	ecArt = 0x04,        \/\/å† è¯$/;"	e	enum:e_WordType
+ecBigramAssoc	unicode/source/Engines/dictDefine.h	/^	ecBigramAssoc	= 0x40,	\/\/äºŒå…ƒè”æƒ³ç»“æœ$/;"	e	enum:e_dictType
+ecCaBigram	unicode/source/Engines/dictDefine.h	/^	ecCaBigram		= 0x02,			\/\/ äºŒå…ƒè°ƒé¢‘$/;"	e	enum:e_caMatchType
+ecCaRules	unicode/source/Engines/dictDefine.h	/^	ecCaRules = 0x10,           \/\/è¯­æ³•è°ƒé¢‘$/;"	e	enum:e_caMatchType
+ecCaSysPhrase	unicode/source/Engines/dictDefine.h	/^	ecCaSysPhrase	= 0x01,			\/\/ ç³»ç»Ÿè¯ç»„åŒ¹é…$/;"	e	enum:e_caMatchType
+ecCaTrigram	unicode/source/Engines/dictDefine.h	/^	ecCaTrigram		= 0x04,			\/\/ ä¸‰å…ƒè°ƒé¢‘$/;"	e	enum:e_caMatchType
+ecCaVerbsTense	unicode/source/Engines/dictDefine.h	/^	ecCaVerbsTense	= 0x08,			\/\/ åŠ¨è¯æ—¶æ€è°ƒé¢‘$/;"	e	enum:e_caMatchType
+ecConj	unicode/source/Engines/dictDefine.h	/^	ecConj = 0x06,       \/\/è¿è¯$/;"	e	enum:e_WordType
+ecCorrectTypeCacheHit	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeCacheHit	= 0x01,		\/\/ çº é”™cacheå‘½ä¸­$/;"	e	enum:e_correctType
+ecCorrectTypeDelete	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeDelete		= 0x04,		\/\/ åˆ é™¤ç±»å‹$/;"	e	enum:e_correctType
+ecCorrectTypeExchange	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeExchange	= 0x10,		\/\/ äº¤æ¢ç±»å‹$/;"	e	enum:e_correctType
+ecCorrectTypeInsert	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeInsert		= 0x08,		\/\/ æ’å…¥ç±»å‹$/;"	e	enum:e_correctType
+ecCorrectTypeNone	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeNone		= 0x00,$/;"	e	enum:e_correctType
+ecCorrectTypePosition	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypePosition	= 0x20,		\/\/ å±å¹•ä½ç½®çº é”™$/;"	e	enum:e_correctType
+ecCorrectTypeSubstitute	unicode/source/Engines/dictDefine.h	/^	ecCorrectTypeSubstitute = 0x02,		\/\/ æ›¿æ¢ç±»å‹$/;"	e	enum:e_correctType
+ecDid	unicode/source/Engines/dictDefine.h	/^	ecDid					= 0x02,		\/\/è¿‡å»å¼$/;"	e	enum:e_tenseType
+ecDo	unicode/source/Engines/dictDefine.h	/^	ecDo					= 0x01,		\/\/åŸå½¢$/;"	e	enum:e_tenseType
+ecDoes	unicode/source/Engines/dictDefine.h	/^	ecDoes					= 0x10,		\/\/ä¸‰å•$/;"	e	enum:e_tenseType
+ecDoing	unicode/source/Engines/dictDefine.h	/^	ecDoing					= 0x08,		\/\/è¿›è¡Œæ—¶$/;"	e	enum:e_tenseType
+ecDoingCand	unicode/source/Engines/dictDefine.h	/^	ecDoingCand				= 0x20,		\/\/åªæœ‰ä¸€äº›è¿›è¡Œæ—¶çš„æ ‡å¿—ï¼Œè¿˜éœ€ç¡®è®¤çš„çŠ¶æ€$/;"	e	enum:e_tenseType
+ecDone	unicode/source/Engines/dictDefine.h	/^	ecDone					= 0x04,		\/\/è¿‡å»åˆ†è¯$/;"	e	enum:e_tenseType
+ecMultiCorrection	unicode/source/Engines/dictDefine.h	/^	ecMultiCorrection = 0x100, \/\/å¤šä½ç½®çº é”™$/;"	e	enum:e_dictType
+ecNoCaMatch	unicode/source/Engines/dictDefine.h	/^	ecNoCaMatch		= 0,			\/\/ æ— åŒ¹é…$/;"	e	enum:e_caMatchType
+ecNoDict	unicode/source/Engines/dictDefine.h	/^	ecNoDict = 0,		\/\/æœªèµ‹å€¼$/;"	e	enum:e_dictType
+ecNone	unicode/source/Engines/dictDefine.h	/^	ecNone = 0x01,       \/\/åè¯$/;"	e	enum:e_WordType
+ecNullType	unicode/source/Engines/dictDefine.h	/^	ecNullType = 0x00,      \/\/å…¶ä»–è¯æ€§(æš‚ä¸å‚ä¸è¯­æ³•è°ƒé¢‘)$/;"	e	enum:e_WordType
+ecNum	unicode/source/Engines/dictDefine.h	/^	ecNum = 0x07,        \/\/æ•°è¯$/;"	e	enum:e_WordType
+ecOther	unicode/source/Engines/dictDefine.h	/^	ecOther = 0,$/;"	e	enum:e_keyboardType
+ecPhraseAssoc	unicode/source/Engines/dictDefine.h	/^	ecPhraseAssoc	= 0x08,	\/\/è¯ç»„è”æƒ³çš„ç»“æœ$/;"	e	enum:e_dictType
+ecPhraseDict	unicode/source/Engines/dictDefine.h	/^	ecPhraseDict	= 0x04,	\/\/è¯ç»„$/;"	e	enum:e_dictType
+ecPosCorrection	unicode/source/Engines/dictDefine.h	/^	ecPosCorrection = 0x200,	\/\/ä½ç½®çº é”™$/;"	e	enum:e_dictType
+ecPrep	unicode/source/Engines/dictDefine.h	/^	ecPrep = 0x05,       \/\/ä»‹è¯$/;"	e	enum:e_WordType
+ecPron	unicode/source/Engines/dictDefine.h	/^	ecPron = 0x03,       \/\/ä»£è¯$/;"	e	enum:e_WordType
+ecSortByDictionary	unicode/source/Engines/dictDefine.h	/^	ecSortByDictionary$/;"	e	enum:e_sortType
+ecSortByFreq	unicode/source/Engines/dictDefine.h	/^	ecSortByFreq = 1,$/;"	e	enum:e_sortType
+ecSpellerCorrection	unicode/source/Engines/dictDefine.h	/^	ecSpellerCorrection	= 0x20,	\/\/çº é”™å€™é€‰$/;"	e	enum:e_dictType
+ecSuperShortHand	unicode/source/Engines/dictDefine.h	/^	ecSuperShortHand= 0x10, \/\/è¶…çº§ç®€æ‹¼å€™é€‰$/;"	e	enum:e_dictType
+ecSysDict	unicode/source/Engines/dictDefine.h	/^	ecSysDict		= 0x01,	\/\/ç³»ç»Ÿè¯$/;"	e	enum:e_dictType
+ecTenseNone	unicode/source/Engines/dictDefine.h	/^	ecTenseNone				= 0x00,$/;"	e	enum:e_tenseType
+ecTrigramAssoc	unicode/source/Engines/dictDefine.h	/^	ecTrigramAssoc	= 0x80,	\/\/ä¸‰å…ƒè”æƒ³ç»“æœ$/;"	e	enum:e_dictType
+ecUserBigramAssoc	unicode/source/Engines/dictDefine.h	/^	ecUserBigramAssoc = 0x400, \/\/ç”¨æˆ·äºŒå…ƒè”æƒ³$/;"	e	enum:e_dictType
+ecUserDict	unicode/source/Engines/dictDefine.h	/^	ecUserDict		= 0x02,	\/\/ç”¨æˆ·è¯$/;"	e	enum:e_dictType
+ecUserTrigramAssoc	unicode/source/Engines/dictDefine.h	/^	ecUserTrigramAssoc = 0x800, \/\/ç”¨æˆ·ä¸‰å…ƒè”æƒ³$/;"	e	enum:e_dictType
+ecVerb	unicode/source/Engines/dictDefine.h	/^	ecVerb = 0x02,       \/\/åŠ¨è¯$/;"	e	enum:e_WordType
+eleNum	unicode/source/Common/t_hashMap.h	/^		int eleNum;$/;"	m	struct:t_hashMap::t_dataHead
+fProb	unicode/source/Engines/dictDefine.h	/^	float fProb;			\/\/å­—ç¬¦ä¸²æ¦‚ç‡ç´¯ä¹˜$/;"	m	struct:t_composingMemory
+fetch	unicode/test/scripts/spellerTest.sh	/^function fetch(){$/;"	f
+freq	unicode/source/Engines/dictDefine.h	/^	int			freq;$/;"	m	struct:t_candMemory
+getCorInstance	unicode/source/Common/t_keyMap.h	/^	static t_keyMap * getCorInstance()$/;"	f	class:t_keyMap
+getInstance	unicode/source/Common/t_ctype.h	/^	static t_ctype * getInstance()$/;"	f	class:t_ctype
+getInstance	unicode/source/Common/t_keyMap.h	/^	static t_keyMap * getInstance()$/;"	f	class:t_keyMap
+getMagic	unicode/source/SysDict/t_sysDict.h	/^	unsigned int getMagic()$/;"	f	class:t_sysDict
+getSysMagic	unicode/source/SysDict/t_sysInterface.cpp	/^unsigned int t_sysInterface::getSysMagic()$/;"	f	class:t_sysInterface
+getSysVersion	unicode/source/SysDict/t_sysInterface.cpp	/^unsigned int t_sysInterface::getSysVersion()$/;"	f	class:t_sysInterface
+getVersion	unicode/source/SysDict/t_sysDict.h	/^	unsigned int getVersion()$/;"	f	class:t_sysDict
+hashCode	unicode/source/Common/t_hashMap.h	/^		unsigned int hashCode;$/;"	m	struct:t_hashMap::t_data
+header	backup/ngx_http_result.h	/^	ngx_str_t header;	\/\/http±¨Í·µÄ×Ö·û´®$/;"	m	struct:ngx_http_result
+headers	ngx_http_request_info.h	/^	HashMap* headers;	\/\/httpÍ·ĞÅÏ¢$/;"	m	struct:_RequestInfo
+hello_counter	backup/hello_module.c	/^        ngx_int_t hello_counter;$/;"	m	struct:__anon1	file:
+hello_string	backup/hello_module.c	/^        ngx_str_t hello_string;$/;"	m	struct:__anon1	file:
+init_func	backup/chat_module.c	/^static InitFunc init_func = NULL;$/;"	v	file:
+isFinish	unicode/source/Common/t_hashMap.h	/^		bool isFinish;$/;"	m	class:t_hashMap::t_hashMapIterator
+isSbOrSth	unicode/source/Verbs/t_tenseEstimate.cpp	/^bool t_tenseEstimate::isSbOrSth( const char16_t * szWord )$/;"	f	class:t_tenseEstimate
+is_inited	unicode/source/Engines/t_convertInterface.h	/^	bool is_inited;                     \/\/æ˜¯å¦å·²ç»åˆå§‹åŒ–è¿‡ï¼ˆè½½å…¥è¯åº“ï¼‰$/;"	m	class:t_convertInterface
+key	hash_map.h	/^	ngx_str_t key;$/;"	m	struct:_HashNode
+key	test1/hash_map.h	/^	ngx_str_t key;$/;"	m	struct:_HashNode
+key	unicode/source/Common/t_hashMap.h	/^		KEY key;$/;"	m	struct:t_hashMap::t_data
+len	test1/hash_map.h	/^	size_t len;$/;"	m	struct:_ngx_str_t
+lib_path	backup/chat_module.c	/^	ngx_str_t lib_path;$/;"	m	struct:__anon2	file:
+link	unicode/source/Common/t_hashMap.h	/^		t_data *link;$/;"	m	struct:t_hashMap::t_dataHead
+lsComposing	unicode/source/Engines/dictDefine.h	/^	char16_t * lsComposing;	\/\/å­—ç¬¦ä¸²$/;"	m	struct:t_composingMemory
+lsWord	unicode/source/Engines/dictDefine.h	/^	char16_t *	lsWord;$/;"	m	struct:t_candMemory
+lsWord	unicode/source/Engines/dictDefine.h	/^	char16_t *	lsWord;$/;"	m	struct:t_phraseMemory
+m_aPrefix	unicode/source/SysDict/t_phraseInterface.h	/^	std::u16string m_aPrefix[64];	\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„å‰ç¼€$/;"	m	class:t_phraseInterface
+m_abCaptial	unicode/source/Engines/t_convertInterface.h	/^	bool * m_abCaptial;					\/\/è®°å½•åŸå§‹è¾“å…¥ä¸²çš„å¤§å†™æƒ…å†µ$/;"	m	class:t_convertInterface
+m_anDataNum	unicode/source/Common/t_hashMap.h	/^	int m_anDataNum[2];$/;"	m	class:t_hashMap
+m_anEMScore	unicode/source/Correct/t_correctInterface.h	/^	int * m_anEMScore;			\/\/çº é”™å€™é€‰çš„emå¾—åˆ†$/;"	m	class:t_correctInterface
+m_anHeadArrLen	unicode/source/Common/t_hashMap.h	/^	int m_anHeadArrLen[2];$/;"	m	class:t_hashMap
+m_apHeadArr	unicode/source/Common/t_hashMap.h	/^	t_dataHead *m_apHeadArr[2];$/;"	m	class:t_hashMap
+m_bCaseSensitive	unicode/source/Common/t_ctype.h	/^	bool m_bCaseSensitive;$/;"	m	class:t_ctype
+m_bContextAware	unicode/source/Engines/t_convertInterface.h	/^	bool m_bContextAware;               \/\/æ˜¯å¦å¼€å¯è°ƒé¢‘$/;"	m	class:t_convertInterface
+m_bCorrection	unicode/source/Engines/t_convertInterface.h	/^	bool m_bCorrection;                 \/\/æ˜¯å¦å¼€å¯çº é”™$/;"	m	class:t_convertInterface
+m_bCreate	unicode/source/UserDict/t_userDict.h	/^	bool m_bCreate;$/;"	m	class:t_userDict
+m_bCreate	unicode/source/UserDict/t_userNgramDict.h	/^	bool m_bCreate;$/;"	m	class:t_userNgramDict
+m_bCreate	unicode/source/Verbs/t_verbDict.h	/^	bool m_bCreate;$/;"	m	class:t_verbDict
+m_bHasOriginal	unicode/source/Engines/t_convertInterface.h	/^	bool m_bHasOriginal;				\/\/å€™é€‰ä¸­æ˜¯å¦å­˜åœ¨åŸå§‹è¾“å…¥ä¸²å½¢å¼çš„è¯æ¡$/;"	m	class:t_convertInterface
+m_bInit	unicode/source/SysDict/t_phraseInterface.h	/^	bool m_bInit;$/;"	m	class:t_phraseInterface
+m_bInit	unicode/source/SysDict/t_sysInterface.h	/^	bool m_bInit;$/;"	m	class:t_sysInterface
+m_bInit	unicode/source/Verbs/t_verbInterface.h	/^	bool m_bInit;$/;"	m	class:t_verbInterface
+m_bInited	unicode/source/Common/t_keyMap.h	/^	bool m_bInited;$/;"	m	class:t_keyMap
+m_bInited	unicode/source/Correct/t_spellerCache.h	/^	bool m_bInited;					\/\/æ˜¯å¦ç»è¿‡äº†åˆå§‹åŒ–$/;"	m	class:t_spellerCache
+m_bInited	unicode/source/Correct/t_sysCorrect.h	/^	bool m_bInited;$/;"	m	class:t_sysCorrect
+m_bInited	unicode/source/GramAdjust/t_ruleEstimate.h	/^	bool m_bInited;$/;"	m	class:t_ruleEstimate
+m_bInited	unicode/source/Verbs/t_tenseEstimate.h	/^	bool m_bInited;$/;"	m	class:t_tenseEstimate
+m_bLowerContinuous	unicode/source/Common/t_ctype.h	/^	bool m_bLowerContinuous;$/;"	m	class:t_ctype
+m_bOriHasDeadEnd	unicode/source/Correct/t_sysCorrect.h	/^	bool m_bOriHasDeadEnd;						\/\/åŸå§‹è¾“å…¥ä¸²ä¸­æ˜¯å¦å«æ–­è·¯$/;"	m	class:t_sysCorrect
+m_bUpperCases	unicode/source/Candidate/Candidates.h	/^	bool m_bUpperCases[MAX_TYPING_LENGTH];$/;"	m	class:Candidates
+m_bUpperContinuous	unicode/source/Common/t_ctype.h	/^	bool m_bUpperContinuous;$/;"	m	class:t_ctype
+m_base	unicode/source/SysDict/t_sysDict.h	/^		const void* m_base;$/;"	m	class:t_sysDict::NodeIterator
+m_base	unicode/source/SysDict/t_sysDict.h	/^	const void*       m_base;$/;"	m	class:t_sysDict
+m_base	unicode/source/SysDict/t_sysPhrase.h	/^		const void* m_base;$/;"	m	class:t_sysPhrase::NodeIterator
+m_base	unicode/source/SysDict/t_sysPhrase.h	/^	const void*       m_base;$/;"	m	class:t_sysPhrase
+m_cCands	unicode/source/Candidate/Candidates.h	/^	std::vector<std::unique_ptr<CandItem>> m_cCands;$/;"	m	class:Candidates
+m_chLowerEnd	unicode/source/Common/t_ctype.h	/^	char16_t m_chLowerEnd;$/;"	m	class:t_ctype
+m_chLowerStart	unicode/source/Common/t_ctype.h	/^	char16_t m_chLowerStart;$/;"	m	class:t_ctype
+m_chUpperEnd	unicode/source/Common/t_ctype.h	/^	char16_t m_chUpperEnd;$/;"	m	class:t_ctype
+m_chUpperStart	unicode/source/Common/t_ctype.h	/^	char16_t m_chUpperStart;$/;"	m	class:t_ctype
+m_ecCorrectType	unicode/source/Engines/t_convertInterface.h	/^	e_correctType m_ecCorrectType;		\/\/çº é”™ç±»å‹$/;"	m	class:t_convertInterface
+m_indexLevel	unicode/source/SysDict/t_sysDict.h	/^	int               m_indexLevel;$/;"	m	class:t_sysDict
+m_indexLevel	unicode/source/SysDict/t_sysPhrase.h	/^	int               m_indexLevel;$/;"	m	class:t_sysPhrase
+m_inputtype	unicode/source/SysDict/t_phraseInterface.h	/^	int m_inputtype;$/;"	m	class:t_phraseInterface
+m_inputtype	unicode/source/SysDict/t_sysInterface.h	/^	int m_inputtype;$/;"	m	class:t_sysInterface
+m_lastSearchPos	unicode/source/SysDict/t_sysDict.h	/^	void*			  m_lastSearchPos; \/\/è®°å½•ä¸Šä¸€æ¬¡æŸ¥è¯¢çš„ä½ç½®$/;"	m	class:t_sysDict
+m_lastSearchPos	unicode/source/SysDict/t_sysPhrase.h	/^	void*			  m_lastSearchPos; \/\/è®°å½•ä¸Šä¸€æ¬¡æŸ¥è¯¢çš„ä½ç½®$/;"	m	class:t_sysPhrase
+m_length	unicode/source/SysDict/t_sysDict.h	/^		int m_length;$/;"	m	class:t_sysDict::WordIterator
+m_length	unicode/source/SysDict/t_sysPhrase.h	/^		int m_length;$/;"	m	class:t_sysPhrase::WordIterator
+m_level	unicode/source/SysDict/t_sysDict.h	/^		int m_level;$/;"	m	class:t_sysDict::LeafIterator
+m_level	unicode/source/SysDict/t_sysDict.h	/^		int m_level;$/;"	m	class:t_sysDict::NodeIterator
+m_level	unicode/source/SysDict/t_sysPhrase.h	/^		int m_level;$/;"	m	class:t_sysPhrase::LeafIterator
+m_level	unicode/source/SysDict/t_sysPhrase.h	/^		int m_level;$/;"	m	class:t_sysPhrase::NodeIterator
+m_magic	unicode/source/SysDict/t_sysDict.h	/^	unsigned int      m_magic;$/;"	m	class:t_sysDict
+m_magic	unicode/source/SysDict/t_sysPhrase.h	/^	int               m_magic;$/;"	m	class:t_sysPhrase
+m_map	unicode/source/Common/t_hashMap.h	/^		t_hashMap *m_map;$/;"	m	class:t_hashMap::t_hashMapIterator
+m_nAssocCandNum	unicode/source/Ngram/t_ngram.h	/^	int m_nAssocCandNum;$/;"	m	class:t_ngram
+m_nAssocCandNum	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nAssocCandNum;$/;"	m	class:t_userNgramDict
+m_nCacheDataSize	unicode/source/Correct/t_correctInterface.h	/^	int m_nCacheDataSize;$/;"	m	class:t_correctInterface
+m_nCacheLength	unicode/source/Correct/t_spellerCache.h	/^	int m_nCacheLength;				\/\/cacheæ–‡ä»¶é•¿åº¦$/;"	m	class:t_spellerCache
+m_nCaptialCharNum	unicode/source/Engines/t_convertInterface.h	/^	int m_nCaptialCharNum;				\/\/åŸå§‹è¾“å…¥ä¸²ä¸­çš„å¤§å†™å­—æ¯ä¸ªæ•°$/;"	m	class:t_convertInterface
+m_nCharNum	unicode/source/Common/t_ctype.h	/^	int m_nCharNum;\/\/æ€»çš„å­—æ¯ä¸ªæ•°ï¼ˆå¤§å†™+å°å†™ï¼‰$/;"	m	class:t_ctype
+m_nComposingLen	unicode/source/Engines/t_convertInterface.h	/^	int m_nComposingLen;				\/\/è¾“å…¥ä¸²é•¿åº¦$/;"	m	class:t_convertInterface
+m_nComposingNum	unicode/source/SysDict/t_sysInterface.h	/^	int m_nComposingNum;					\/\/è¾“å…¥ä¸²ä¸ªæ•°$/;"	m	class:t_sysInterface
+m_nContextType	unicode/source/Engines/t_convertInterface.h	/^	int m_nContextType;                 \/\/ä¸Šæ–‡ç´§é‚»è¯æ±‡çš„è¯æ€§$/;"	m	class:t_convertInterface
+m_nCorCandNum	unicode/source/Correct/t_correctInterface.h	/^	int m_nCorCandNum;			\/\/çº é”™ç»“æœä¸ªæ•°$/;"	m	class:t_correctInterface
+m_nCorResultNum	unicode/source/Engines/t_convertInterface.h	/^	int m_nCorResultNum;				\/\/ç›®å‰çš„çº é”™å€™é€‰ä¸ªæ•°$/;"	m	class:t_convertInterface
+m_nCurHeadIndex	unicode/source/Common/t_hashMap.h	/^		int m_nCurHeadIndex;  \/\/ å½“å‰headçš„index [gaofeng 2014\/4\/28]$/;"	m	class:t_hashMap::t_hashMapIterator
+m_nCurMapIndex	unicode/source/Common/t_hashMap.h	/^		int m_nCurMapIndex;  \/\/ å½“å‰mapçš„index [gaofeng 2014\/4\/28]$/;"	m	class:t_hashMap::t_hashMapIterator
+m_nCurMapIndex	unicode/source/Common/t_hashMap.h	/^	int m_nCurMapIndex;$/;"	m	class:t_hashMap
+m_nCurSiftIndex	unicode/source/Common/t_hashMap.h	/^	int m_nCurSiftIndex;   \/\/ éœ€è¦ä»æ—§çš„mapè½¬ç§»åˆ°æ–°mapçš„headæ•°ç»„index [gaofeng 2014\/4\/23]$/;"	m	class:t_hashMap
+m_nErrorModelDataSize	unicode/source/Correct/t_correctInterface.h	/^	int m_nErrorModelDataSize;$/;"	m	class:t_correctInterface
+m_nFormalCandNum	unicode/source/Engines/t_convertInterface.h	/^	int m_nFormalCandNum;				\/\/å¸¸è§„å€™é€‰ä¸ªæ•°ï¼Œï¼ˆè¯ç»„ä¸è®¡å…¥ç»Ÿè®¡ï¼‰$/;"	m	class:t_convertInterface
+m_nKeyCount	unicode/source/Common/t_keyMap.h	/^	int m_nKeyCount;$/;"	m	class:t_keyMap
+m_nLastBigramContextID	unicode/source/Ngram/t_ngram.h	/^	int m_nLastBigramContextID;$/;"	m	class:t_ngram
+m_nLastBigramContextID	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastBigramContextID;$/;"	m	class:t_userNgramDict
+m_nLastBigramLowerIndex	unicode/source/Ngram/t_ngram.h	/^	int m_nLastBigramLowerIndex;$/;"	m	class:t_ngram
+m_nLastBigramLowerIndex	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastBigramLowerIndex;$/;"	m	class:t_userNgramDict
+m_nLastBigramUpperIndex	unicode/source/Ngram/t_ngram.h	/^	int m_nLastBigramUpperIndex;$/;"	m	class:t_ngram
+m_nLastBigramUpperIndex	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastBigramUpperIndex;$/;"	m	class:t_userNgramDict
+m_nLastContextAId	unicode/source/Ngram/t_ngram.h	/^	int m_nLastContextAId;$/;"	m	class:t_ngram
+m_nLastContextBId	unicode/source/Ngram/t_ngram.h	/^	int m_nLastContextBId;$/;"	m	class:t_ngram
+m_nLastLen	unicode/source/SysDict/t_sysInterface.h	/^	int m_nLastLen;							\/\/ä¹‹å‰å·²æœ‰å­—æ¯çš„ä¸ªæ•°$/;"	m	class:t_sysInterface
+m_nLastResultLowerIndex	unicode/source/UserDict/t_userDict.h	/^	int m_nLastResultLowerIndex;\/\/ä¸Šæ¬¡convertè¿”å›ç»“æœçš„ä¸‹ç•Œ$/;"	m	class:t_userDict
+m_nLastResultUpperIndex	unicode/source/UserDict/t_userDict.h	/^	int m_nLastResultUpperIndex;\/\/ä¸Šæ¬¡convertè¿”å›ç»“æœçš„ä¸Šç•Œ$/;"	m	class:t_userDict
+m_nLastTrigramContextAID	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastTrigramContextAID;$/;"	m	class:t_userNgramDict
+m_nLastTrigramContextBID	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastTrigramContextBID;$/;"	m	class:t_userNgramDict
+m_nLastTrigramLowerIndex	unicode/source/Ngram/t_ngram.h	/^	int m_nLastTrigramLowerIndex;$/;"	m	class:t_ngram
+m_nLastTrigramLowerIndex	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastTrigramLowerIndex;$/;"	m	class:t_userNgramDict
+m_nLastTrigramUpperIndex	unicode/source/Ngram/t_ngram.h	/^	int m_nLastTrigramUpperIndex;$/;"	m	class:t_ngram
+m_nLastTrigramUpperIndex	unicode/source/UserDict/t_userNgramDict.h	/^	int m_nLastTrigramUpperIndex;$/;"	m	class:t_userNgramDict
+m_nMapCount	unicode/source/Common/t_keyMap.h	/^	int m_nMapCount;$/;"	m	class:t_keyMap
+m_nMaxBigramIndexNum	unicode/source/UserDict/t_userNgramDict.h	/^	static const int m_nMaxBigramIndexNum = 10;$/;"	m	class:t_userNgramDict
+m_nMaxCandNum	unicode/source/Ngram/t_ngram.h	/^	static const int m_nMaxCandNum = 10;$/;"	m	class:t_ngram
+m_nMaxCandNum	unicode/source/UserDict/t_userNgramDict.h	/^	static const int m_nMaxCandNum = 10;$/;"	m	class:t_userNgramDict
+m_nMaxOffset	unicode/source/SysDict/t_sysDict.h	/^    int m_nMaxOffset;$/;"	m	class:t_sysDict
+m_nMaxOffset	unicode/source/SysDict/t_sysPhrase.h	/^	int m_nMaxOffset;$/;"	m	class:t_sysPhrase
+m_nMaxTrigramIndexNum	unicode/source/UserDict/t_userNgramDict.h	/^	static const int m_nMaxTrigramIndexNum = 100;$/;"	m	class:t_userNgramDict
+m_nMaxTrigramMiddleNum	unicode/source/UserDict/t_userNgramDict.h	/^	static const int m_nMaxTrigramMiddleNum = 10;$/;"	m	class:t_userNgramDict
+m_nMaxTrigramRightNum	unicode/source/UserDict/t_userNgramDict.h	/^	static const int m_nMaxTrigramRightNum = m_nMaxTrigramIndexNum \/ m_nMaxTrigramMiddleNum;$/;"	m	class:t_userNgramDict
+m_nOldMapIndex	unicode/source/Common/t_hashMap.h	/^	int m_nOldMapIndex;$/;"	m	class:t_hashMap
+m_nOriginalStrLen	unicode/source/Correct/t_sysCorrect.h	/^	int m_nOriginalStrLen;			\/\/åŸå§‹è¾“å…¥ä¸²é•¿åº¦$/;"	m	class:t_sysCorrect
+m_nPhraseNum	unicode/source/SysDict/t_phraseInterface.h	/^	int m_nPhraseNum;$/;"	m	class:t_phraseInterface
+m_nPointerNum	unicode/source/SysDict/t_phraseInterface.h	/^	int m_nPointerNum;			\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶ç¼“å­˜çš„æŒ‡é’ˆä¸ªæ•°$/;"	m	class:t_phraseInterface
+m_nPointerNum	unicode/source/SysDict/t_sysInterface.h	/^	int m_nPointerNum;					\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶ç¼“å­˜çš„æŒ‡é’ˆä¸ªæ•°$/;"	m	class:t_sysInterface
+m_nResultLowerIndex	unicode/source/UserDict/t_userDict.h	/^	int m_nResultLowerIndex;	\/\/æ¯æ¬¡convertè¿”å›ç»“æœçš„ä¸‹ç•Œ$/;"	m	class:t_userDict
+m_nResultNum	unicode/source/Engines/t_convertInterface.h	/^	int	m_nResultNum;					\/\/ç›®å‰çš„å€™é€‰ä¸ªæ•°$/;"	m	class:t_convertInterface
+m_nResultUpperIndex	unicode/source/UserDict/t_userDict.h	/^	int m_nResultUpperIndex;	\/\/æ¯æ¬¡convertè¿”å›ç»“æœçš„ä¸Šç•Œ$/;"	m	class:t_userDict
+m_nScoreForOriginalStr	unicode/source/Correct/t_sysCorrect.h	/^	int m_nScoreForOriginalStr;		\/\/åŸå§‹è¾“å…¥ä¸²çš„å¾—åˆ†(åªæœ‰tgmçš„è¯­è¨€æ¨¡å‹å¾—åˆ†)$/;"	m	class:t_sysCorrect
+m_nSpaceReserved	unicode/source/Correct/t_sysCorrect.h	/^	int m_nSpaceReserved;			\/\/æ–‡ä»¶å¤´éƒ¨é¢„ç•™4å­—èŠ‚ç©ºé—´$/;"	m	class:t_sysCorrect
+m_nStepIndexNum	unicode/source/UserDict/t_userDict.h	/^	int	m_nStepIndexNum;$/;"	m	class:t_userDict
+m_nTenseType	unicode/source/Engines/t_convertInterface.h	/^	int m_nTenseType;					\/\/ä¸Šæ–‡æ—¶æ€$/;"	m	class:t_convertInterface
+m_nUpperCharNum	unicode/source/Common/t_ctype.h	/^	int m_nUpperCharNum;\/\/å¤§å†™å­—æ¯ä¸ªæ•°$/;"	m	class:t_ctype
+m_nWordsCount	unicode/source/SysDict/t_phraseInterface.h	/^	int m_nWordsCount;		\/\/å·²æœ‰éè¯ç»„å€™é€‰ä¸ªæ•°$/;"	m	class:t_phraseInterface
+m_ncorrectCandNum	unicode/source/Correct/t_sysCorrect.h	/^	int m_ncorrectCandNum;						\/\/ç›®å‰çš„çº é”™å€™é€‰ä¸²ä¸ªæ•°$/;"	m	class:t_sysCorrect
+m_nidsScoreDataLen	unicode/source/Correct/t_sysCorrect.h	/^	int m_nidsScoreDataLen;			\/\/idsç±»å‹æ•°æ®é•¿åº¦$/;"	m	class:t_sysCorrect
+m_ntgmScoreDataLen	unicode/source/Correct/t_sysCorrect.h	/^	int m_ntgmScoreDataLen;			\/\/letter trigramæ•°æ®é•¿åº¦$/;"	m	class:t_sysCorrect
+m_num	unicode/source/SysDict/t_sysDict.h	/^		int m_num;$/;"	m	class:t_sysDict::LeafIterator
+m_num	unicode/source/SysDict/t_sysPhrase.h	/^		int m_num;$/;"	m	class:t_sysPhrase::LeafIterator
+m_nxposScoreDataLen	unicode/source/Correct/t_sysCorrect.h	/^	int m_nxposScoreDataLen;		\/\/xposç±»å‹æ•°æ®é•¿åº¦$/;"	m	class:t_sysCorrect
+m_pAssocCand	unicode/source/Ngram/t_ngram.h	/^	t_NGramAssocCand * m_pAssocCand;$/;"	m	class:t_ngram
+m_pAssocCand	unicode/source/UserDict/t_userNgramDict.h	/^	t_userNgramAssocCand * m_pAssocCand;$/;"	m	class:t_userNgramDict
+m_pBase	unicode/source/Ngram/t_ngram.h	/^	unsigned char * m_pBase;		\/\/æ–‡ä»¶å†…å­˜èµ·å§‹æŒ‡é’ˆ$/;"	m	class:t_ngram
+m_pBiDataBase	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned char * m_pBiDataBase;               \/\/¶şÔª¹æÔòÊı¾İÆğÊ¼Ö¸Õë$/;"	m	class:t_ruleEstimate
+m_pBiIndexBase	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned char * m_pBiIndexBase;               \/\/¶şÔª¹æÔòindexÆğÊ¼Ö¸Õë$/;"	m	class:t_ruleEstimate
+m_pBigramBase	unicode/source/Ngram/t_ngram.h	/^	t_bigram * m_pBigramBase;$/;"	m	class:t_ngram
+m_pBigramIndexBase	unicode/source/UserDict/t_userNgramDict.h	/^	t_userBigram * m_pBigramIndexBase; \/\/ÓÃ»§¶şÔªË÷ÒıÇøµÄ»ùÖ¸Õë$/;"	m	struct:__anon9
+m_pCache	unicode/source/SysDict/t_sysInterface.h	/^	StackItem * m_pCache;					\/\/è¾“å…¥ä¸²å¯¹åº”çš„ç´¢å¼•æŒ‡é’ˆ$/;"	m	class:t_sysInterface
+m_pCandList	unicode/source/Engines/t_convertInterface.h	/^	t_candMemory * m_pCandList;			\/\/å€™é€‰åˆ—è¡¨$/;"	m	class:t_convertInterface
+m_pComposingList	unicode/source/SysDict/t_sysInterface.h	/^	t_composingMemory * m_pComposingList;	\/\/è¾“å…¥ä¸²ç¼“å­˜$/;"	m	class:t_sysInterface
+m_pConDataBase	unicode/source/Verbs/t_tenseEstimate.h	/^	char16_t * m_pConDataBase;				\/\/è¿ç»­æ¨¡å¼æ•°æ®èµ·æŒ‡é’ˆ$/;"	m	class:t_tenseEstimate
+m_pConIndexBase	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned char * m_pConIndexBase;		\/\/è¿ç»­æ¨¡å¼indexèµ·æŒ‡é’ˆ$/;"	m	class:t_tenseEstimate
+m_pCorList	unicode/source/Engines/t_convertInterface.h	/^	t_candMemory * m_pCorList;			\/\/çº é”™å€™é€‰åˆ—è¡¨$/;"	m	class:t_convertInterface
+m_pData	unicode/source/Common/t_hashMap.h	/^		t_data *m_pData;  \/\/ å½“å‰çš„æŒ‡å‘çš„dataçš„æŒ‡é’ˆ [gaofeng 2014\/4\/28]$/;"	m	class:t_hashMap::t_hashMapIterator
+m_pDataBase	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned char * m_pDataBase;               \/\/ÄÚ´æÆğÊ¼Ö¸Õë$/;"	m	class:t_ruleEstimate
+m_pDataBase	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned char * m_pDataBase;			\/\/å†…å­˜èµ·æŒ‡é’ˆ$/;"	m	class:t_tenseEstimate
+m_pDictBase	unicode/source/Verbs/t_verbDict.h	/^	unsigned char * m_pDictBase;		\/\/´Ê¿â»ùÖ¸Õë£¬ÓÃÀ´ÕûÌå¹ÜÀíÄÚ´æ$/;"	m	class:t_verbDict
+m_pHash	unicode/source/Common/t_ctype.h	/^	t_hashMap<char16_t, char16_t> * m_pHash;$/;"	m	class:t_ctype
+m_pHashUpper	unicode/source/Common/t_ctype.h	/^	t_hashMap<char16_t, char16_t> * m_pHashUpper;$/;"	m	class:t_ctype
+m_pHeader	unicode/source/Correct/t_spellerCache.h	/^	t_cacheHeader * m_pHeader;$/;"	m	class:t_spellerCache
+m_pHeader	unicode/source/GramAdjust/t_ruleEstimate.h	/^	t_gramRulesHeader * m_pHeader;               \/\/ÎÄ¼şÍ·$/;"	m	class:t_ruleEstimate
+m_pHeader	unicode/source/Ngram/t_ngram.h	/^	t_header * m_pHeader;$/;"	m	class:t_ngram
+m_pHeader	unicode/source/Verbs/t_tenseEstimate.h	/^	t_paradigmHeader * m_pHeader;			\/\/æ–‡ä»¶å¤´$/;"	m	class:t_tenseEstimate
+m_pIndex	unicode/source/Ngram/t_ngram.h	/^	t_index * m_pIndex;$/;"	m	class:t_ngram
+m_pPhraseList	unicode/source/SysDict/t_phraseInterface.h	/^	t_phraseMemory * m_pPhraseList;		\/\/n-gramèµ„æº$/;"	m	class:t_phraseInterface
+m_pSpellerCache	unicode/source/Correct/t_correctInterface.h	/^	t_spellerCache * m_pSpellerCache;$/;"	m	class:t_correctInterface
+m_pSysCorrect	unicode/source/Correct/t_correctInterface.h	/^	t_sysCorrect * m_pSysCorrect;$/;"	m	class:t_correctInterface
+m_pSysDict	unicode/source/SysDict/t_sysInterface.h	/^	t_sysDict * m_pSysDict;$/;"	m	class:t_sysInterface
+m_pSysPhrase	unicode/source/SysDict/t_phraseInterface.h	/^	t_sysPhrase * m_pSysPhrase;$/;"	m	class:t_phraseInterface
+m_pTriDataBase	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned char * m_pTriDataBase;               \/\/ÈıÔª¹æÔòÊı¾İÆğÊ¼Ö¸Õë$/;"	m	class:t_ruleEstimate
+m_pTriDataBase	unicode/source/Verbs/t_tenseEstimate.h	/^	char16_t * m_pTriDataBase;				\/\/triggeræ¨¡å¼æ•°æ®èµ·æŒ‡é’ˆ$/;"	m	class:t_tenseEstimate
+m_pTriIndexBase	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned char * m_pTriIndexBase;               \/\/ÈıÔª¹æÔòindexÆğÊ¼Ö¸Õë$/;"	m	class:t_ruleEstimate
+m_pTriIndexBase	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned char * m_pTriIndexBase;		\/\/triggeræ¨¡å¼indexèµ·æŒ‡é’ˆ$/;"	m	class:t_tenseEstimate
+m_pTrigramBase	unicode/source/Ngram/t_ngram.h	/^	t_trigram * m_pTrigramBase;$/;"	m	class:t_ngram
+m_pTrigramIndexBase	unicode/source/UserDict/t_userNgramDict.h	/^	t_userTrigram * m_pTrigramIndexBase; \/\/ÓÃ»§ÈıÔªË÷ÒıÇøµÄ»ùÖ¸Õë$/;"	m	struct:__anon9
+m_pVerbDict	unicode/source/Verbs/t_verbInterface.h	/^	t_verbDict *m_pVerbDict;$/;"	m	class:t_verbInterface
+m_pWordBase	unicode/source/UserDict/t_userNgramDict.h	/^	char16_t * m_pWordBase; \/\/Ôª´ÊÊı¾İÇø»ùÖ¸Õë$/;"	m	struct:__anon9
+m_pWordIndexBase	unicode/source/UserDict/t_userNgramDict.h	/^	t_BasicIndex * m_pWordIndexBase; \/\/Ôª´ÊË÷ÒıÇøµÄ»ùÖ¸Õë$/;"	m	struct:__anon9
+m_pcWordBase	unicode/source/Ngram/t_ngram.h	/^	char16_t * m_pcWordBase;$/;"	m	class:t_ngram
+m_pcWordBase	unicode/source/UserDict/t_userDict.h	/^	char16_t * m_pcWordBase;					\/\/æ•°æ®åŒºåŸºæŒ‡é’ˆ$/;"	m	struct:__anon10
+m_pcacheBasePtr	unicode/source/Correct/t_spellerCache.h	/^	unsigned char * m_pcacheBasePtr;\/\/cacheèµ·æŒ‡é’ˆ$/;"	m	class:t_spellerCache
+m_pcacheData	unicode/source/Correct/t_spellerCache.h	/^	char16_t * m_pcacheData;		\/\/cacheæ•°æ®åŒº$/;"	m	class:t_spellerCache
+m_pcacheIndex	unicode/source/Correct/t_spellerCache.h	/^	t_cacheIndex * m_pcacheIndex;	\/\/cacheç´¢å¼•åŒº$/;"	m	class:t_spellerCache
+m_pchMem	unicode/source/SysDict/t_sysDict.h	/^    unsigned char *   m_pchMem;			\/\/ç³»ç»Ÿè¯åº“å†…å­˜$/;"	m	class:t_sysDict
+m_pchMem	unicode/source/SysDict/t_sysPhrase.h	/^	unsigned char *   m_pchMem;$/;"	m	class:t_sysPhrase
+m_pcorrectCandidate	unicode/source/Correct/t_sysCorrect.h	/^	t_correctCandidate * m_pcorrectCandidate;	\/\/çº é”™å€™é€‰ä¸²$/;"	m	class:t_sysCorrect
+m_pcorrectInterface	unicode/source/Engines/t_convertInterface.h	/^	t_correctInterface * m_pcorrectInterface;$/;"	m	class:t_convertInterface
+m_pngram	unicode/source/Engines/t_convertInterface.h	/^	t_ngram * m_pngram;$/;"	m	class:t_convertInterface
+m_pphraseInterface	unicode/source/Engines/t_convertInterface.h	/^	t_phraseInterface * m_pphraseInterface;$/;"	m	class:t_convertInterface
+m_prefix	unicode/source/SysDict/t_sysDict.h	/^		char16_t m_prefix[MAX_LEVEL + 1];$/;"	m	class:t_sysDict::WordIterator
+m_prefix	unicode/source/SysDict/t_sysPhrase.h	/^		char16_t m_prefix[MAX_LEVEL + 1];$/;"	m	class:t_sysPhrase::WordIterator
+m_prulesEstimate	unicode/source/Engines/t_convertInterface.h	/^	t_ruleEstimate * m_prulesEstimate;         \/\/è¯­æ³•è°ƒé¢‘  hfjiao$/;"	m	class:t_convertInterface
+m_pstrCand	unicode/source/Correct/t_correctInterface.h	/^	std::u16string * m_pstrCand;\/\/çº é”™ç»“æœä¸²$/;"	m	class:t_correctInterface
+m_psysInterface	unicode/source/Engines/t_convertInterface.h	/^    t_sysInterface * m_psysInterface;$/;"	m	class:t_convertInterface
+m_pszPrefix	unicode/source/SysDict/t_sysInterface.h	/^	char16_t * m_pszPrefix;			\/\/ç´¢å¼•æŒ‡é’ˆå¯¹åº”çš„å‰ç¼€ä¸²$/;"	m	class:t_sysInterface
+m_ptIndexBase	unicode/source/UserDict/t_userDict.h	/^	t_userIndex	* m_ptIndexBase;				\/\/ç´¢å¼•åŒºåŸºæŒ‡é’ˆ$/;"	m	struct:__anon10
+m_ptIndexBase	unicode/source/Verbs/t_verbDict.h	/^	t_verbIndex * m_ptIndexBase;   \/\/Ë÷ÒıÇø»ùÖ¸Õë$/;"	m	struct:__anon5
+m_ptUserDictHeader	unicode/source/UserDict/t_userDict.h	/^	t_userDictHeader *m_ptUserDictHeader;$/;"	m	class:t_userDict
+m_ptUserDictInfo	unicode/source/UserDict/t_userDict.h	/^	t_userDictInfo *m_ptUserDictInfo;$/;"	m	class:t_userDict
+m_ptUserNgramDictInfo	unicode/source/UserDict/t_userNgramDict.h	/^	t_userNgramDictInfo *m_ptUserNgramDictInfo;$/;"	m	class:t_userNgramDict
+m_ptUserNgramHeader	unicode/source/UserDict/t_userNgramDict.h	/^	t_userNgramHeader *m_ptUserNgramHeader;$/;"	m	class:t_userNgramDict
+m_ptVerbDictHeader	unicode/source/Verbs/t_verbDict.h	/^	t_verbDictHeader *m_ptVerbDictHeader;$/;"	m	class:t_verbDict
+m_ptVerbDictInfo	unicode/source/Verbs/t_verbDict.h	/^	t_verbDictInfo *m_ptVerbDictInfo;$/;"	m	class:t_verbDict
+m_ptenseEstimate	unicode/source/Engines/t_convertInterface.h	/^	t_tenseEstimate * m_ptenseEstimate;$/;"	m	class:t_convertInterface
+m_pucBuffer	unicode/source/UserDict/t_userDict.h	/^	unsigned char * m_pucBuffer;$/;"	m	class:t_userDict
+m_pucBuffer	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned char * m_pucBuffer;\/\/¼ÇÂ¼ÁË´ÓË÷Òı¿ªÊ¼µÄÄÚ´æÖ¸Õë$/;"	m	class:t_userNgramDict
+m_pucBufferBase	unicode/source/Correct/t_correctInterface.h	/^	unsigned char * m_pucBufferBase;	\/\/è¯åº“å†…å­˜èµ·æŒ‡é’ˆ(æ•´ä½“ç®¡ç†å†…å­˜ç”¨)$/;"	m	class:t_correctInterface
+m_pucTGMScoreDataPtr	unicode/source/Correct/t_sysCorrect.h	/^	unsigned char * m_pucTGMScoreDataPtr;$/;"	m	class:t_sysCorrect
+m_pucWordBase	unicode/source/Verbs/t_verbDict.h	/^	char16_t* m_pucWordBase;   \/\/Êı¾İÇø»ùÖ¸Õë$/;"	m	struct:__anon5
+m_punMapBase	unicode/source/Verbs/t_verbDict.h	/^	unsigned int* m_punMapBase;   \/\/Ó³ÉäÇø»ùÖ¸Õë$/;"	m	struct:__anon5
+m_pusIDSScoreDataPtr	unicode/source/Correct/t_sysCorrect.h	/^	unsigned short * m_pusIDSScoreDataPtr;$/;"	m	class:t_sysCorrect
+m_pusXPOSScoreDataPtr	unicode/source/Correct/t_sysCorrect.h	/^	unsigned short * m_pusXPOSScoreDataPtr;$/;"	m	class:t_sysCorrect
+m_puserDict	unicode/source/Engines/t_convertInterface.h	/^	t_userDict * m_puserDict;$/;"	m	class:t_convertInterface
+m_puserNgramDict	unicode/source/Engines/t_convertInterface.h	/^	t_userNgramDict *m_puserNgramDict;$/;"	m	class:t_convertInterface
+m_pverbInterface	unicode/source/Engines/t_convertInterface.h	/^	t_verbInterface * m_pverbInterface;$/;"	m	class:t_convertInterface
+m_stack	unicode/source/SysDict/t_sysDict.h	/^		} m_stack[MAX_LEVEL + 1];$/;"	m	class:t_sysDict::NodeIterator	typeref:struct:t_sysDict::NodeIterator::StackItem
+m_stack	unicode/source/SysDict/t_sysPhrase.h	/^		} m_stack[MAX_LEVEL + 1];$/;"	m	class:t_sysPhrase::NodeIterator	typeref:struct:t_sysPhrase::NodeIterator::StackItem
+m_strComposing	unicode/source/Engines/t_convertInterface.h	/^    std::u16string m_strComposing;      \/\/è¾“å…¥ä¸²$/;"	m	class:t_convertInterface
+m_strContext	unicode/source/Engines/t_convertInterface.h	/^	std::u16string m_strContext;		\/\/ä¸Šæ–‡$/;"	m	class:t_convertInterface
+m_strCorStr	unicode/source/Correct/t_sysCorrect.h	/^	std::u16string m_strCorStr;				\/\/ä¿®æ­£ä¸²ï¼Œè®¡ç®—å¾—åˆ†æ—¶ä¸­é—´å˜é‡ç”¨$/;"	m	class:t_sysCorrect
+m_strLastComposing	unicode/source/Engines/t_convertInterface.h	/^	std::u16string m_strLastComposing;	\/\/æœ€è¿‘çš„ä¸€æ¬¡è¾“å…¥ä¸²(åº”è¯¥å’Œæœ€è¿‘çš„convertç»“æœä¿æŒä¸€è‡´)$/;"	m	class:t_convertInterface
+m_strLastComposing	unicode/source/UserDict/t_userDict.h	/^	std::u16string m_strLastComposing;	\/\/è®°å½•ä¸Šä¸€æ¬¡convertçš„è¾“å…¥ä¸²ï¼ˆå’Œç»“æœè®°å½•ä¿æŒä¸€è‡´ï¼‰$/;"	m	class:t_userDict
+m_strLastInput	unicode/source/SysDict/t_phraseInterface.h	/^	std::u16string m_strLastInput;	\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„è¾“å…¥ä¸²$/;"	m	class:t_phraseInterface
+m_strLastInput	unicode/source/SysDict/t_sysInterface.h	/^	std::u16string m_strLastInput;		\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„è¾“å…¥ä¸²$/;"	m	class:t_sysInterface
+m_strOriginalInputStr	unicode/source/Correct/t_sysCorrect.h	/^	std::u16string m_strOriginalInputStr;	\/\/åŸå§‹è¾“å…¥ä¸²$/;"	m	class:t_sysCorrect
+m_strPrefix	unicode/source/SysDict/t_sysInterface.h	/^	std::u16string m_strPrefix[MAX_POINTER_NUM];		\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„å‰ç¼€$/;"	m	class:t_sysInterface
+m_szContext	unicode/source/Verbs/t_verbInterface.h	/^	char16_t * m_szContext;					\/\/ÉÏÎÄ$/;"	m	class:t_verbInterface
+m_szWord	unicode/source/Candidate/CandItem.h	/^	std::unique_ptr<char> m_szWord;$/;"	m	class:CandItem
+m_tCache	unicode/source/SysDict/t_phraseInterface.h	/^	StackItem * m_tCache;		\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„æŒ‡é’ˆç¼“å­˜ï¼ˆå’Œå‰ç¼€ä¸€ä¸€å¯¹åº”ï¼‰$/;"	m	class:t_phraseInterface
+m_tCache	unicode/source/SysDict/t_sysInterface.h	/^	StackItem * m_tCache;				\/\/ä¸Šæ¬¡æŸ¥è¯¢æ—¶çš„æŒ‡é’ˆç¼“å­˜ï¼ˆå’Œå‰ç¼€ä¸€ä¸€å¯¹åº”ï¼‰$/;"	m	class:t_sysInterface
+m_tEngineId	unicode/source/Candidate/CandItem.h	/^    ENGINE_ID m_tEngineId;$/;"	m	class:CandItem
+m_table	unicode/source/Common/t_keyMap.h	/^	char16_t m_table[MAX_KEY_NUM][MAX_MAP_NUM];$/;"	m	class:t_keyMap
+m_top	unicode/source/SysDict/t_sysDict.h	/^		int m_top;$/;"	m	class:t_sysDict::NodeIterator
+m_top	unicode/source/SysDict/t_sysPhrase.h	/^		int m_top;$/;"	m	class:t_sysPhrase::NodeIterator
+m_uDfrScore	unicode/source/Candidate/CandItem.h	/^	UINT16 m_uDfrScore;$/;"	m	class:CandItem
+m_uFlag	unicode/source/Candidate/CandItem.h	/^	UINT16 m_uFlag;$/;"	m	class:CandItem
+m_uRequiredPos	unicode/source/Candidate/CandItem.h	/^	int m_uRequiredPos;$/;"	m	class:CandItem
+m_uScore	unicode/source/Candidate/CandItem.h	/^	UINT16 m_uScore;$/;"	m	class:CandItem
+m_ucBasicDictBuffer	unicode/source/Engines/t_convertInterface.h	/^	unsigned char * m_ucBasicDictBuffer;$/;"	m	class:t_convertInterface
+m_ucNgramDictBuffer	unicode/source/Engines/t_convertInterface.h	/^	unsigned char * m_ucNgramDictBuffer;$/;"	m	class:t_convertInterface
+m_unAttachSizePerWord	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unAttachSizePerWord;$/;"	m	class:t_userDict
+m_unAvgLenPerWordOfStart	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unAvgLenPerWordOfStart;$/;"	m	class:t_userDict
+m_unCurAllocBigramIndexSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurAllocBigramIndexSize;\/\/Ä¿Ç°Îª¶şÔªË÷ÒıÇø·ÖÅäµÄÄÚ´æ(×Ö½ÚÊı),ÉèÖÃÒÔÃ¿¸öÔª´ÊÎª×óÔªµÄ¶şÔªÊıÄ¿Îª10$/;"	m	struct:__anon9
+m_unCurAllocIndexSize	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unCurAllocIndexSize;			\/\/ç›®å‰ä¸ºç´¢å¼•åŒºåˆ†é…çš„å†…å­˜(å­—èŠ‚æ•°)$/;"	m	struct:__anon10
+m_unCurAllocIndexSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurAllocIndexSize; \/\/Ä¿Ç°ÎªÔª´ÊË÷ÒıÇø·ÖÅäµÄÄÚ´æ(×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unCurAllocMemSize	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unCurAllocMemSize;			\/\/ç›®å‰åˆ†é…çš„å†…å­˜ç©ºé—´å¤§å°(å­—èŠ‚æ•°)$/;"	m	struct:__anon10
+m_unCurAllocMemSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurAllocMemSize;			\/\/Ä¿Ç°·ÖÅäµÄÄÚ´æ¿Õ¼ä´óĞ¡(×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unCurAllocTrigramIndexSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurAllocTrigramIndexSize;\/\/Ä¿Ç°ÎªÈıÔªË÷ÒıÇø·ÖÅäµÄÄÚ´æ(×Ö½ÚÊı),ÉèÖÃÒÔÃ¿¸öÔª´ÊÎª×óÔªµÄÈıÔªÊıÄ¿Îª100$/;"	m	struct:__anon9
+m_unCurAllocWordSize	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unCurAllocWordSize;			\/\/ç›®å‰ä¸ºè¯æ¡åŒºåˆ†é…çš„å†…å­˜(å­—èŠ‚æ•°)$/;"	m	struct:__anon10
+m_unCurAllocWordSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurAllocWordSize; \/\/ Ä¿Ç°ÎªÔª´Ê´ÊÌõ·ÖÅäµÄÄÚ´æ(×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unCurMaxBigramNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurMaxBigramNum;  \/\/Ä¿Ç°·ÖÅäµÄ×î´óµÄ¶şÔªË÷ÒıÊı(·Ç×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unCurMaxTrigramNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurMaxTrigramNum;  \/\/Ä¿Ç°·ÖÅäµÄ×î´óµÄÈıÔªË÷ÒıÊı(·Ç×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unCurMaxWordNum	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unCurMaxWordNum;				\/\/ç›®å‰åˆ†é…çš„ç´¢å¼•æ•°(éå­—èŠ‚æ•°)$/;"	m	struct:__anon10
+m_unCurMaxWordNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int m_unCurMaxWordNum; \/\/Ä¿Ç°·ÖÅäµÄ×î´óµÄÔª´ÊµÄË÷ÒıÊı(·Ç×Ö½ÚÊı)$/;"	m	struct:__anon9
+m_unDataSize	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unDataSize;				\/\/è¯æ¡åŒºæ€»å¤§å°(å­—èŠ‚æ•°)$/;"	m	struct:__anon11
+m_unMD5	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMD5;					\/\/MD5å’ŒMagicéƒ½æ˜¯æ ¡éªŒç”¨çš„$/;"	m	struct:__anon11
+m_unMagicNum	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMagicNum;$/;"	m	struct:__anon11
+m_unMagicNum	unicode/source/Verbs/t_verbDict.h	/^	unsigned int m_unMagicNum;   \/\/Ä§Êı£¬ÓÃ×÷Ğ£Ñé$/;"	m	struct:__anon6
+m_unMapAtomCnt	unicode/source/Verbs/t_verbDict.h	/^	unsigned int m_unMapAtomCnt;   \/\/Ó³Éä±íÖĞµÄÎ»ÖÃĞÅÏ¢ÌõÊı$/;"	m	struct:__anon6
+m_unMaxPseudoTime	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMaxPseudoTime;			\/\/æœ€å¤§ä¼ªæ—¶é—´$/;"	m	struct:__anon11
+m_unMaxSize	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMaxSize;$/;"	m	class:t_userDict
+m_unMaxSizePerWord	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMaxSizePerWord;$/;"	m	class:t_userDict
+m_unMaxhasnum	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unMaxhasnum;$/;"	m	class:t_userDict
+m_unReserved	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unReserved;				\/\/é¢„ç•™$/;"	m	struct:__anon11
+m_unTotalFreq	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unTotalFreq;				\/\/æ€»çš„è¾“å…¥æ¬¡æ•°$/;"	m	struct:__anon11
+m_unVersion	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unVersion;				\/\/ç‰ˆæœ¬$/;"	m	struct:__anon11
+m_unVersion	unicode/source/Verbs/t_verbDict.h	/^	unsigned int m_unVersion;   \/\/°æ±¾$/;"	m	struct:__anon6
+m_unWordCount	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unWordCount;				\/\/ç°æœ‰è¯æ¡æ•°$/;"	m	struct:__anon11
+m_unWordCount	unicode/source/Verbs/t_verbDict.h	/^	unsigned int m_unWordCount;   \/\/ÏÖÓĞ´ÊÌõÊı$/;"	m	struct:__anon6
+m_unWriteBackTime	unicode/source/UserDict/t_userDict.h	/^	unsigned int m_unWriteBackTime;$/;"	m	class:t_userDict
+m_usEmojiId	unicode/source/Candidate/CandItem.h	/^	UINT16 m_usEmojiId;$/;"	m	class:CandItem
+m_usYanwenziId	unicode/source/Candidate/CandItem.h	/^	UINT16 m_usYanwenziId;$/;"	m	class:CandItem
+m_used	unicode/source/SysDict/t_sysDict.h	/^		bool m_used;$/;"	m	class:t_sysDict::LeafIterator
+m_used	unicode/source/SysDict/t_sysPhrase.h	/^		bool m_used;$/;"	m	class:t_sysPhrase::LeafIterator
+m_version	unicode/source/SysDict/t_sysDict.h	/^	unsigned int	  m_version;$/;"	m	class:t_sysDict
+m_version	unicode/source/SysDict/t_sysPhrase.h	/^	unsigned int	  m_version;$/;"	m	class:t_sysPhrase
+m_words	unicode/source/SysDict/t_sysDict.h	/^		const void* m_words;$/;"	m	class:t_sysDict::LeafIterator
+m_words	unicode/source/SysDict/t_sysPhrase.h	/^		const void* m_words;$/;"	m	class:t_sysPhrase::LeafIterator
+main	backup/test.c	/^void main() {$/;"	f
+main	backup/test.cpp	/^int main() {$/;"	f
+main	test1/main.c	/^void main()$/;"	f
+main	unicode/test/main.cpp	/^int main()$/;"	f
+nBasicWordNum	unicode/source/Ngram/t_ngram.h	/^	int nBasicWordNum;      \/\/å…ƒè¯ä¸ªæ•°$/;"	m	struct:t_header
+nBasicWordNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nBasicWordNum;      \/\/Ôª´Ê¸öÊı$/;"	m	struct:__anon8
+nBiCount	unicode/source/GramAdjust/t_ruleEstimate.h	/^	int nBiCount;$/;"	m	class:t_ruleEstimate
+nBiDictType	unicode/source/UserDict/t_userNgramDict.h	/^	int   nBiDictType;          \/\/ ´ÊÌõÀ´Ô´$/;"	m	struct:t_userBigram
+nBiList	unicode/source/GramAdjust/t_ruleEstimate.h	/^	e_WordType  nBiList[10];             \/\/ÓÉ¶şÔªÓï·¨¹æÔò²éµ½µÄÏÂÎÄ¿É½Ó´ÊĞÔÁĞ±í$/;"	m	class:t_ruleEstimate
+nBigramBase	unicode/source/Ngram/t_ngram.h	/^	int nBigramBase;        \/\/äºŒå…ƒæ•°æ®èµ·å§‹ä½ç½®$/;"	m	struct:t_header
+nBigramNum	unicode/source/Ngram/t_ngram.h	/^	int nBigramNum;         \/\/äºŒå…ƒæ•°æ®æ€»ä¸ªæ•°$/;"	m	struct:t_header
+nBigramNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nBigramNum;         \/\/¶şÔªÊı¾İ×Ü¸öÊı Êµ¼ÊµÄ¶şÔªÊıÄ¿$/;"	m	struct:__anon8
+nCaType	unicode/source/Engines/dictDefine.h	/^	int			nCaType;		\/\/è°ƒé¢‘ç±»å‹$/;"	m	struct:t_candMemory
+nCacheNum	unicode/source/Correct/t_spellerCache.h	/^	int nCacheNum;	\/\/cacheä¸ªæ•°$/;"	m	struct:t_cacheHeader
+nContextType	unicode/source/GramAdjust/t_ruleEstimate.h	/^	int nContextType;                     \/\/½ôÁÚÉÏÎÄµÄ´ÊĞÔ$/;"	m	class:t_ruleEstimate
+nCorCharNum	unicode/source/Engines/dictDefine.h	/^	int nCorCharNum;		\/\/å·²ç»ä¿®æ­£çš„å­—ç¬¦ä¸ªæ•°$/;"	m	struct:t_composingMemory
+nCorrectionLen	unicode/source/Correct/t_spellerCache.h	/^	int nCorrectionLen : 3;	\/\/ä¿®æ­£ä¸²é•¿åº¦ï¼Œ0-7ä»£è¡¨é•¿åº¦1-8$/;"	m	struct:t_cacheIndex
+nCurSegNum	unicode/source/Engines/dictDefine.h	/^	int			nCurSegNum;	\/\/åˆ°ä¸Šä¸€æ¬¡ä¸Šå±ä¸ºæ­¢åŒ¹é…çš„æ®µæ•°$/;"	m	struct:t_phraseMemory
+nDataSize	unicode/source/Correct/t_spellerCache.h	/^	int nDataSize;	\/\/cacheæ•°æ®åŒºå¤§å°$/;"	m	struct:t_cacheHeader
+nDataSize	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nDataSize;			 \/\/´ÊÌõÇø×Ü´óĞ¡(×Ö½ÚÊı)	$/;"	m	struct:__anon8
+nDictType	unicode/source/Engines/dictDefine.h	/^	int			nDictType;	\/\/ä¸ºå®ç°è¯åº“ç±»å‹å…±å­˜ï¼Œæ”¹ä¸ºintç±»å‹$/;"	m	struct:t_candMemory
+nFreq	unicode/source/Engines/dictDefine.h	/^	int			nFreq;$/;"	m	struct:t_phraseMemory
+nFreq	unicode/source/Ngram/t_ngram.h	/^	int nFreq;				\/\/é¢‘ç‡$/;"	m	struct:t_NGramAssocCand
+nGramNum	unicode/source/Ngram/t_ngram.h	/^	int nGramNum;			\/\/2\/3å…ƒ$/;"	m	struct:t_NGramAssocCand
+nGramNum	unicode/source/UserDict/t_userNgramDict.h	/^	int nGramNum;			\/\/2\/3Ôª$/;"	m	struct:t_userNgramAssocCand
+nHeaderBigramNum	unicode/source/Ngram/t_ngram.h	/^	int nHeaderBigramNum;   \/\/å¥é¦–äºŒå…ƒæ•°æ®æ€»ä¸ªæ•° eyanli$/;"	m	struct:t_header
+nHeaderTrigramNum	unicode/source/Ngram/t_ngram.h	/^	int nHeaderTrigramNum;  \/\/å¥é¦–ä¸‰å…ƒæ•°æ®æ€»ä¸ªæ•° eyanli$/;"	m	struct:t_header
+nIndexSize	unicode/source/Correct/t_spellerCache.h	/^	int nIndexSize;	\/\/cacheç´¢å¼•åŒºå¤§å°$/;"	m	struct:t_cacheHeader
+nInputIdx	unicode/source/Verbs/t_verbInterface.h	/^	int nInputIdx;   \/\/ÊäÈë¶¯´ÊµÄË÷ÒıÎ»ÖÃ$/;"	m	class:t_verbInterface
+nLen	unicode/source/Engines/t_convertInterface.cpp	/^	int nLen;$/;"	m	struct:SG_Dict_Cmp_Word	file:
+nLen	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nLen : 4;	\/\/´ÊÌõ³¤¶È$/;"	m	struct:t_BasicIndex
+nMD5	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nMD5;               \/\/MD5ºÍMagic¶¼ÊÇĞ£ÑéÓÃµÄ$/;"	m	struct:__anon8
+nMagic	unicode/source/Ngram/t_ngram.h	/^	unsigned int nMagic;$/;"	m	struct:t_header
+nMagic	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nMagic;$/;"	m	struct:__anon8
+nMapOffset	unicode/source/Verbs/t_verbInterface.h	/^	int nMapOffset;   \/\/ÊäÈë¶¯´Ê¶ÔÓ¦µÄÓ³Éä±íµÄÆğÊ¼Î»ÖÃ$/;"	m	class:t_verbInterface
+nMatchLen	unicode/source/Engines/dictDefine.h	/^	int			nMatchLen;	\/\/åˆ°ä¸Šä¸€æ¬¡ä¸Šå±ä¸ºæ­¢åŒ¹é…åˆ°çš„ä½ç½®ï¼ˆtake off---ä¸Šå±takeä¹‹åè¯¥å€¼ä¸º5ï¼‰$/;"	m	struct:t_phraseMemory
+nMatchedSegNum	unicode/source/Engines/dictDefine.h	/^	int			nMatchedSegNum;$/;"	m	struct:t_candMemory
+nMaxBiPseudoTime	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nMaxBiPseudoTime;	 \/\/¶şÔª×î´óÎ±Ê±¼ä$/;"	m	struct:__anon8
+nMaxSysFreq	unicode/source/Engines/dictDefine.h	/^	int nMaxSysFreq;		\/\/åä¸‹è¯é¢‘æœ€é«˜çš„ç³»ç»Ÿè¯è¯é¢‘$/;"	m	struct:t_composingMemory
+nMaxTriPseudoTime	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nMaxTriPseudoTime;	 \/\/ÈıÔª×î´óÎ±Ê±¼ä$/;"	m	struct:__anon8
+nNgramID1	unicode/source/Engines/t_convertInterface.h	/^	int nNgramID1;                      \/\/ä¸Šæ–‡å€’æ•°ç¬¬äºŒä¸ªè¯çš„å…ƒè¯ID$/;"	m	class:t_convertInterface
+nNgramID2	unicode/source/Engines/t_convertInterface.h	/^	int nNgramID2;                      \/\/ç´§é‚»ä¸Šæ–‡çš„å…ƒè¯ID$/;"	m	class:t_convertInterface
+nOffSet	unicode/source/Correct/t_spellerCache.h	/^	int nOffSet : 26;		\/\/æ•°æ®åŒºåç§»ï¼Œï¼ˆç›¸å¯¹DataåŒº,å­—ç¬¦æ•°ï¼‰$/;"	m	struct:t_cacheIndex
+nOriginalLen	unicode/source/Correct/t_spellerCache.h	/^	int nOriginalLen : 3;	\/\/åŸå§‹è¾“å…¥ä¸²é•¿åº¦ï¼Œ0-7ä»£è¡¨é•¿åº¦1-8$/;"	m	struct:t_cacheIndex
+nPart1	unicode/source/Ngram/t_ngram.h	/^	unsigned int nPart1;$/;"	m	struct:t_index
+nPart2	unicode/source/Ngram/t_ngram.h	/^	unsigned int nPart2;$/;"	m	struct:t_index
+nPointerNum	unicode/source/Engines/dictDefine.h	/^	int nPointerNum;		\/\/ç´¢å¼•ç¼“å­˜æŒ‡é’ˆä¸ªæ•°$/;"	m	struct:t_composingMemory
+nPos	unicode/source/Correct/t_sysCorrect.h	/^	int nPos;					\/\/ä¿®æ­£ä½ç½®$/;"	m	struct:t_correctCandidate
+nPseudoTimeDiff	unicode/source/Engines/dictDefine.h	/^	int			nPseudoTimeDiff;\/\/ç”¨æˆ·è¯ä¼ªæ—¶é—´å’Œæœ€å¤§ä¼ªæ—¶é—´çš„å·®$/;"	m	struct:t_candMemory
+nResIdx	unicode/source/Verbs/t_verbInterface.h	/^	int nResIdx;   \/\/±äÌå½á¹ûµÄË÷ÒıÎ»ÖÃ$/;"	m	class:t_verbInterface
+nResOffset	unicode/source/Verbs/t_verbInterface.h	/^	int nResOffset;   \/\/±äÌå½á¹ûÔÚÊı¾İÇøÖĞµÄÆ«ÒÆ$/;"	m	class:t_verbInterface
+nReserved	unicode/source/Correct/t_spellerCache.h	/^	int nReserved;$/;"	m	struct:t_cacheHeader
+nScore	unicode/source/Engines/dictDefine.h	/^	int nScore;				\/\/ç»¼åˆå¾—åˆ†,è¶Šå¤§è¶Šå¥½$/;"	m	struct:t_composingMemory
+nSegNum	unicode/source/Engines/dictDefine.h	/^	int			nSegNum;	\/\/æ€»æ®µæ•°(n-gram)$/;"	m	struct:t_phraseMemory
+nSysFreq	unicode/source/Engines/dictDefine.h	/^	int			nSysFreq;	\/\/åŸå§‹ç³»ç»Ÿè¯é¢‘$/;"	m	struct:t_candMemory
+nSysFreq	unicode/source/Engines/dictDefine.h	/^	int			nSysFreq;$/;"	m	struct:t_phraseMemory
+nSysFreq	unicode/source/UserDict/t_userNgramDict.h	/^	int nSysFreq;				\/\/ÆµÂÊ$/;"	m	struct:t_userNgramAssocCand
+nTotal	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int nTotal;$/;"	m	struct:t_gramRulesIndex
+nTotal	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int nTotal;$/;"	m	struct:t_paradigmIndex
+nTotalBiFreq	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nTotalBiFreq;		 \/\/¶şÔª×ÜµÄÊäÈë´ÎÊı$/;"	m	struct:__anon8
+nTotalTriFreq	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nTotalTriFreq;		 \/\/ÈıÔª×ÜµÄÊäÈë´ÎÊı$/;"	m	struct:__anon8
+nTriCount	unicode/source/GramAdjust/t_ruleEstimate.h	/^	int nTriCount;$/;"	m	class:t_ruleEstimate
+nTriDictType	unicode/source/UserDict/t_userNgramDict.h	/^	int   nTriDictType;          \/\/ ´ÊÌõÀ´Ô´$/;"	m	struct:t_userTrigram
+nTriList	unicode/source/GramAdjust/t_ruleEstimate.h	/^	e_WordType nTriList[10];             \/\/ÓÉÈıÔªÓï·¨¹æÔò²éµ½µÄÏÂÎÄ¿É½Ó´ÊĞÔÁĞ±í$/;"	m	class:t_ruleEstimate
+nTrigramBase	unicode/source/Ngram/t_ngram.h	/^	int nTrigramBase;       \/\/ä¸‰å…ƒæ•°æ®èµ·å§‹ä½ç½®$/;"	m	struct:t_header
+nTrigramNum	unicode/source/Ngram/t_ngram.h	/^	int nTrigramNum;        \/\/ä¸‰å…ƒæ•°æ®æ€»ä¸ªæ•°$/;"	m	struct:t_header
+nTrigramNum	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nTrigramNum;		 \/\/ÈıÔªÊı¾İ×Ü¸öÊı Êµ¼ÊµÄÈıÔªÊıÄ¿$/;"	m	struct:__anon8
+nTypeCount	unicode/source/Engines/t_convertInterface.h	/^	int nTypeCount;                     \/\/ä¸‹æ–‡ä¼˜å…ˆè¯æ€§è®¡æ•°$/;"	m	class:t_convertInterface
+nTypeList	unicode/source/Engines/t_convertInterface.h	/^	e_WordType nTypeList[10];           \/\/ä¸‹æ–‡å¯æ¥çš„å€™é€‰è¯çš„è¯æ€§åˆ—è¡¨$/;"	m	class:t_convertInterface
+nTypeList	unicode/source/GramAdjust/t_ruleEstimate.h	/^	e_WordType nTypeList[10];                      \/\/ÏÂÎÄ¿É½ÓµÄºòÑ¡´ÊµÄ´ÊĞÔÁĞ±í$/;"	m	class:t_ruleEstimate
+nUserDictType	unicode/source/UserDict/t_userDict.h	/^	int				nUserDictType;		\/\/è¯æ¡æ¥æº$/;"	m	struct:t_userIndex
+nUserFreq	unicode/source/Engines/dictDefine.h	/^	int			nUserFreq;	\/\/ç”¨æˆ·è¯ä¸Šå±æ¬¡æ•°$/;"	m	struct:t_candMemory
+nUserFreq	unicode/source/Engines/dictDefine.h	/^	int			nUserFreq;$/;"	m	struct:t_phraseMemory
+nUserFreq	unicode/source/UserDict/t_userNgramDict.h	/^	int nUserFreq;$/;"	m	struct:t_userNgramAssocCand
+nVersion	unicode/source/Ngram/t_ngram.h	/^	unsigned int nVersion;$/;"	m	struct:t_header
+nVersion	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int nVersion;		     \/\/°æ±¾ $/;"	m	struct:__anon8
+nWordBase	unicode/source/Ngram/t_ngram.h	/^	int nWordBase;          \/\/æ•°æ®åŒºèµ·å§‹ä½ç½®$/;"	m	struct:t_header
+nWordID	unicode/source/Engines/dictDefine.h	/^	int         nWordID;        \/\/å…ƒè¯ID ï¼š hfjiao$/;"	m	struct:t_candMemory
+nWordPos	unicode/source/UserDict/t_userNgramDict.h	/^	int nWordPos : 20;	\/\/´ÊÌõÊı¾İÆ«ÒÆ$/;"	m	struct:t_BasicIndex
+nWordType	unicode/source/Engines/dictDefine.h	/^	int         nWordType;      \/\/è¯æ€§ : hfjiao$/;"	m	struct:t_candMemory
+next	unicode/source/Common/t_hashMap.h	/^		t_data *next;  \/\/ æŒ‡å‘ä¸‹ä¸€ä¸ªå…ƒç´  [gaofeng 2014\/4\/22]$/;"	m	struct:t_hashMap::t_data
+ngx_http_cand_num	httpframe_module.c	/^ngx_http_cand_num(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)$/;"	f	file:
+ngx_http_chat1_path	backup/chat_module.c	/^static char* ngx_http_chat1_path(ngx_conf_t* cf, ngx_command_t* cmd, void* conf) {$/;"	f	file:
+ngx_http_chat2_path	backup/chat_module.c	/^static char* ngx_http_chat2_path(ngx_conf_t* cf, ngx_command_t* cmd, void* conf) {$/;"	f	file:
+ngx_http_chat_commands	backup/chat_module.c	/^static ngx_command_t ngx_http_chat_commands[] = {$/;"	v	file:
+ngx_http_chat_create_loc_conf	backup/chat_module.c	/^static void* ngx_http_chat_create_loc_conf(ngx_conf_t *cf) {$/;"	f	file:
+ngx_http_chat_handler	backup/chat_module.c	/^ngx_http_chat_handler(ngx_http_request_t* r) {$/;"	f	file:
+ngx_http_chat_init	backup/chat_module.c	/^static ngx_int_t ngx_http_chat_init(ngx_conf_t* cf) {$/;"	f	file:
+ngx_http_chat_loc_conf_t	backup/chat_module.c	/^} ngx_http_chat_loc_conf_t;$/;"	t	typeref:struct:__anon2	file:
+ngx_http_chat_module	backup/chat_module.c	/^ngx_module_t ngx_http_chat_module = {$/;"	v
+ngx_http_chat_module_ctx	backup/chat_module.c	/^static ngx_http_module_t ngx_http_chat_module_ctx = {$/;"	v	file:
+ngx_http_dict_path	httpframe_module.c	/^ngx_http_dict_path(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)$/;"	f	file:
+ngx_http_do_get	ngx_http_handle_interface.cpp	/^int ngx_http_do_get(RequestInfo* req_info) {$/;"	f
+ngx_http_do_post	ngx_http_handle_interface.cpp	/^int ngx_http_do_post(RequestInfo* req_info) {$/;"	f
+ngx_http_frame_commands	httpframe_module.c	/^static ngx_command_t ngx_http_frame_commands[] = {$/;"	v	file:
+ngx_http_frame_create_loc_conf	httpframe_module.c	/^static void *ngx_http_frame_create_loc_conf(ngx_conf_t *cf)$/;"	f	file:
+ngx_http_frame_handler	httpframe_module.c	/^ngx_http_frame_handler(ngx_http_request_t *r)$/;"	f	file:
+ngx_http_frame_init	httpframe_module.c	/^ngx_http_frame_init(ngx_conf_t *cf)$/;"	f	file:
+ngx_http_frame_loc_conf_t	httpframe_module.h	/^} ngx_http_frame_loc_conf_t;$/;"	t	typeref:struct:__anon3
+ngx_http_frame_module	httpframe_module.c	/^ngx_module_t ngx_http_frame_module = {$/;"	v
+ngx_http_frame_module_ctx	httpframe_module.c	/^static ngx_http_module_t ngx_http_frame_module_ctx = {$/;"	v	file:
+ngx_http_hello_commands	backup/hello_module.c	/^static ngx_command_t ngx_http_hello_commands[] = {$/;"	v	file:
+ngx_http_hello_counter	backup/hello_module.c	/^static char *ngx_http_hello_counter(ngx_conf_t *cf, ngx_command_t *cmd,$/;"	f	file:
+ngx_http_hello_create_loc_conf	backup/hello_module.c	/^static void *ngx_http_hello_create_loc_conf(ngx_conf_t *cf)$/;"	f	file:
+ngx_http_hello_handler	backup/hello_module.c	/^ngx_http_hello_handler(ngx_http_request_t *r)$/;"	f	file:
+ngx_http_hello_init	backup/hello_module.c	/^ngx_http_hello_init(ngx_conf_t *cf)$/;"	f	file:
+ngx_http_hello_loc_conf_t	backup/hello_module.c	/^}ngx_http_hello_loc_conf_t;$/;"	t	typeref:struct:__anon1	file:
+ngx_http_hello_module	backup/hello_module.c	/^ngx_module_t ngx_http_hello_module = {$/;"	v
+ngx_http_hello_module_ctx	backup/hello_module.c	/^static ngx_http_module_t ngx_http_hello_module_ctx = {$/;"	v	file:
+ngx_http_hello_string	backup/hello_module.c	/^ngx_http_hello_string(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)$/;"	f	file:
+ngx_http_invalid_request	ngx_http_handle_interface.cpp	/^int ngx_http_invalid_request(RequestInfo* req_info) {$/;"	f
+ngx_http_lib_path	backup/chat_module.c	/^static char* ngx_http_lib_path(ngx_conf_t* cf, ngx_command_t* cmd, void* conf) {$/;"	f	file:
+ngx_http_result	backup/ngx_http_result.h	/^struct ngx_http_result {$/;"	s
+ngx_null_string	test1/hash_map.h	11;"	d
+ngx_parser_http_request	backup/hello_module.c	/^ngx_parser_http_request(ngx_http_request_t *r) $/;"	f	file:
+ngx_parser_http_request	httpframe_module.c	/^ngx_parser_http_request(ngx_http_request_t *r) $/;"	f	file:
+ngx_str_t	test1/hash_map.h	/^} ngx_str_t;$/;"	t	typeref:struct:_ngx_str_t
+num	unicode/source/SysDict/t_sysInterface.h	/^	int num;$/;"	m	struct:StackItem
+offset	unicode/source/SysDict/t_sysDict.h	/^			const unsigned* offset;$/;"	m	struct:t_sysDict::NodeIterator::StackItem
+offset	unicode/source/SysDict/t_sysPhrase.h	/^			const unsigned* offset;$/;"	m	struct:t_sysPhrase::NodeIterator::StackItem
+operator ()	unicode/source/Engines/t_convertInterface.cpp	/^	bool operator()( const t_candMemory &pa, const t_candMemory &pb ) const$/;"	f	struct:SG_Dict_Cmp_Freq
+operator ()	unicode/source/Engines/t_convertInterface.cpp	/^	bool operator()(const t_candMemory &pa, const t_candMemory &pb) const$/;"	f	struct:SG_Dict_Cmp_Word
+operator =	unicode/source/Engines/dictDefine.h	/^	t_candMemory& operator = ( const t_candMemory & object )$/;"	f	struct:t_candMemory
+operator =	unicode/source/Engines/dictDefine.h	/^	t_candMemory& operator = (t_candMemory && object) $/;"	f	struct:t_candMemory
+operator =	unicode/source/Engines/dictDefine.h	/^	t_phraseMemory& operator = ( const t_phraseMemory & object )$/;"	f	struct:t_phraseMemory
+operator =	unicode/source/Engines/dictDefine.h	/^	t_phraseMemory& operator = ( t_phraseMemory && object )$/;"	f	struct:t_phraseMemory
+out	ngx_http_request_info.h	/^	ngx_chain_t* out;	\/\/·µ»ØµÄ°üÌå$/;"	m	struct:_RequestInfo
+params	ngx_http_request_info.h	/^	HashMap* params;	\/\/uriÖĞ²ÎÊıĞÅÏ¢£¬ÒÔÉÏÕâÁ½¸öÊÇ½âÎö¹ıµÄĞÅÏ¢£¬·½±ã»ñÈ¡$/;"	m	struct:_RequestInfo
+pos	unicode/source/SysDict/t_sysInterface.h	/^	int pos;$/;"	m	struct:StackItem
+prefixTmp	unicode/source/SysDict/t_sysInterface.h	/^	char16_t * prefixTmp;$/;"	m	class:t_sysInterface
+process	unicode/test/scripts/htest.sh	/^function process(){$/;"	f
+process	unicode/test/scripts/spellerTest.sh	/^function process(){$/;"	f
+r	ngx_http_request_info.h	/^	ngx_http_request_t* r;	\/\/ËùÓĞÇëÇóµÄĞÅÏ¢$/;"	m	struct:_RequestInfo
+recoverIndex	unicode/source/SysDict/t_sysDict.h	/^	void recoverIndex() { m_lastSearchPos = (void *)m_base; }$/;"	f	class:t_sysDict
+recoverIndex	unicode/source/SysDict/t_sysPhrase.h	/^	void recoverIndex() { m_lastSearchPos = (void *)m_base; }$/;"	f	class:t_sysPhrase
+removePathFromFileName	unicode/source/Common/commonMacro.h	/^const char * removePathFromFileName(const char * path)$/;"	f
+reserved	unicode/source/UserDict/t_userNgramDict.h	/^	int reserved : 4;    \/\/±£ÁôÇø$/;"	m	struct:t_BasicIndex
+resetNgramIndexID	unicode/source/UserDict/t_userNgramDict.cpp	/^void t_userNgramDict::resetNgramIndexID(int nInsertIndex)$/;"	f	class:t_userNgramDict
+sCurTriGramNum	unicode/source/UserDict/t_userNgramDict.h	/^	short sCurTriGramNum; \/\/¹Ì¶¨µÄ×óÔªºÍÖĞÔªºó ¼ÇÂ¼µ±Ç°µÄÓÃ»§ÈıÔªµÄÊıÄ¿$/;"	m	struct:t_userTrigram
+sID1	unicode/source/Ngram/t_ngram.h	/^	short sID1;             \/\/ä¸­å…ƒID$/;"	m	struct:t_trigram
+sID1	unicode/source/UserDict/t_userNgramDict.h	/^	short sID1;            \/\/ÖĞÔªID$/;"	m	struct:t_userTrigram
+sID2	unicode/source/Ngram/t_ngram.h	/^	short sID2;             \/\/å³å…ƒID$/;"	m	struct:t_bigram
+sID2	unicode/source/Ngram/t_ngram.h	/^	short sID2;             \/\/å³å…ƒID$/;"	m	struct:t_trigram
+sID2	unicode/source/UserDict/t_userNgramDict.h	/^	short sID2;            \/\/ÓÒÔªID$/;"	m	struct:t_userBigram
+sID2	unicode/source/UserDict/t_userNgramDict.h	/^	short sID2;            \/\/ÓÒÔªID$/;"	m	struct:t_userTrigram
+size	hash_map.h	/^	size_t size;$/;"	m	struct:_HashMap
+stat	unicode/test/scripts/spellerTest.sh	/^function stat(){$/;"	f
+static_conf	backup/chat_module.c	/^static ngx_http_chat_loc_conf_t* static_conf = NULL;$/;"	v	file:
+strToLower	unicode/test/main.cpp	/^inline bool strToLower( string & str )$/;"	f
+string2U	unicode/source/t_utilities.h	/^inline void string2U( const std::string & strOri, std::u16string & strResult )$/;"	f
+strrchr	unicode/source/Verbs/t_verbInterface.cpp	/^char16_t * t_verbInterface::strrchr(char16_t * str, char16_t ch)$/;"	f	class:t_verbInterface
+strstr	unicode/source/Verbs/t_verbInterface.cpp	/^char16_t * t_verbInterface::strstr(char16_t * strA, const char16_t * strB)$/;"	f	class:t_verbInterface
+sysBigramFreq	unicode/source/UserDict/t_userNgramDict.h	/^	short sysBigramFreq;   \/\/ÏµÍ³¶şÔªµÄ´ÊÆµ$/;"	m	struct:t_userBigram
+sysTrigramFreq	unicode/source/UserDict/t_userNgramDict.h	/^	short sysTrigramFreq;   \/\/ÏµÍ³ÈıÔªµÄ´ÊÆµ$/;"	m	struct:t_userTrigram
+szWord	unicode/source/Ngram/t_ngram.h	/^	char16_t * szWord;		\/\/è”æƒ³ç»“æœ$/;"	m	struct:t_NGramAssocCand
+szWord	unicode/source/UserDict/t_userNgramDict.h	/^	char16_t * szWord;			\/\/ÁªÏë½á¹û$/;"	m	struct:t_userNgramAssocCand
+t_BasicIndex	unicode/source/UserDict/t_userNgramDict.h	/^	t_BasicIndex(unsigned int nLength, int unPos,$/;"	f	struct:t_BasicIndex
+t_BasicIndex	unicode/source/UserDict/t_userNgramDict.h	/^struct t_BasicIndex$/;"	s
+t_HMDefaultComp	unicode/source/Common/t_hashMap.h	/^class t_HMDefaultComp$/;"	c
+t_HMLstrArrComp	unicode/source/Common/t_hashMap.h	/^class t_HMLstrArrComp$/;"	c
+t_HMStrComp	unicode/source/Common/t_hashMap.h	/^class t_HMStrComp$/;"	c
+t_NGramAssocCand	unicode/source/Ngram/t_ngram.h	/^struct t_NGramAssocCand$/;"	s
+t_bigram	unicode/source/Ngram/t_ngram.h	/^struct t_bigram$/;"	s
+t_cacheHeader	unicode/source/Correct/t_spellerCache.h	/^	t_cacheHeader()$/;"	f	struct:t_cacheHeader
+t_cacheHeader	unicode/source/Correct/t_spellerCache.h	/^struct t_cacheHeader$/;"	s
+t_cacheIndex	unicode/source/Correct/t_spellerCache.h	/^struct t_cacheIndex$/;"	s
+t_candMemory	unicode/source/Engines/dictDefine.h	/^	t_candMemory( const t_candMemory & object )$/;"	f	struct:t_candMemory
+t_candMemory	unicode/source/Engines/dictDefine.h	/^	t_candMemory( t_candMemory && object )$/;"	f	struct:t_candMemory
+t_candMemory	unicode/source/Engines/dictDefine.h	/^	t_candMemory()$/;"	f	struct:t_candMemory
+t_candMemory	unicode/source/Engines/dictDefine.h	/^struct t_candMemory$/;"	s
+t_composingMemory	unicode/source/Engines/dictDefine.h	/^	t_composingMemory( const int nFreq = -1, const float fP = 0.0,$/;"	f	struct:t_composingMemory
+t_composingMemory	unicode/source/Engines/dictDefine.h	/^struct t_composingMemory$/;"	s
+t_convertInterface	unicode/source/Engines/t_convertInterface.cpp	/^t_convertInterface::t_convertInterface()$/;"	f	class:t_convertInterface
+t_convertInterface	unicode/source/Engines/t_convertInterface.h	/^class t_convertInterface$/;"	c
+t_correctCandidate	unicode/source/Correct/t_sysCorrect.h	/^	t_correctCandidate()$/;"	f	struct:t_correctCandidate
+t_correctCandidate	unicode/source/Correct/t_sysCorrect.h	/^struct t_correctCandidate$/;"	s
+t_correctInterface	unicode/source/Correct/t_correctInterface.cpp	/^t_correctInterface::t_correctInterface()$/;"	f	class:t_correctInterface
+t_correctInterface	unicode/source/Correct/t_correctInterface.h	/^class t_correctInterface$/;"	c
+t_ctype	unicode/source/Common/t_ctype.cpp	/^t_ctype::t_ctype()$/;"	f	class:t_ctype
+t_ctype	unicode/source/Common/t_ctype.h	/^class t_ctype$/;"	c
+t_data	unicode/source/Common/t_hashMap.h	/^		t_data()$/;"	f	struct:t_hashMap::t_data
+t_data	unicode/source/Common/t_hashMap.h	/^	struct t_data  \/\/ ä¿å­˜æ¯ä¸€ä¸ªæ•°æ®å…ƒç´  [gaofeng 2014\/4\/24]$/;"	s	class:t_hashMap
+t_dataHead	unicode/source/Common/t_hashMap.h	/^		t_dataHead()$/;"	f	struct:t_hashMap::t_dataHead
+t_dataHead	unicode/source/Common/t_hashMap.h	/^	struct t_dataHead  \/\/ æ¯ä¸€ä¸ªé“¾è¡¨çš„å¤´èŠ‚ç‚¹ [gaofeng 2014\/4\/24]$/;"	s	class:t_hashMap
+t_gramRulesHeader	unicode/source/GramAdjust/t_ruleEstimate.h	/^struct t_gramRulesHeader$/;"	s
+t_gramRulesIndex	unicode/source/GramAdjust/t_ruleEstimate.h	/^struct t_gramRulesIndex$/;"	s
+t_hashMap	unicode/source/Common/t_hashMap.h	/^class t_hashMap$/;"	c
+t_hashMap	unicode/source/Common/t_hashMap.h	/^t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::t_hashMap()$/;"	f	class:t_hashMap
+t_hashMap	unicode/source/Common/t_hashMap.h	/^t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::t_hashMap(int initSize)$/;"	f	class:t_hashMap
+t_hashMapIterator	unicode/source/Common/t_hashMap.h	/^	class t_hashMapIterator$/;"	c	class:t_hashMap
+t_hashMapIterator	unicode/source/Common/t_hashMap.h	/^t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::t_hashMapIterator::t_hashMapIterator()$/;"	f	class:t_hashMap::t_hashMapIterator
+t_hashMapIterator	unicode/source/Common/t_hashMap.h	/^t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::t_hashMapIterator::t_hashMapIterator(t_hashMap *map)$/;"	f	class:t_hashMap::t_hashMapIterator
+t_header	unicode/source/Ngram/t_ngram.h	/^struct t_header$/;"	s
+t_index	unicode/source/Ngram/t_ngram.h	/^struct t_index$/;"	s
+t_keyMap	unicode/source/Common/t_keyMap.h	/^	t_keyMap()$/;"	f	class:t_keyMap
+t_keyMap	unicode/source/Common/t_keyMap.h	/^class t_keyMap$/;"	c
+t_ngram	unicode/source/Ngram/t_ngram.cpp	/^t_ngram::t_ngram()$/;"	f	class:t_ngram
+t_ngram	unicode/source/Ngram/t_ngram.h	/^class t_ngram$/;"	c
+t_paradigmHeader	unicode/source/Verbs/t_tenseEstimate.h	/^struct t_paradigmHeader$/;"	s
+t_paradigmIndex	unicode/source/Verbs/t_tenseEstimate.h	/^struct t_paradigmIndex$/;"	s
+t_phraseInterface	unicode/source/SysDict/t_phraseInterface.cpp	/^t_phraseInterface::t_phraseInterface()$/;"	f	class:t_phraseInterface
+t_phraseInterface	unicode/source/SysDict/t_phraseInterface.h	/^class t_phraseInterface$/;"	c
+t_phraseMemory	unicode/source/Engines/dictDefine.h	/^	t_phraseMemory( const int freq, const char16_t * szword, const e_dictType Type,$/;"	f	struct:t_phraseMemory
+t_phraseMemory	unicode/source/Engines/dictDefine.h	/^	t_phraseMemory( t_phraseMemory && object )$/;"	f	struct:t_phraseMemory
+t_phraseMemory	unicode/source/Engines/dictDefine.h	/^	t_phraseMemory()$/;"	f	struct:t_phraseMemory
+t_phraseMemory	unicode/source/Engines/dictDefine.h	/^struct t_phraseMemory$/;"	s
+t_ruleEstimate	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^t_ruleEstimate::t_ruleEstimate()$/;"	f	class:t_ruleEstimate
+t_ruleEstimate	unicode/source/GramAdjust/t_ruleEstimate.h	/^class t_ruleEstimate$/;"	c
+t_spellerCache	unicode/source/Correct/t_spellerCache.cpp	/^t_spellerCache::t_spellerCache()$/;"	f	class:t_spellerCache
+t_spellerCache	unicode/source/Correct/t_spellerCache.h	/^class t_spellerCache$/;"	c
+t_sysCorrect	unicode/source/Correct/t_sysCorrect.cpp	/^t_sysCorrect::t_sysCorrect()$/;"	f	class:t_sysCorrect
+t_sysCorrect	unicode/source/Correct/t_sysCorrect.h	/^class t_sysCorrect$/;"	c
+t_sysDict	unicode/source/SysDict/t_sysDict.cpp	/^t_sysDict::t_sysDict()$/;"	f	class:t_sysDict
+t_sysDict	unicode/source/SysDict/t_sysDict.h	/^class t_sysDict$/;"	c
+t_sysFreq	unicode/source/Engines/dictDefine.h	/^typedef short t_sysFreq;$/;"	t
+t_sysInterface	unicode/source/SysDict/t_sysInterface.cpp	/^t_sysInterface::t_sysInterface()$/;"	f	class:t_sysInterface
+t_sysInterface	unicode/source/SysDict/t_sysInterface.h	/^class t_sysInterface$/;"	c
+t_sysPhrase	unicode/source/SysDict/t_sysPhrase.cpp	/^t_sysPhrase::t_sysPhrase()$/;"	f	class:t_sysPhrase
+t_sysPhrase	unicode/source/SysDict/t_sysPhrase.h	/^class t_sysPhrase$/;"	c
+t_tenseEstimate	unicode/source/Verbs/t_tenseEstimate.cpp	/^t_tenseEstimate::t_tenseEstimate()$/;"	f	class:t_tenseEstimate
+t_tenseEstimate	unicode/source/Verbs/t_tenseEstimate.h	/^class t_tenseEstimate$/;"	c
+t_trigram	unicode/source/Ngram/t_ngram.h	/^struct t_trigram$/;"	s
+t_userBigram	unicode/source/UserDict/t_userNgramDict.h	/^	t_userBigram(short ID, short sysFreq, short usFreq, int nType, unsigned int unTime)$/;"	f	struct:t_userBigram
+t_userBigram	unicode/source/UserDict/t_userNgramDict.h	/^struct t_userBigram$/;"	s
+t_userDict	unicode/source/UserDict/t_userDict.cpp	/^t_userDict::t_userDict()$/;"	f	class:t_userDict
+t_userDict	unicode/source/UserDict/t_userDict.h	/^class t_userDict$/;"	c
+t_userDictHeader	unicode/source/UserDict/t_userDict.h	/^}t_userDictHeader;$/;"	t	typeref:struct:__anon11
+t_userDictInfo	unicode/source/UserDict/t_userDict.h	/^}t_userDictInfo;$/;"	t	typeref:struct:__anon10
+t_userIndex	unicode/source/UserDict/t_userDict.h	/^	t_userIndex( unsigned int unPos, unsigned char ucLength,$/;"	f	struct:t_userIndex
+t_userIndex	unicode/source/UserDict/t_userDict.h	/^struct t_userIndex$/;"	s
+t_userNgramAssocCand	unicode/source/UserDict/t_userNgramDict.h	/^struct t_userNgramAssocCand$/;"	s
+t_userNgramDict	unicode/source/UserDict/t_userNgramDict.cpp	/^t_userNgramDict::t_userNgramDict()$/;"	f	class:t_userNgramDict
+t_userNgramDict	unicode/source/UserDict/t_userNgramDict.h	/^class t_userNgramDict$/;"	c
+t_userNgramDictInfo	unicode/source/UserDict/t_userNgramDict.h	/^}t_userNgramDictInfo;$/;"	t	typeref:struct:__anon9
+t_userNgramHeader	unicode/source/UserDict/t_userNgramDict.h	/^}t_userNgramHeader;$/;"	t	typeref:struct:__anon8
+t_userNgramWordData	unicode/source/UserDict/t_userNgramDict.h	/^}t_userNgramWordData;$/;"	t	typeref:struct:__anon7
+t_userTrigram	unicode/source/UserDict/t_userNgramDict.h	/^	t_userTrigram(short ID1, short ID2, short sysFreq, short usFreq, int nType, unsigned int unTime, short curTriGramNum)$/;"	f	struct:t_userTrigram
+t_userTrigram	unicode/source/UserDict/t_userNgramDict.h	/^struct t_userTrigram$/;"	s
+t_verbData	unicode/source/Verbs/t_verbDict.h	/^}t_verbData;$/;"	t	typeref:struct:__anon4
+t_verbDict	unicode/source/Verbs/t_verbDict.cpp	/^t_verbDict::t_verbDict()$/;"	f	class:t_verbDict
+t_verbDict	unicode/source/Verbs/t_verbDict.h	/^class t_verbDict$/;"	c
+t_verbDictHeader	unicode/source/Verbs/t_verbDict.h	/^}t_verbDictHeader;$/;"	t	typeref:struct:__anon6
+t_verbDictInfo	unicode/source/Verbs/t_verbDict.h	/^}t_verbDictInfo;$/;"	t	typeref:struct:__anon5
+t_verbIndex	unicode/source/Verbs/t_verbDict.h	/^struct t_verbIndex$/;"	s
+t_verbInterface	unicode/source/Verbs/t_verbInterface.cpp	/^t_verbInterface::t_verbInterface()$/;"	f	class:t_verbInterface
+t_verbInterface	unicode/source/Verbs/t_verbInterface.h	/^class t_verbInterface$/;"	c
+testNgram	unicode/source/t_testNgram.h	/^void testNgram()$/;"	f
+testTypingRate	unicode/test/main.cpp	/^void testTypingRate()$/;"	f
+testUserNgramDict	unicode/source/testUserNgram.h	/^void testUserNgramDict()$/;"	f
+testVerbs	unicode/source/t_VerbsTest.h	/^void testVerbs()$/;"	f
+testVerbs	unicode/source/t_VerbsTest_new.h	/^void testVerbs()$/;"	f
+type	unicode/source/Correct/t_sysCorrect.h	/^	e_correctType type;			\/\/çº é”™ç±»å‹$/;"	m	struct:t_correctCandidate
+type	unicode/source/Engines/dictDefine.h	/^	e_dictType	type;$/;"	m	struct:t_phraseMemory
+u2String	unicode/source/t_utilities.h	/^inline void u2String( const std::u16string & strOri, std::string & strResult )$/;"	f
+u2stringsz	unicode/source/t_utilities.h	/^inline void u2stringsz(const char16_t *ori,char *result)$/;"	f
+ucFreq	unicode/source/Ngram/t_ngram.h	/^	unsigned char ucFreq;   \/\/freq$/;"	m	struct:t_bigram
+ucFreq	unicode/source/Ngram/t_ngram.h	/^	unsigned char ucFreq;   \/\/freq$/;"	m	struct:t_trigram
+unBiRulesLeftNum	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unBiRulesLeftNum;$/;"	m	struct:t_gramRulesHeader
+unBiRulesLen	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unBiRulesLen;$/;"	m	struct:t_gramRulesHeader
+unConParadigmLen	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unConParadigmLen;		\/\/è¿ç»­çš„å›ºå®šæ­é…æ•°æ®æ€»é•¿åº¦ï¼ˆå­—ç¬¦æ•°ï¼‰$/;"	m	struct:t_paradigmHeader
+unConParadigmNum	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unConParadigmNum;		\/\/è¿ç»­çš„å›ºå®šæ­é…æ•°é‡$/;"	m	struct:t_paradigmHeader
+unLen	unicode/source/Verbs/t_verbDict.h	/^	unsigned int unLen : 8;    \/\/¶¯´Ê´ÊÌõµÄ³¤¶È$/;"	m	struct:t_verbIndex
+unMagic	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unMagic;$/;"	m	struct:t_gramRulesHeader
+unMagic	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unMagic;$/;"	m	struct:t_paradigmHeader
+unMapOffset	unicode/source/Verbs/t_verbDict.h	/^	unsigned int unMapOffset;   \/\/¶¯´Ê¶ÔÓ¦Ó³Éä±íµÄÆğÊ¼Æ«ÒÆ$/;"	m	struct:t_verbIndex
+unPseudoTime	unicode/source/UserDict/t_userDict.h	/^	unsigned int	unPseudoTime;		\/\/ä¼ªæ—¶é—´s$/;"	m	struct:t_userIndex
+unPseudoTime	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int	unPseudoTime;		\/\/Î±Ê±¼äs$/;"	m	struct:t_userBigram
+unPseudoTime	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int	unPseudoTime;		\/\/Î±Ê±¼äs$/;"	m	struct:t_userTrigram
+unReserved0	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unReserved0;$/;"	m	struct:t_paradigmHeader
+unReserved1	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unReserved1;$/;"	m	struct:t_paradigmHeader
+unStartPos	unicode/source/UserDict/t_userDict.h	/^	unsigned int	unStartPos;			\/\/è¯æ¡èµ·å§‹ä½ç½®ï¼ˆå­—ç¬¦æ•°ï¼‰$/;"	m	struct:t_userIndex
+unStartPos	unicode/source/Verbs/t_verbDict.h	/^	unsigned int unStartPos : 24;  \/\/¶¯´ÊÔÚÊı¾İÇøµÄ´ÊÊ×Æ«ÒÆ$/;"	m	struct:t_verbIndex
+unTriParadigmLen	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unTriParadigmLen;		\/\/æœ‰æ’å…¥è¯çš„å›ºå®šæ­é…æ•°æ®æ€»é•¿åº¦ï¼ˆå­—ç¬¦æ•°ï¼‰$/;"	m	struct:t_paradigmHeader
+unTriParadigmNum	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unTriParadigmNum;		\/\/æœ‰æ’å…¥è¯çš„å›ºå®šæ­é…æ•°é‡$/;"	m	struct:t_paradigmHeader
+unTriRulesLeftNum	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unTriRulesLeftNum;$/;"	m	struct:t_gramRulesHeader
+unTriRulesLen	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unTriRulesLen;$/;"	m	struct:t_gramRulesHeader
+unUserPseudoTime	unicode/source/UserDict/t_userNgramDict.h	/^	unsigned int unUserPseudoTime;$/;"	m	struct:t_userNgramAssocCand
+unVersion	unicode/source/GramAdjust/t_ruleEstimate.h	/^	unsigned int unVersion;$/;"	m	struct:t_gramRulesHeader
+unVersion	unicode/source/Verbs/t_tenseEstimate.h	/^	unsigned int unVersion;$/;"	m	struct:t_paradigmHeader
+usCount	unicode/source/UserDict/t_userDict.h	/^	unsigned short	usCount;			\/\/è¾“å…¥æ¬¡æ•°$/;"	m	struct:t_userIndex
+usCount	unicode/source/UserDict/t_userNgramDict.h	/^	short usCount;           \/\/ÓÃ»§¶şÔªÉÏÆÁ´ÎÊı,ÓÃ»§ÊäÈëÉÏÆÁµÄ´®ÖĞÆ¥ÅäÁËÓÃ»§¶şÔªÔòÓÃ»§¶şÔªÊäÈë´ÎÊı¼Ó1$/;"	m	struct:t_userBigram
+usCount	unicode/source/UserDict/t_userNgramDict.h	/^	short usCount;           \/\/ÓÃ»§ÈıÔªÉÏÆÁ´ÎÊı,ÓÃ»§ÊäÈëÉÏÆÁµÄ´®ÖĞÆ¥ÅäÁËÓÃ»§¶şÔªÔòÓÃ»§¶şÔªÊäÈë´ÎÊı¼Ó1$/;"	m	struct:t_userTrigram
+usEmScore	unicode/source/Correct/t_sysCorrect.h	/^	unsigned short usEmScore;	\/\/error modelå¾—åˆ†$/;"	m	struct:t_correctCandidate
+usLen	unicode/source/UserDict/t_userDict.h	/^	unsigned short	usLen : 5;			\/\/é•¿åº¦,æœ€é•¿31$/;"	m	struct:t_userIndex
+usLmScore	unicode/source/Correct/t_sysCorrect.h	/^	unsigned short usLmScore;	\/\/language modelå¾—åˆ†$/;"	m	struct:t_correctCandidate
+usSysFreq	unicode/source/UserDict/t_userDict.h	/^	unsigned short	usSysFreq : 11;		\/\/ç³»ç»Ÿè¯åº“ä¸­çš„è¯é¢‘ï¼Œæœ€å¤§2047$/;"	m	struct:t_userIndex
+value	hash_map.h	/^	ngx_str_t value;$/;"	m	struct:_HashNode
+value	test1/hash_map.h	/^	ngx_str_t value;$/;"	m	struct:_HashNode
+value	unicode/source/Common/t_hashMap.h	/^		VALUE value;$/;"	m	struct:t_hashMap::t_data
+~CandItem	unicode/source/Candidate/CandItem.cpp	/^CandItem::~CandItem()$/;"	f	class:CandItem
+~Candidates	unicode/source/Candidate/Candidates.cpp	/^Candidates::~Candidates()$/;"	f	class:Candidates
+~HttpHandle	backup/HttpHandle.cpp	/^HttpHandle::~HttpHandle() {}$/;"	f	class:HttpHandle
+~WordIterator	unicode/source/SysDict/t_sysDict.h	/^		virtual ~WordIterator(void) {}$/;"	f	class:t_sysDict::WordIterator
+~WordIterator	unicode/source/SysDict/t_sysPhrase.h	/^		virtual ~WordIterator( void ) {}$/;"	f	class:t_sysPhrase::WordIterator
+~t_candMemory	unicode/source/Engines/dictDefine.h	/^	~t_candMemory()$/;"	f	struct:t_candMemory
+~t_convertInterface	unicode/source/Engines/t_convertInterface.cpp	/^t_convertInterface::~t_convertInterface()$/;"	f	class:t_convertInterface
+~t_correctInterface	unicode/source/Correct/t_correctInterface.cpp	/^t_correctInterface::~t_correctInterface()$/;"	f	class:t_correctInterface
+~t_ctype	unicode/source/Common/t_ctype.cpp	/^t_ctype::~t_ctype()$/;"	f	class:t_ctype
+~t_hashMap	unicode/source/Common/t_hashMap.h	/^t_hashMap<KEY, VALUE, OP, unBSize, unBCount>::~t_hashMap()$/;"	f	class:t_hashMap
+~t_keyMap	unicode/source/Common/t_keyMap.h	/^	virtual ~t_keyMap(void) {}$/;"	f	class:t_keyMap
+~t_ngram	unicode/source/Ngram/t_ngram.cpp	/^t_ngram::~t_ngram()$/;"	f	class:t_ngram
+~t_phraseInterface	unicode/source/SysDict/t_phraseInterface.cpp	/^t_phraseInterface::~t_phraseInterface()$/;"	f	class:t_phraseInterface
+~t_phraseMemory	unicode/source/Engines/dictDefine.h	/^	~t_phraseMemory()$/;"	f	struct:t_phraseMemory
+~t_ruleEstimate	unicode/source/GramAdjust/t_ruleEstimate.cpp	/^t_ruleEstimate::~t_ruleEstimate()$/;"	f	class:t_ruleEstimate
+~t_spellerCache	unicode/source/Correct/t_spellerCache.cpp	/^t_spellerCache::~t_spellerCache()$/;"	f	class:t_spellerCache
+~t_sysCorrect	unicode/source/Correct/t_sysCorrect.cpp	/^t_sysCorrect::~t_sysCorrect()$/;"	f	class:t_sysCorrect
+~t_sysDict	unicode/source/SysDict/t_sysDict.cpp	/^t_sysDict::~t_sysDict()$/;"	f	class:t_sysDict
+~t_sysInterface	unicode/source/SysDict/t_sysInterface.cpp	/^t_sysInterface::~t_sysInterface()$/;"	f	class:t_sysInterface
+~t_sysPhrase	unicode/source/SysDict/t_sysPhrase.cpp	/^t_sysPhrase::~t_sysPhrase()$/;"	f	class:t_sysPhrase
+~t_tenseEstimate	unicode/source/Verbs/t_tenseEstimate.cpp	/^t_tenseEstimate::~t_tenseEstimate()$/;"	f	class:t_tenseEstimate
+~t_userDict	unicode/source/UserDict/t_userDict.cpp	/^t_userDict::~t_userDict()$/;"	f	class:t_userDict
+~t_userNgramDict	unicode/source/UserDict/t_userNgramDict.cpp	/^t_userNgramDict::~t_userNgramDict()$/;"	f	class:t_userNgramDict
+~t_verbDict	unicode/source/Verbs/t_verbDict.cpp	/^t_verbDict::~t_verbDict()$/;"	f	class:t_verbDict
+~t_verbInterface	unicode/source/Verbs/t_verbInterface.cpp	/^t_verbInterface::~t_verbInterface()$/;"	f	class:t_verbInterface
