@@ -47,5 +47,5 @@ curl "http://127.0.0.1/test?data=研究生命起源"</br>
 - POST</br>
 curl --data "研究生命起源" "http://127.0.0.1/test"</br>
 结果：研究 生命 起源</br>
-具体源码注释见：
-<a href="https://github.com/ustcdane/nginx_mmseg" target="_blank"> github/ </a>。
+具体细节：
+<a href="http://blog.csdn.net/daniel_ustc/article/details/50531677" target="_blank">博客 </a>。
