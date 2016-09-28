@@ -35,7 +35,7 @@ CXXFLAGS=$(CFLAGS) -std=c++11 -g<br>
 </br>
 这是因为nginx 找不到我们的动态链接库 libmmseg.so,因此需要在路径LD_LIBRARY_PATH中添加，方法如下：</br>
 在 /etc/profile 中添加</br>
-export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:/user/nginx_mmseg/mmseg/build/</br>
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/user/nginx_mmseg/mmseg/build/</br>
 然后 source /etc/profile 即可。</br>
 
 **测试**
