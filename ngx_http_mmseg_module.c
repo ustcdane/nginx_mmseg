@@ -51,6 +51,44 @@ static ngx_command_t ngx_http_mmseg_commands[] = {
 	},
 	ngx_null_command // 注意写法
 };
+/*
+也可以master就加载词库等信息，子进程worker共享父进程数据，copy on write
+词库较大时 这种方法更好！
+
+typedef struct {
+    ngx_str_t output_words;
+} ngx_http_mmseg_loc_conf_t;
+
+static ngx_command_t ngx_http_mmseg_commands[] = { 
+    {   
+        ngx_string("nginx_mmseg"), // The command name
+        NGX_HTTP_LOC_CONF | NGX_CONF_TAKE3,
+        ngx_http_mmseg_set_conf, // The command handler
+        NGX_HTTP_LOC_CONF_OFFSET,
+        offsetof(ngx_http_mmseg_loc_conf_t, output_words),
+        NULL
+    },  
+    ngx_null_command
+};
+// 这里加载词库数据
+MMSeg g_interface;
+static char* ngx_http_mmseg_set_conf(ngx_conf_t* cf, ngx_command_t* cmd, void* conf) {
+   ngx_http_core_loc_conf_t* clcf;
+    clcf = (ngx_http_core_loc_conf_t*)ngx_http_conf_get_module_loc_conf(cf, ngx_http_core_module);
+    clcf->handler = ngx_http_mmseg_handler;
+    ngx_conf_set_str_slot(cf, cmd, conf);
+    if (cf->args->nelts != 3) {
+        ngx_log_error(NGX_LOG_ERR, cf->log, 0, " [the number of conf'a args is not 3] ");
+        return (char*)NGX_CONF_ERROR;
+    }   
+    ngx_str_t * value = (ngx_str_t *)cf->args->elts;
+
+    g_interface = MMSeg::Instance(words_p, chars_p);
+    return NGX_CONF_OK;
+}
+/*
+
+
 
 // 模块上下文结构
 // 设置module启动时需要执行的一些函数
