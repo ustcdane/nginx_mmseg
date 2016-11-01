@@ -51,7 +51,7 @@ static ngx_command_t ngx_http_mmseg_commands[] = {
 	},
 	ngx_null_command // 注意写法
 };
-*/
+/*
 也可以master就加载词库等信息，子进程worker共享父进程数据，copy on write
 词库较大时 这种方法更好！
 
