@@ -86,7 +86,7 @@ static char* ngx_http_mmseg_set_conf(ngx_conf_t* cf, ngx_command_t* cmd, void* c
     g_interface = MMSeg::Instance(words_p, chars_p);
     return NGX_CONF_OK;
 }
-/*
+*/
 
 
 
