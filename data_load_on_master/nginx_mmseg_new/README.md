@@ -2,7 +2,7 @@
   **下载源码**<br>
  git clone  https://github.com/ustcdane/nginx_mmseg.git  /user/nginx_mmseg<br>
  把这个目录的单独拿出来：</br>
- https://github.com/ustcdane/nginx_mmseg/tree/master/data_load_on_master/nginx_mmseg_new
+ https://github.com/ustcdane/nginx_mmseg/tree/master/data_load_on_master/nginx_mmseg_new</br>
 **configure**
 进入nginx目录，cd nginx-1.8.0，运行configure生成Makefile文件，Makefile文件在objs目录下：<br>
 ./configure  --prefix=/user/nginx-1.8.0/bin --add-module=/user/nginx_mmseg/  --with-pcre=/user/pcre-8.37<br>
