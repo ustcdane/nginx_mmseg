@@ -1,6 +1,8 @@
  需要先下载 pcre软件包,假设下载了pcre-8.37 并放在user目录下。<br>
   **下载源码**<br>
  git clone  https://github.com/ustcdane/nginx_mmseg.git  /user/nginx_mmseg<br>
+ 把这个目录的单独拿出来：</br>
+ https://github.com/ustcdane/nginx_mmseg/tree/master/data_load_on_master/nginx_mmseg_new
 **configure**
 进入nginx目录，cd nginx-1.8.0，运行configure生成Makefile文件，Makefile文件在objs目录下：<br>
 ./configure  --prefix=/user/nginx-1.8.0/bin --add-module=/user/nginx_mmseg/  --with-pcre=/user/pcre-8.37<br>
@@ -22,8 +24,7 @@ CXXFLAGS=$(CFLAGS) -std=c++11 -g<br>
             index  index.html index.htm;
         }   
     location /test {
-            words_path /user/nginx_mmseg/mmseg/data/words.dic;
-            charFreq_path /user/nginx_mmseg/mmseg/data/chars.dic; 
+           mmseg /search/odin/daniel/nginx_mmseg/mmseg/data/words.dic /search/odin/daniel/nginx_mmseg/mmseg/data/chars.dic; 
         }   
 ```
 有不清楚的可以参考目录下 Makefile_example 文件 Makefile.bk.hpp和 Makefile.bk.so，
